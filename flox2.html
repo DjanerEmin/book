@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 11 Development and evaluation of a mobile measurement procedure for TOC SIF | Exploring the effect of canopy structure on top-of-canopy sun-induced fluorescence</title>
+  <meta name="description" content="A PhD thesis for awarding the title Doctor of Agricultural Science" />
+  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 11 Development and evaluation of a mobile measurement procedure for TOC SIF | Exploring the effect of canopy structure on top-of-canopy sun-induced fluorescence" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A PhD thesis for awarding the title Doctor of Agricultural Science" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 11 Development and evaluation of a mobile measurement procedure for TOC SIF | Exploring the effect of canopy structure on top-of-canopy sun-induced fluorescence" />
+  
+  <meta name="twitter:description" content="A PhD thesis for awarding the title Doctor of Agricultural Science" />
+  
+
+<meta name="author" content="Dzhaner Emin" />
+
+
+<meta name="date" content="2019-11-11" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="flox1.html"/>
+<link rel="next" href="flox3.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.5/datatables.js"></script>
+<link href="libs/dt-core-1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.10.16/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.10.16/js/jquery.dataTables.min.js"></script>
+<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Sun-induced fluorescence</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#section"></a></li>
+<li class="chapter" data-level="" data-path="preamble.html"><a href="preamble.html"><i class="fa fa-check"></i>Preamble</a><ul>
+<li class="chapter" data-level="" data-path="preamble.html"><a href="preamble.html#acknowledgments"><i class="fa fa-check"></i>Acknowledgments</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="part"><span><b>I Theoretical background (Methods)</b></span></li>
+<li class="chapter" data-level="2" data-path="fluo.html"><a href="fluo.html"><i class="fa fa-check"></i><b>2</b> Fluorescence basics</a><ul>
+<li class="chapter" data-level="2.1" data-path="fluo.html"><a href="fluo.html#faith-of-absorbed-light-energy-reaching-the-plant-surface"><i class="fa fa-check"></i><b>2.1</b> Faith of absorbed light energy reaching the plant surface</a></li>
+<li class="chapter" data-level="2.2" data-path="fluo.html"><a href="fluo.html#origin-of-chlorophyll-fluorescence"><i class="fa fa-check"></i><b>2.2</b> Origin of chlorophyll fluorescence</a></li>
+<li class="chapter" data-level="2.3" data-path="fluo.html"><a href="fluo.html#link-between-fluorescence-and-photosynthesis"><i class="fa fa-check"></i><b>2.3</b> Link between fluorescence and photosynthesis</a></li>
+<li class="chapter" data-level="2.4" data-path="fluo.html"><a href="fluo.html#heat-dissipation"><i class="fa fa-check"></i><b>2.4</b> Heat dissipation</a></li>
+<li class="chapter" data-level="2.5" data-path="fluo.html"><a href="fluo.html#measuring-chl-fluorescence"><i class="fa fa-check"></i><b>2.5</b> Measuring Chl fluorescence</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="fluo.html"><a href="fluo.html#pam-fluorimetry---active-methods"><i class="fa fa-check"></i><b>2.5.1</b> PAM fluorimetry - active methods</a></li>
+<li class="chapter" data-level="2.5.2" data-path="fluo.html"><a href="fluo.html#fluorescence-under-natural-conditions-sif"><i class="fa fa-check"></i><b>2.5.2</b> Fluorescence under natural conditions (SIF)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="rs.html"><a href="rs.html"><i class="fa fa-check"></i><b>3</b> Remote sensing of vegetation biophysics and SIF</a><ul>
+<li class="chapter" data-level="3.1" data-path="rs.html"><a href="rs.html#remote-sensing"><i class="fa fa-check"></i><b>3.1</b> Remote sensing</a></li>
+<li class="chapter" data-level="3.2" data-path="rs.html"><a href="rs.html#the-concept-of-scale-in-remote-sensing.-scalability-of-ecological-processes-scale"><i class="fa fa-check"></i><b>3.2</b> The concept of scale in remote sensing. Scalability of ecological processes {scale}</a></li>
+<li class="chapter" data-level="3.3" data-path="rs.html"><a href="rs.html#retrieval-of-sif"><i class="fa fa-check"></i><b>3.3</b> Retrieval of SIF</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="rs.html"><a href="rs.html#fld-principle"><i class="fa fa-check"></i><b>3.3.1</b> FLD principle</a></li>
+<li class="chapter" data-level="3.3.2" data-path="rs.html"><a href="rs.html#spectral-fitting-methods-the-state-of-the-art-sif-retrieval-of-the-entire-sif-spectrum"><i class="fa fa-check"></i><b>3.3.2</b> Spectral fitting methods – the state of the art SIF retrieval of the entire SIF spectrum</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="rs.html"><a href="rs.html#sensor-design-for-sif-acquisition"><i class="fa fa-check"></i><b>3.4</b> Sensor design for SIF acquisition</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="rs.html"><a href="rs.html#flox"><i class="fa fa-check"></i><b>3.4.1</b> Ground sensor design</a></li>
+<li class="chapter" data-level="3.4.2" data-path="rs.html"><a href="rs.html#hyplant"><i class="fa fa-check"></i><b>3.4.2</b> Airborne</a></li>
+<li class="chapter" data-level="3.4.3" data-path="rs.html"><a href="rs.html#spaceborne"><i class="fa fa-check"></i><b>3.4.3</b> Spaceborne</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="factors-affecting-canopy-structure.html"><a href="factors-affecting-canopy-structure.html"><i class="fa fa-check"></i><b>4</b> Factors affecting canopy structure</a><ul>
+<li class="chapter" data-level="4.1" data-path="factors-affecting-canopy-structure.html"><a href="factors-affecting-canopy-structure.html#computational-factors"><i class="fa fa-check"></i><b>4.1</b> Computational Factors</a></li>
+<li class="chapter" data-level="4.2" data-path="factors-affecting-canopy-structure.html"><a href="factors-affecting-canopy-structure.html#environmental-factors"><i class="fa fa-check"></i><b>4.2</b> Environmental Factors</a></li>
+<li class="chapter" data-level="4.3" data-path="factors-affecting-canopy-structure.html"><a href="factors-affecting-canopy-structure.html#physiological-factors"><i class="fa fa-check"></i><b>4.3</b> Physiological Factors</a></li>
+<li class="chapter" data-level="4.4" data-path="factors-affecting-canopy-structure.html"><a href="factors-affecting-canopy-structure.html#discussion"><i class="fa fa-check"></i><b>4.4</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="canopystr.html"><a href="canopystr.html"><i class="fa fa-check"></i><b>5</b> Canopy structure</a><ul>
+<li class="chapter" data-level="5.1" data-path="canopystr.html"><a href="canopystr.html#measuring-canopy-structure"><i class="fa fa-check"></i><b>5.1</b> Measuring canopy structure</a></li>
+<li class="chapter" data-level="5.2" data-path="canopystr.html"><a href="canopystr.html#modeling-canopy-structure"><i class="fa fa-check"></i><b>5.2</b> modeling canopy structure</a></li>
+<li class="chapter" data-level="5.3" data-path="canopystr.html"><a href="canopystr.html#retrieval-of-canopy-structure"><i class="fa fa-check"></i><b>5.3</b> Retrieval of canopy structure</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="canopystr.html"><a href="canopystr.html#look-up-tables"><i class="fa fa-check"></i><b>5.3.1</b> Look-up Tables</a></li>
+<li class="chapter" data-level="5.3.2" data-path="canopystr.html"><a href="canopystr.html#cost-functions"><i class="fa fa-check"></i><b>5.3.2</b> Cost functions</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="canopystr.html"><a href="canopystr.html#the-effect-of-canopy-structure-on-sif"><i class="fa fa-check"></i><b>5.4</b> The effect of canopy structure on SIF</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="bibliometric-analysis-of-sun-induced-fluorescence-literature.html"><a href="bibliometric-analysis-of-sun-induced-fluorescence-literature.html"><i class="fa fa-check"></i><b>6</b> Bibliometric analysis of Sun-induced fluorescence literature</a><ul>
+<li class="chapter" data-level="6.1" data-path="bibliometric-analysis-of-sun-induced-fluorescence-literature.html"><a href="bibliometric-analysis-of-sun-induced-fluorescence-literature.html#descriptive-bibliometric-analysis"><i class="fa fa-check"></i><b>6.1</b> Descriptive bibliometric analysis</a></li>
+<li class="chapter" data-level="6.2" data-path="bibliometric-analysis-of-sun-induced-fluorescence-literature.html"><a href="bibliometric-analysis-of-sun-induced-fluorescence-literature.html#graphical-depiction"><i class="fa fa-check"></i><b>6.2</b> Graphical depiction</a></li>
+<li class="chapter" data-level="6.3" data-path="bibliometric-analysis-of-sun-induced-fluorescence-literature.html"><a href="bibliometric-analysis-of-sun-induced-fluorescence-literature.html#individual-paper-analytics"><i class="fa fa-check"></i><b>6.3</b> Individual paper analytics</a></li>
+<li class="chapter" data-level="6.4" data-path="bibliometric-analysis-of-sun-induced-fluorescence-literature.html"><a href="bibliometric-analysis-of-sun-induced-fluorescence-literature.html#bibliographic-network-matrices"><i class="fa fa-check"></i><b>6.4</b> Bibliographic network matrices</a></li>
+</ul></li>
+<li class="part"><span><b>II Materials and methods</b></span></li>
+<li class="chapter" data-level="7" data-path="studyarea.html"><a href="studyarea.html"><i class="fa fa-check"></i><b>7</b> Study area</a><ul>
+<li class="chapter" data-level="7.1" data-path="studyarea.html"><a href="studyarea.html#location"><i class="fa fa-check"></i><b>7.1</b> Location</a></li>
+<li class="chapter" data-level="7.2" data-path="studyarea.html"><a href="studyarea.html#climate"><i class="fa fa-check"></i><b>7.2</b> Climate</a></li>
+<li class="chapter" data-level="7.3" data-path="studyarea.html"><a href="studyarea.html#land-use"><i class="fa fa-check"></i><b>7.3</b> Land use</a></li>
+<li class="chapter" data-level="7.4" data-path="studyarea.html"><a href="studyarea.html#soilter"><i class="fa fa-check"></i><b>7.4</b> Soil &amp; Terrace</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="sugar-beet.html"><a href="sugar-beet.html"><i class="fa fa-check"></i><b>8</b> Sugar beet</a><ul>
+<li class="chapter" data-level="8.1" data-path="sugar-beet.html"><a href="sugar-beet.html#history-distribution-and-economics"><i class="fa fa-check"></i><b>8.1</b> History, distribution and economics</a></li>
+<li class="chapter" data-level="8.2" data-path="sugar-beet.html"><a href="sugar-beet.html#growth"><i class="fa fa-check"></i><b>8.2</b> Growth</a></li>
+<li class="chapter" data-level="8.3" data-path="sugar-beet.html"><a href="sugar-beet.html#husbandry"><i class="fa fa-check"></i><b>8.3</b> Husbandry</a></li>
+<li class="chapter" data-level="8.4" data-path="sugar-beet.html"><a href="sugar-beet.html#effects-of-canopy-structure"><i class="fa fa-check"></i><b>8.4</b> Effects of canopy structure</a><ul>
+<li class="chapter" data-level="8.4.1" data-path="sugar-beet.html"><a href="sugar-beet.html#canopy-development"><i class="fa fa-check"></i><b>8.4.1</b> Canopy development</a></li>
+<li class="chapter" data-level="8.4.2" data-path="sugar-beet.html"><a href="sugar-beet.html#effect-of-canopy-structure-on-yield"><i class="fa fa-check"></i><b>8.4.2</b> Effect of canopy structure on yield</a></li>
+<li class="chapter" data-level="8.4.3" data-path="sugar-beet.html"><a href="sugar-beet.html#effect-of-canopy-structure-on-radiation-budget-and-optical-properties"><i class="fa fa-check"></i><b>8.4.3</b> Effect of canopy structure on radiation budget and optical properties</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="sugar-beet.html"><a href="sugar-beet.html#other-effects"><i class="fa fa-check"></i><b>8.5</b> Other effects</a><ul>
+<li class="chapter" data-level="8.5.1" data-path="sugar-beet.html"><a href="sugar-beet.html#effect-of-nitrogen"><i class="fa fa-check"></i><b>8.5.1</b> effect of nitrogen</a></li>
+<li class="chapter" data-level="8.5.2" data-path="sugar-beet.html"><a href="sugar-beet.html#effect-of-soil-water"><i class="fa fa-check"></i><b>8.5.2</b> Effect of soil water</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>III Results</b></span></li>
+<li class="chapter" data-level="9" data-path="scope.html"><a href="scope.html"><i class="fa fa-check"></i><b>9</b> Exploring the influence of LAI and Chlorophyll content on TOC SIF using SCOPE simulation</a><ul>
+<li class="chapter" data-level="9.1" data-path="scope.html"><a href="scope.html#simulation"><i class="fa fa-check"></i><b>9.1</b> Simulation</a></li>
+<li class="chapter" data-level="9.2" data-path="scope.html"><a href="scope.html#results"><i class="fa fa-check"></i><b>9.2</b> Results</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="scope.html"><a href="scope.html#sif-as-function-of-lai-and-cab"><i class="fa fa-check"></i><b>9.2.1</b> SIF as function of LAI and Cab</a></li>
+<li class="chapter" data-level="9.2.2" data-path="scope.html"><a href="scope.html#sif-as-a-function-of-vi"><i class="fa fa-check"></i><b>9.2.2</b> SIF as a function of VI</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="scope.html"><a href="scope.html#discussion-1"><i class="fa fa-check"></i><b>9.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="ground-measurements-of-sif.html"><a href="ground-measurements-of-sif.html"><i class="fa fa-check"></i>Ground measurements of SIF</a></li>
+<li class="chapter" data-level="10" data-path="flox1.html"><a href="flox1.html"><i class="fa fa-check"></i><b>10</b> Description of FLOX device and exploratory data analysis of diurnal measurements</a><ul>
+<li class="chapter" data-level="10.1" data-path="flox1.html"><a href="flox1.html#flox-description-and-metadata"><i class="fa fa-check"></i><b>10.1</b> FLOX description and metadata</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="flox1.html"><a href="flox1.html#metadata"><i class="fa fa-check"></i><b>10.1.1</b> Metadata</a></li>
+<li class="chapter" data-level="10.1.2" data-path="flox1.html"><a href="flox1.html#temperature-of-device-housing-and-ccd"><i class="fa fa-check"></i><b>10.1.2</b> Temperature of device housing and CCD</a></li>
+<li class="chapter" data-level="10.1.3" data-path="flox1.html"><a href="flox1.html#humidity"><i class="fa fa-check"></i><b>10.1.3</b> Humidity</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="flox1.html"><a href="flox1.html#exploratory-analysis-of-diurnal-sif-for-two-crops"><i class="fa fa-check"></i><b>10.2</b> Exploratory analysis of diurnal SIF for two crops</a><ul>
+<li class="chapter" data-level="10.2.1" data-path="flox1.html"><a href="flox1.html#three-days-diurnal-measurements-in-sugar-beet"><i class="fa fa-check"></i><b>10.2.1</b> Three days diurnal measurements in sugar beet</a></li>
+<li class="chapter" data-level="10.2.2" data-path="flox1.html"><a href="flox1.html#diurnal-development-of-sif-in-winter-wheat"><i class="fa fa-check"></i><b>10.2.2</b> Diurnal development of SIF in Winter wheat</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="flox1.html"><a href="flox1.html#descriptive-statistics"><i class="fa fa-check"></i><b>10.3</b> Descriptive statistics</a><ul>
+<li class="chapter" data-level="10.3.1" data-path="flox1.html"><a href="flox1.html#sif-value-ranges.-comparison-between-ifld-and-sfm-values"><i class="fa fa-check"></i><b>10.3.1</b> SIF value ranges. Comparison between iFLD and SFM values</a></li>
+<li class="chapter" data-level="10.3.2" data-path="flox1.html"><a href="flox1.html#stability-of-sif-measurements"><i class="fa fa-check"></i><b>10.3.2</b> Stability of SIF measurements</a></li>
+</ul></li>
+<li class="chapter" data-level="10.4" data-path="flox1.html"><a href="flox1.html#discussion-2"><i class="fa fa-check"></i><b>10.4</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="flox2.html"><a href="flox2.html"><i class="fa fa-check"></i><b>11</b> Development and evaluation of a mobile measurement procedure for TOC SIF</a><ul>
+<li class="chapter" data-level="11.1" data-path="flox2.html"><a href="flox2.html#developing-a-mobile-measurement-protocol"><i class="fa fa-check"></i><b>11.1</b> Developing a mobile measurement protocol</a><ul>
+<li class="chapter" data-level="11.1.1" data-path="flox2.html"><a href="flox2.html#setup"><i class="fa fa-check"></i><b>11.1.1</b> Setup</a></li>
+<li class="chapter" data-level="11.1.2" data-path="flox2.html"><a href="flox2.html#procedure"><i class="fa fa-check"></i><b>11.1.2</b> Procedure</a></li>
+<li class="chapter" data-level="11.1.3" data-path="flox2.html"><a href="flox2.html#test-case"><i class="fa fa-check"></i><b>11.1.3</b> Test case</a></li>
+<li class="chapter" data-level="11.1.4" data-path="flox2.html"><a href="flox2.html#post-processing"><i class="fa fa-check"></i><b>11.1.4</b> Post-processing</a></li>
+<li class="chapter" data-level="11.1.5" data-path="flox2.html"><a href="flox2.html#quality-check"><i class="fa fa-check"></i><b>11.1.5</b> Quality check</a></li>
+<li class="chapter" data-level="11.1.6" data-path="flox2.html"><a href="flox2.html#finding-location-average-and-corresponding-reference-sif"><i class="fa fa-check"></i><b>11.1.6</b> Finding location average and corresponding reference SIF</a></li>
+</ul></li>
+<li class="chapter" data-level="11.2" data-path="flox2.html"><a href="flox2.html#evaluation-of-methodology"><i class="fa fa-check"></i><b>11.2</b> Evaluation of methodology</a><ul>
+<li class="chapter" data-level="11.2.1" data-path="flox2.html"><a href="flox2.html#using-par-readings"><i class="fa fa-check"></i><b>11.2.1</b> Using PAR readings</a></li>
+<li class="chapter" data-level="11.2.2" data-path="flox2.html"><a href="flox2.html#evaluating-the-variability-of-sif"><i class="fa fa-check"></i><b>11.2.2</b> Evaluating the variability of SIF</a></li>
+</ul></li>
+<li class="chapter" data-level="11.3" data-path="flox2.html"><a href="flox2.html#descriptive-statistics-of-mobile-flox-data"><i class="fa fa-check"></i><b>11.3</b> Descriptive statistics of mobile FLOX data</a></li>
+<li class="chapter" data-level="11.4" data-path="flox2.html"><a href="flox2.html#focus-on-nirv-fcvi"><i class="fa fa-check"></i><b>11.4</b> focus on nirv fcvi</a></li>
+<li class="chapter" data-level="11.5" data-path="flox2.html"><a href="flox2.html#discussion-3"><i class="fa fa-check"></i><b>11.5</b> Discussion</a><ul>
+<li class="chapter" data-level="11.5.1" data-path="flox2.html"><a href="flox2.html#on-the-measurement-protocol"><i class="fa fa-check"></i><b>11.5.1</b> On the measurement protocol</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="flox3.html"><a href="flox3.html"><i class="fa fa-check"></i><b>12</b> Diurnal rescaling procedure</a><ul>
+<li class="chapter" data-level="12.1" data-path="flox3.html"><a href="flox3.html#the-need-for-rescaling-explained"><i class="fa fa-check"></i><b>12.1</b> The need for rescaling explained</a></li>
+<li class="chapter" data-level="12.2" data-path="flox3.html"><a href="flox3.html#developing-a-rescaling-approach-based-on-empirical-relationship-between-sif-and-lai"><i class="fa fa-check"></i><b>12.2</b> Developing a rescaling approach based on empirical relationship between SIF and LAI</a><ul>
+<li class="chapter" data-level="12.2.1" data-path="flox3.html"><a href="flox3.html#data"><i class="fa fa-check"></i><b>12.2.1</b> Data</a></li>
+<li class="chapter" data-level="12.2.2" data-path="flox3.html"><a href="flox3.html#empirical-relationship"><i class="fa fa-check"></i><b>12.2.2</b> Empirical relationship</a></li>
+<li class="chapter" data-level="12.2.3" data-path="flox3.html"><a href="flox3.html#case-study-hyplant-validation"><i class="fa fa-check"></i><b>12.2.3</b> Case study hyplant validation</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="flox3.html"><a href="flox3.html#develping-a-priori-shape-based-on-the-quadratic-fit-on-par"><i class="fa fa-check"></i><b>12.3</b> Develping a-priori shape based on the quadratic fit on par</a></li>
+<li class="chapter" data-level="12.4" data-path="flox3.html"><a href="flox3.html#discussion-4"><i class="fa fa-check"></i><b>12.4</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="airborne-measurements-of-sif.html"><a href="airborne-measurements-of-sif.html"><i class="fa fa-check"></i>Airborne measurements of SIF</a></li>
+<li class="chapter" data-level="13" data-path="hyplant1.html"><a href="hyplant1.html"><i class="fa fa-check"></i><b>13</b> Exploratory analysis of HyPlant data</a><ul>
+<li class="chapter" data-level="13.1" data-path="hyplant1.html"><a href="hyplant1.html#hyplant-data"><i class="fa fa-check"></i><b>13.1</b> HyPlant Data</a></li>
+<li class="chapter" data-level="13.2" data-path="hyplant1.html"><a href="hyplant1.html#outlier-detection"><i class="fa fa-check"></i><b>13.2</b> Outlier detection</a></li>
+<li class="chapter" data-level="13.3" data-path="hyplant1.html"><a href="hyplant1.html#exploratory-analysis-of-sif"><i class="fa fa-check"></i><b>13.3</b> Exploratory analysis of SIF</a><ul>
+<li class="chapter" data-level="13.3.1" data-path="hyplant1.html"><a href="hyplant1.html#summary-stats"><i class="fa fa-check"></i><b>13.3.1</b> Summary stats</a></li>
+<li class="chapter" data-level="13.3.2" data-path="hyplant1.html"><a href="hyplant1.html#histogram-distribution"><i class="fa fa-check"></i><b>13.3.2</b> Histogram distribution</a></li>
+<li class="chapter" data-level="13.3.3" data-path="hyplant1.html"><a href="hyplant1.html#field-average"><i class="fa fa-check"></i><b>13.3.3</b> Field average</a></li>
+<li class="chapter" data-level="13.3.4" data-path="hyplant1.html"><a href="hyplant1.html#terrace-association"><i class="fa fa-check"></i><b>13.3.4</b> Terrace association</a></li>
+<li class="chapter" data-level="13.3.5" data-path="hyplant1.html"><a href="hyplant1.html#soil"><i class="fa fa-check"></i><b>13.3.5</b> Soil</a></li>
+<li class="chapter" data-level="13.3.6" data-path="hyplant1.html"><a href="hyplant1.html#scale-dependence"><i class="fa fa-check"></i><b>13.3.6</b> Scale dependence</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="hyplant2.html"><a href="hyplant2.html"><i class="fa fa-check"></i><b>14</b> Retrieval of LAI and Cab from HyPlant Reflectance</a><ul>
+<li class="chapter" data-level="14.1" data-path="hyplant2.html"><a href="hyplant2.html#materials"><i class="fa fa-check"></i><b>14.1</b> Materials</a><ul>
+<li class="chapter" data-level="14.1.1" data-path="rs.html"><a href="rs.html#hyplant"><i class="fa fa-check"></i><b>14.1.1</b> HyPlant</a></li>
+<li class="chapter" data-level="14.1.2" data-path="hyplant2.html"><a href="hyplant2.html#study-area"><i class="fa fa-check"></i><b>14.1.2</b> Study Area</a></li>
+<li class="chapter" data-level="14.1.3" data-path="hyplant2.html"><a href="hyplant2.html#ground-truth"><i class="fa fa-check"></i><b>14.1.3</b> Ground truth</a></li>
+<li class="chapter" data-level="14.1.4" data-path="hyplant2.html"><a href="hyplant2.html#lut-generation"><i class="fa fa-check"></i><b>14.1.4</b> LUT generation</a></li>
+<li class="chapter" data-level="14.1.5" data-path="hyplant2.html"><a href="hyplant2.html#cost-function-selection"><i class="fa fa-check"></i><b>14.1.5</b> Cost function selection</a></li>
+</ul></li>
+<li class="chapter" data-level="14.2" data-path="hyplant2.html"><a href="hyplant2.html#results-1"><i class="fa fa-check"></i><b>14.2</b> Results</a><ul>
+<li class="chapter" data-level="14.2.1" data-path="hyplant2.html"><a href="hyplant2.html#cost-function-evaluation-table"><i class="fa fa-check"></i><b>14.2.1</b> Cost function evaluation table</a></li>
+<li class="chapter" data-level="14.2.2" data-path="hyplant2.html"><a href="hyplant2.html#lai-observed-vs.predicted"><i class="fa fa-check"></i><b>14.2.2</b> LAI observed vs. predicted</a></li>
+<li class="chapter" data-level="14.2.3" data-path="hyplant2.html"><a href="hyplant2.html#residuals"><i class="fa fa-check"></i><b>14.2.3</b> Residuals</a></li>
+<li class="chapter" data-level="14.2.4" data-path="hyplant2.html"><a href="hyplant2.html#spectral-reflectance-observed-vs.predicted"><i class="fa fa-check"></i><b>14.2.4</b> Spectral reflectance observed vs. predicted</a></li>
+<li class="chapter" data-level="14.2.5" data-path="hyplant2.html"><a href="hyplant2.html#maps"><i class="fa fa-check"></i><b>14.2.5</b> Maps</a></li>
+<li class="chapter" data-level="14.2.6" data-path="hyplant2.html"><a href="hyplant2.html#compare-to-ndvi"><i class="fa fa-check"></i><b>14.2.6</b> Compare to NDVI</a></li>
+</ul></li>
+<li class="chapter" data-level="14.3" data-path="hyplant2.html"><a href="hyplant2.html#discussion-5"><i class="fa fa-check"></i><b>14.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="hyplant3.html"><a href="hyplant3.html"><i class="fa fa-check"></i><b>15</b> Exploring the relationship between LAI and Chlorophyll and SIF</a><ul>
+<li class="chapter" data-level="15.1" data-path="hyplant3.html"><a href="hyplant3.html#data-and-rq"><i class="fa fa-check"></i><b>15.1</b> Data and RQ</a><ul>
+<li class="chapter" data-level="15.1.1" data-path="hyplant3.html"><a href="hyplant3.html#rq"><i class="fa fa-check"></i><b>15.1.1</b> RQ</a></li>
+<li class="chapter" data-level="15.1.2" data-path="hyplant3.html"><a href="hyplant3.html#data-1"><i class="fa fa-check"></i><b>15.1.2</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="15.2" data-path="hyplant3.html"><a href="hyplant3.html#field-level"><i class="fa fa-check"></i><b>15.2</b> Field level</a><ul>
+<li class="chapter" data-level="15.2.1" data-path="hyplant3.html"><a href="hyplant3.html#data-partitioning"><i class="fa fa-check"></i><b>15.2.1</b> Data partitioning</a></li>
+<li class="chapter" data-level="15.2.2" data-path="hyplant3.html"><a href="hyplant3.html#models-on-the-field-level"><i class="fa fa-check"></i><b>15.2.2</b> Models on the field level</a></li>
+<li class="chapter" data-level="15.2.3" data-path="hyplant3.html"><a href="hyplant3.html#summary"><i class="fa fa-check"></i><b>15.2.3</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="15.3" data-path="hyplant3.html"><a href="hyplant3.html#agrosystem-level"><i class="fa fa-check"></i><b>15.3</b> Agrosystem level</a><ul>
+<li class="chapter" data-level="15.3.1" data-path="hyplant3.html"><a href="hyplant3.html#linear-model-for-lai"><i class="fa fa-check"></i><b>15.3.1</b> Linear model for LAI</a></li>
+<li class="chapter" data-level="15.3.2" data-path="hyplant3.html"><a href="hyplant3.html#stewise-model-selection"><i class="fa fa-check"></i><b>15.3.2</b> Stewise model selection</a></li>
+</ul></li>
+<li class="chapter" data-level="15.4" data-path="hyplant3.html"><a href="hyplant3.html#discussion-6"><i class="fa fa-check"></i><b>15.4</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="hyplant4.html"><a href="hyplant4.html"><i class="fa fa-check"></i><b>16</b> Evaluation of TCAR/OSACI to correct for Cab. Lidar data</a></li>
+<li class="chapter" data-level="17" data-path="hyplant5.html"><a href="hyplant5.html"><i class="fa fa-check"></i><b>17</b> Evaluation of proxy estimates for canopy structure for spatial upscaling of Top-of-Canopy Sun-induced Fluorescence</a><ul>
+<li class="chapter" data-level="17.1" data-path="hyplant5.html"><a href="hyplant5.html#methods"><i class="fa fa-check"></i><b>17.1</b> Methods</a><ul>
+<li class="chapter" data-level="17.1.1" data-path="hyplant5.html"><a href="hyplant5.html#theoretical-background"><i class="fa fa-check"></i><b>17.1.1</b> Theoretical background</a></li>
+<li class="chapter" data-level="17.1.2" data-path="hyplant5.html"><a href="hyplant5.html#rescaling-sif.-location-model-for-high-resolution-remote-sensing-data-hyplant"><i class="fa fa-check"></i><b>17.1.2</b> Rescaling SIF. Location model for high resolution remote sensing data (HyPlant)</a></li>
+<li class="chapter" data-level="17.1.3" data-path="hyplant5.html"><a href="hyplant5.html#data-used"><i class="fa fa-check"></i><b>17.1.3</b> Data used</a></li>
+<li class="chapter" data-level="17.1.4" data-path="hyplant5.html"><a href="hyplant5.html#selection-of-candidate-proxies-for-gamma"><i class="fa fa-check"></i><b>17.1.4</b> Selection of candidate proxies for <span class="math inline">\(\Gamma\)</span></a></li>
+<li class="chapter" data-level="17.1.5" data-path="hyplant5.html"><a href="hyplant5.html#monte-carlo-approach-to-find-the-best-reference-location"><i class="fa fa-check"></i><b>17.1.5</b> Monte Carlo approach to find the best reference location</a></li>
+<li class="chapter" data-level="17.1.6" data-path="hyplant5.html"><a href="hyplant5.html#evaluation-statistics"><i class="fa fa-check"></i><b>17.1.6</b> Evaluation statistics</a></li>
+</ul></li>
+<li class="chapter" data-level="17.2" data-path="hyplant5.html"><a href="hyplant5.html#results-2"><i class="fa fa-check"></i><b>17.2</b> Results</a><ul>
+<li class="chapter" data-level="17.2.1" data-path="hyplant5.html"><a href="hyplant5.html#interpretation-of-spatial-patterns-of-true-sif-vis-and-calculated-analytical-gamma"><i class="fa fa-check"></i><b>17.2.1</b> Interpretation of spatial patterns of true SIF, VIs, and calculated analytical <span class="math inline">\(\Gamma\)</span></a></li>
+<li class="chapter" data-level="17.2.2" data-path="hyplant5.html"><a href="hyplant5.html#evaluation-of-predictive-performance-and-error-decomposition-for-the-four-candidate-proxies"><i class="fa fa-check"></i><b>17.2.2</b> Evaluation of predictive performance and error decomposition for the four candidate proxies</a></li>
+<li class="chapter" data-level="17.2.3" data-path="hyplant5.html"><a href="hyplant5.html#sensitivity-to-the-selected-reference-location"><i class="fa fa-check"></i><b>17.2.3</b> Sensitivity to the selected reference location</a></li>
+<li class="chapter" data-level="17.2.4" data-path="hyplant5.html"><a href="hyplant5.html#spatial-patterns-of-residuals"><i class="fa fa-check"></i><b>17.2.4</b> Spatial patterns of residuals</a></li>
+</ul></li>
+<li class="chapter" data-level="17.3" data-path="hyplant5.html"><a href="hyplant5.html#discussion-7"><i class="fa fa-check"></i><b>17.3</b> Discussion</a><ul>
+<li class="chapter" data-level="17.3.1" data-path="hyplant5.html"><a href="hyplant5.html#on-derivation-of-proxy-estimates-for-gamma"><i class="fa fa-check"></i><b>17.3.1</b> On derivation of proxy estimates for <span class="math inline">\(\Gamma\)</span></a></li>
+<li class="chapter" data-level="17.3.2" data-path="hyplant5.html"><a href="hyplant5.html#on-the-evaluation-methodology-and-the-results"><i class="fa fa-check"></i><b>17.3.2</b> On the evaluation methodology and the results</a></li>
+<li class="chapter" data-level="17.3.3" data-path="hyplant5.html"><a href="hyplant5.html#on-possible-application-in-the-upscaling-of-sif"><i class="fa fa-check"></i><b>17.3.3</b> On possible application in the upscaling of SIF</a></li>
+<li class="chapter" data-level="17.3.4" data-path="hyplant5.html"><a href="hyplant5.html#conclusion"><i class="fa fa-check"></i><b>17.3.4</b> Conclusion</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="hyplant6.html"><a href="hyplant6.html"><i class="fa fa-check"></i><b>18</b> From HyPlant to FLEX upscaling procedure</a><ul>
+<li class="chapter" data-level="18.1" data-path="hyplant6.html"><a href="hyplant6.html#flex-and-hyplant"><i class="fa fa-check"></i><b>18.1</b> FLEX and HyPlant</a></li>
+<li class="chapter" data-level="18.2" data-path="hyplant6.html"><a href="hyplant6.html#input-data"><i class="fa fa-check"></i><b>18.2</b> Input data</a></li>
+</ul></li>
+<li class="chapter" data-level="19" data-path="flox-sif-vs-vi-flox4.html"><a href="flox-sif-vs-vi-flox4.html"><i class="fa fa-check"></i><b>19</b> FLOX SIF vs VI {flox4}</a><ul>
+<li class="chapter" data-level="19.1" data-path="flox-sif-vs-vi-flox4.html"><a href="flox-sif-vs-vi-flox4.html#sif-vi-relationship-at-flox-scale"><i class="fa fa-check"></i><b>19.1</b> sif vi relationship at flox scale</a></li>
+<li class="chapter" data-level="19.2" data-path="flox-sif-vs-vi-flox4.html"><a href="flox-sif-vs-vi-flox4.html#focus-on-nirv-fcvi-1"><i class="fa fa-check"></i><b>19.2</b> focus on nirv fcvi</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Exploring the effect of canopy structure on top-of-canopy sun-induced fluorescence</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="flox2" class="section level1">
+<h1><span class="header-section-number">Chapter 11</span> Development and evaluation of a mobile measurement procedure for TOC SIF</h1>
+<p>The fact that sun-induced fluorescence (SIF) can be retrieved from proximal scale and also from satellite opens the need to develop methods to properly scale-up the signal and, for satellite data, distinguish the contribution among different land covers. Typically, validation stations are equipped with point spectrometers and have a footprint which depends on the height of the tower. However, a singular point is not enough to be used as a validation for larger spatial resolutions such as the one expected to be delivered by the FLEX satellite. An additional spatially explicit sampling of SIF can be used to extend the footprint of ground validation stations cover the variability of conditions and cover other land cover classes falling inside a single FLEX pixel, in effect aiding a more robust upscaling of SIF from ground to satellite.</p>
+<p>In a recent review paper <span class="citation">(Aasen et al. <a href="#ref-Aasen2019">2019</a>)</span> outlned the current state and challenges ahead for the measurement of SIF across spatiotemporal scales. The paper distinguishes between leaf level, canopy level non spatially explicit (tower), and canopy level spatially explicit measurements of SIF. The last group includes mainly airborne sensors such as point spectrometers installed on unnamed aerial vehicles (UAVs) and imaging spectrometers carried on board of manned aircraft and satellites. However, spatially explicit sampling is possible also on the ground. It can be seen as occupying the scale between tower and drone, delivering the same type of spatially unresolved data (e.g. from point spectrometers) but combining the advantage of and movability (drones). Indeed, fast moving system exist particularly in the framework of field phenotyping and precision farming.</p>
+<p>A moving system has several important aspects which might contribute to measurement uncertainty. Variations in height above the canopy, rotation in respect to the sun, tilt of optic fibers, positional accuracy, number of individual measurements per location, and the need to record additional relevant information about the measurement location all contribute to measurement uncertainty. However, if those can be standardized and a method to account for the difference in time between individual measurements can be outlined, there is a potential to use repetative ground sampling procedures to get a better understanding of variability of plant status in the field and augment the spatial footprint of long term static observations recorded at monitoring stations.</p>
+<p>In summary, based on the discussion above we see that there is a need for a measurement methodology (approach) which:</p>
+<ol style="list-style-type: decimal">
+<li>enables robust SIF measurements from different locations (spatially explicit),</li>
+<li>ensures robust correction of the daily cycle, and</li>
+<li>keeps the standard physical units used in remote sensing of SIF.</li>
+</ol>
+<p>Answering the first criterion above requires converting the currently available stationary devices into movable ones. This can be done by installing the device on a moving platform, or making a small enough device which can be carried along by a flexible and small enough positioning system. A way to answer criteria 2 is to incorporate the information from a stationary and a moving device and produce a correction mechanism which accounts for the time difference between sampling locations. the former device produces high temporal resolution information on the changes occuring in PAR and SIF for a single location while the latter, measures snapshots of SIF and PAR at various locations.</p>
+<p>In this chapter we will outline a two device measurement protocol which can be used to collect and compare spatially explicit measurements of SIF within a single crop. We will convert the FLOX device into a moving system and perform spatially explicit measurements within one sugar beet field where an EC tower and a second device are also installed. Then we will compare the information recorded from both devices and asses the uncertainty and noise added due to the repeated relocation of the mobile measurement system. We will discuss any pitfalls and design considerations before using such approach. We will also discuss possible applications and give examples of similar uses. Finally We will extend the spatial sampling into several other crops ( with no reference device available for them) and present a descriptive statistical analysis for a large data set of sampling locations taken during the HyFLEX measurement campaign in 2018.</p>
+<p>In the next chapter we will compare two different approaches to correct for the mismatch between observation time among the mobile measurements to produce a theoretical steady state SIF at time of hyplant overpass in effect answering criteria 3 above.</p>
+<div id="developing-a-mobile-measurement-protocol" class="section level2">
+<h2><span class="header-section-number">11.1</span> Developing a mobile measurement protocol</h2>
+<div id="setup" class="section level3">
+<h3><span class="header-section-number">11.1.1</span> Setup</h3>
+<p>Until now it has become clear that a full understanding of the SIF signal requires combined investigation of its temporal and spatial dynamics. To study both the temporal and the spatial component of SIF, we developed a measurement protocol involving the use of two nearly identical and inter calibrated FLOX devices (exploratory analysis of data from FLOX was shown in previous chapter). The first device, termed the ‘mobile’ device was fitted with a provisional backpack harness from RuckPac ltd. A light weight tripod was combined with a horizontal extension arm and a gimbal device for the fiber optics. The optic fibers were connected to the gimbal ensuring constant leveling of the system. A counter balance was attached to the opposite side of the horizontal arm.</p>
+<p>The combination of backpack carried FLOX and tripod with a stabilization enabled operation by a single person, who recorded the exact time of arrival and departure at each location. this was enough to relate the individual measurements from the device to each location since the device is equipped with a gps unit. Nevertheless, each location was marked with a separate handheld GPS unit (Garmin) and auxilary data collected by a second ground team several hours prior to measurements. The field of view of all optical fibers is ~25<sup>o</sup> and the footprint of both setups is approximately 1 m (Figure <a href="flox2.html#fig:10-flox2-mobile-pic">11.1</a>).</p>
+<div class="figure"><span id="fig:10-flox2-mobile-pic"></span>
+<img src="Visuals/mobile_pictogram2.png" alt="Schematic view (left) and a photo (right) of the mobile FLOX setup." width="370" />
+<p class="caption">
+Figure 11.1: Schematic view (left) and a photo (right) of the mobile FLOX setup.
+</p>
+</div>
+</div>
+<div id="procedure" class="section level3">
+<h3><span class="header-section-number">11.1.2</span> Procedure</h3>
+<p>The mobile device was used to measure along predefined transects. To minimize crop damaging we used the tractor tracks nearest to the predefined transects to relocate the system. At each location the tripod was set to face south to avoid shadows and avoid anisotropy effects. The optic fibers were 2.20 meters above the ground although the height varied depending on the slope or local conditions on the ground. The operators clock and the internal clock of both devices were matched to the second.</p>
+<p>A second ‘reference’ FLOX was installed on a permanent position using a tower (Campbel analytics) prior to starting with the mobile data collection. The installation height was matched to the height of the mobile device (height 220 cm). To minimize bi-directional effects and avoid shadowing from the tripod the mobile and the stationary setup faced southwards (Figure <a href="flox2.html#fig:10-flox2-mobile-procedure">11.2</a> left).</p>
+<div class="figure"><span id="fig:10-flox2-mobile-procedure"></span>
+<img src="Visuals/mobile_protocol.png" alt=" Mobile measurements of SIF. Two device protocol (left) and test transects in one sugar beet field (right). Morning transect (SB0) on 27.06.2018 is shown in red, afternoon transect (SB1) on 26.06.2018 - in black. The location LAI is shown. The reference FLOX tower is depicted in the middle of the field." width="610" />
+<p class="caption">
+Figure 11.2:  Mobile measurements of SIF. Two device protocol (left) and test transects in one sugar beet field (right). Morning transect (SB0) on 27.06.2018 is shown in red, afternoon transect (SB1) on 26.06.2018 - in black. The location LAI is shown. The reference FLOX tower is depicted in the middle of the field.
+</p>
+</div>
+</div>
+<div id="test-case" class="section level3">
+<h3><span class="header-section-number">11.1.3</span> Test case</h3>
+<p>To test the performance of the methodoly we conducted measurements on two consecutive days during a clear sky window (26-27.06.2018) at the Selhausen study site (Figure <a href="flox2.html#fig:10-flox2-mobile-procedure">11.2</a> right). The reference FLOX was installed in the vicinity of a EC tower in the middle of the sugar beet field. The mobile FLOX device was started in autonomous mode prior to each transect. At each location, the begin and end cycle numbers, the times for begin and end of visit, gps coordinates, and other relevant information were noted on paper protocols. After required number of cycles was reached (minimum of five measurements were taken at each location) we moved to the next location leaving the device to run in autonomous mode. A total of 15 locations were measured inside the sugar beet field covering the morning and afternoon hours (Table <a href="flox2.html#tab:10-flox2-table1">11.1</a>).</p>
+<table>
+<caption><span id="tab:10-flox2-table1">Table 11.1: </span>Overview of the evaluation dataset collected with the mobile FLOX procedure</caption>
+<thead>
+<tr class="header">
+<th align="left">Date</th>
+<th align="left">Time.Window</th>
+<th align="left">Transect</th>
+<th align="right">SIF_A_ifld</th>
+<th align="right">+-sd</th>
+<th align="right">SIF_B_ifld</th>
+<th align="right">+-sd.</th>
+<th align="right">LAI</th>
+<th align="right">Cab</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">26.06.2018</td>
+<td align="left">11.00-12.00 LT</td>
+<td align="left">SB0</td>
+<td align="right">1.785</td>
+<td align="right">0.089</td>
+<td align="right">0.356</td>
+<td align="right">0.126</td>
+<td align="right">2.773</td>
+<td align="right">49.018</td>
+</tr>
+<tr class="even">
+<td align="left">27.06.2018</td>
+<td align="left">14:30-15:30 LT</td>
+<td align="left">SB1</td>
+<td align="right">1.674</td>
+<td align="right">0.085</td>
+<td align="right">0.340</td>
+<td align="right">0.094</td>
+<td align="right">3.667</td>
+<td align="right">46.989</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="post-processing" class="section level3">
+<h3><span class="header-section-number">11.1.4</span> Post-processing</h3>
+<p>The raw digital numbers (DN) recorded by the sensor were converted to radiance, reflectance, and SIF using a calibration coefficients from the annual calibration of the FLOX. All conversion, including the calculation of a set of vegetation indices (VI), was done using the company software. SIF was calculated using the iFLD method <span class="citation">(M. Meroni et al. <a href="#ref-Meroni2009">2009</a>)</span>. The locations were identified based on the time stamp and the internal gps points. All recorded data between two locations were excluded, e.g. only measurements after stabilization of the system at location are considered.</p>
+</div>
+<div id="quality-check" class="section level3">
+<h3><span class="header-section-number">11.1.5</span> Quality check</h3>
+<p>The stability of incoming radiation within a single measurement cycle is calculated as the percent change between the first and the second irradiance reading. <span class="citation">(Aasen et al. <a href="#ref-Aasen2019">2019</a>)</span> advises for the exclusion all measurements having more than 1% variation in ambient conditions. In addition, other authors suggest removal of low sun angles, e.g SZA &gt; 60<sup>o</sup>. Because the field work took place in the begining of the summer during largely clear sky conditions, very few measurement surpassed the advisable threshold of 1% deviation in ambient conditions and no observations were taken at sun zenith angles higher than 40<sup>o</sup>.</p>
+</div>
+<div id="finding-location-average-and-corresponding-reference-sif" class="section level3">
+<h3><span class="header-section-number">11.1.6</span> Finding location average and corresponding reference SIF</h3>
+<p>Observations (individual FLOX measurements) for each location were averaged into 5-minute windows (e.g. one astronomical hour contains 60/5 = 12 5-min slots). Thus, depending on the time spent inside a location, a location can have more than one 5-minute averages. Moreover, the 5-minute averages are rounded to 0 and 5 minutes (e.g. 12:00-12:05, 12:05- 12:10 and so on). However, if only one FLOX reading is recorded within a 5-min window, the observation and the window are discarded. For example, consider a location measured between 12:02 until 12:11 with measurement at every minute. Under this processing, this location falls within three 5-min windows- 12:00-12:05 (3 readings), 12:05-12:10 (5-readings), and 12:10-12:15 (1 reading). However, since only one reading is contained in the final 5-minute window, it will be discarded and the location will have only two valid 5 minute averages. The reason to exlude such observations is the inability to calculate a standard deviation estimate.</p>
+<div class="figure">
+<img src="Visuals/Mobile_post.png" />
+
+</div>
+<p>By choosinth 5 minutes as a standard averaging window we have the following hypotheses:</p>
+<ol style="list-style-type: decimal">
+<li>The time window is small enough to consider constant environmental and physiological conditions (e.g changes in PAR are negligible).</li>
+<li>The number of measurement cycles per 5-minute window are enought for evaluation of variability (e.g. standard deviation).</li>
+<li>The standardization of the data into regular 5-min windows simplifies comparison between two devices but keeps diurnal trend.</li>
+</ol>
+<p>The data from the stationary device was subject to the same 5-min averaging so that each 5-min window measured by the mobile device has a corresponding 5-min reference measurement taken by the stationary system.</p>
+<p>The level of variability for both devices was calculated as the absolute and relative standard deviation (RSD %). The signal -to-noise ratio (SNR) was estimated as the reciprocal of the coefficient of variation(<span class="math inline">\(SNR = \frac{\mu}{\sigma}\)</span>).</p>
+</div>
+</div>
+<div id="evaluation-of-methodology" class="section level2">
+<h2><span class="header-section-number">11.2</span> Evaluation of methodology</h2>
+<p>In order to investigate the influence of the mobile setup and the preprocessing steps (the 5-min window averaging) on the quality of the recorded signal we analysed the within five-minute-window variability for all locations and compared it against the corresponding variability at the stationary system. First we compare the diurnal PAR estimates from both devices.</p>
+<div id="using-par-readings" class="section level3">
+<h3><span class="header-section-number">11.2.1</span> Using PAR readings</h3>
+<p>The graph above shows the diurnal development of a proxy estimate of PAR delivered by the FLOX. We can observe a larger noise at the mobile system. It is visible that incoming radiation at the moving device (upper figure A and C) shifts with locations (e.g. the location groupings are visible). The corresponding PAR readings of the stationary device (upper figure B and D) follow a smoother pattern. More importantly, we observe a shift in absolute value ranges. We think that this is due to lack of intercalibration.</p>
+<div class="figure"><span id="fig:unnamed-chunk-61"></span>
+<img src="bookdown_files/figure-html/unnamed-chunk-61-1.png" alt="Incoming radiation estimate (proxy for PAR) from the mobile device (A,C) and from the stationary device (B, D) for the two measurement days - 26.06.2018 (upper graphs) and 27.06.2018 (lower graphs). Clear sky conditions" width="1152" />
+<p class="caption">
+Figure 11.3: Incoming radiation estimate (proxy for PAR) from the mobile device (A,C) and from the stationary device (B, D) for the two measurement days - 26.06.2018 (upper graphs) and 27.06.2018 (lower graphs). Clear sky conditions
+</p>
+</div>
+<p>Then we fit a quadratic model and investigate the goodness-of-fit and calculate the time of the day when maximum PAR is reached (<span class="math inline">\(\frac{-b}{2a}\)</span>), where <span class="math inline">\(b\)</span> and <span class="math inline">\(a\)</span> are the coefficients of the quadratic fit). In a best case scenario the maximum of the quadratic curve must coinside with the time when the sun is highest in the sky (solar noon). This quality check is unafected by the discrepancy of value ranges and can inform on the rubustness of the mobile two device methodology. The solar noon for the two dates (26 and 27 June 2018) is 13:37 local time (11:37 UTC)</p>
+<table>
+<caption><span id="tab:unnamed-chunk-62">Table 11.2: </span>Goodness of fit stats for the quadratic models fitted to EPAR estimates from the mobile and durnal (reference) FLOX for two days</caption>
+<thead>
+<tr class="header">
+<th align="left">model</th>
+<th align="right">r.squared</th>
+<th align="right">adj.r.squared</th>
+<th align="right">sigma</th>
+<th align="right">statistic</th>
+<th align="right">p.value</th>
+<th align="right">df</th>
+<th align="right">logLik</th>
+<th align="right">AIC</th>
+<th align="right">BIC</th>
+<th align="right">deviance</th>
+<th align="right">df.residual</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">mobile 26.06.</td>
+<td align="right">0.9345428</td>
+<td align="right">0.9337948</td>
+<td align="right">0.0125564</td>
+<td align="right">1249.252</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">528.1418</td>
+<td align="right">-1048.2837</td>
+<td align="right">-1035.5565</td>
+<td align="right">0.0275908</td>
+<td align="right">175</td>
+</tr>
+<tr class="even">
+<td align="left">mobile 27.06.</td>
+<td align="right">0.9688762</td>
+<td align="right">0.9684409</td>
+<td align="right">0.0110566</td>
+<td align="right">2225.775</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">452.0410</td>
+<td align="right">-896.0821</td>
+<td align="right">-884.1476</td>
+<td align="right">0.0174815</td>
+<td align="right">143</td>
+</tr>
+<tr class="odd">
+<td align="left">diurnal 26.06.</td>
+<td align="right">0.9911131</td>
+<td align="right">0.9910540</td>
+<td align="right">0.0058788</td>
+<td align="right">16784.481</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">1131.6173</td>
+<td align="right">-2255.2346</td>
+<td align="right">-2240.3665</td>
+<td align="right">0.0104026</td>
+<td align="right">301</td>
+</tr>
+<tr class="even">
+<td align="left">diurnal 27.06.</td>
+<td align="right">0.9803326</td>
+<td align="right">0.9801538</td>
+<td align="right">0.0080747</td>
+<td align="right">5483.002</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">759.7294</td>
+<td align="right">-1511.4587</td>
+<td align="right">-1497.8300</td>
+<td align="right">0.0143440</td>
+<td align="right">220</td>
+</tr>
+</tbody>
+</table>
+<p>We see that the quadratic function describes the static (reference) setup extraordinary well (R<sup>2</sup> &gt; 98%). For the mobile FLOX, the fit to the EPAR estimate is less accurate but still very high. This suggest that a quadratic fit can describe the diurnal course of incoming radiation well and inform on the quality of mobile measurements. e.g. by examining the residual variation. We pull the coefficients and calculate the location of maximum PAR.</p>
+<table>
+<caption><span id="tab:unnamed-chunk-63">Table 11.3: </span>Coefficients for the four models</caption>
+<thead>
+<tr class="header">
+<th align="left">FLOX</th>
+<th align="left">Date</th>
+<th align="left">key</th>
+<th align="right">a</th>
+<th align="right">b</th>
+<th align="right">c</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">diurnal</td>
+<td align="left">26.06.</td>
+<td align="left">estimate</td>
+<td align="right">-4.5165638</td>
+<td align="right">-0.2060629</td>
+<td align="right">0.3286563</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">p.value</td>
+<td align="right">0.0000000</td>
+<td align="right">0.0000000</td>
+<td align="right">0.0000000</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">statistic</td>
+<td align="right">-88.4031985</td>
+<td align="right">-32.8411610</td>
+<td align="right">715.2474981</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">std.error</td>
+<td align="right">0.0510905</td>
+<td align="right">0.0062745</td>
+<td align="right">0.0004595</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">27.06.</td>
+<td align="left">estimate</td>
+<td align="right">-3.5087195</td>
+<td align="right">0.2659419</td>
+<td align="right">0.3216572</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">p.value</td>
+<td align="right">0.0000000</td>
+<td align="right">0.0000000</td>
+<td align="right">0.0000000</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">statistic</td>
+<td align="right">-24.2474193</td>
+<td align="right">10.2185988</td>
+<td align="right">325.4642015</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">std.error</td>
+<td align="right">0.1447049</td>
+<td align="right">0.0260253</td>
+<td align="right">0.0009883</td>
+</tr>
+<tr class="odd">
+<td align="left">mobile</td>
+<td align="left">26.06.</td>
+<td align="left">estimate</td>
+<td align="right">-10.0397202</td>
+<td align="right">-0.5770324</td>
+<td align="right">0.4313132</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">p.value</td>
+<td align="right">0.0000000</td>
+<td align="right">0.0000000</td>
+<td align="right">0.0000000</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">statistic</td>
+<td align="right">-29.7793672</td>
+<td align="right">-32.1790353</td>
+<td align="right">316.7590813</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">std.error</td>
+<td align="right">0.3371368</td>
+<td align="right">0.0179319</td>
+<td align="right">0.0013616</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">27.06.</td>
+<td align="left">estimate</td>
+<td align="right">-6.4537472</td>
+<td align="right">0.2006442</td>
+<td align="right">0.4158890</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">p.value</td>
+<td align="right">0.0000000</td>
+<td align="right">0.0422191</td>
+<td align="right">0.0000000</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">statistic</td>
+<td align="right">-12.2876074</td>
+<td align="right">2.0497204</td>
+<td align="right">104.2092133</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">std.error</td>
+<td align="right">0.5252241</td>
+<td align="right">0.0978886</td>
+<td align="right">0.0039909</td>
+</tr>
+</tbody>
+</table>
+<p>For day one when measurements include the solar noon (fig. A B) the shift from the true solar noon is -8 minutes for the diurnal FLOX (fig.B) and -17 minutes for the mobile FLOX (A) resulting in 9 minute discrepancy between the two devices. Given that the mobile FLOX data was averaged over 5 minute windows we can conclude that the shift of predicted maximum PAR between the two setups is <span class="math inline">\(9\pm 2.5\)</span> minutes.</p>
+<p>On day two (fig C D), where observations are taken in the morning hours and do not contain the maximum PAR - the discrepancy between both quadratic estimates are larger - 30 minute shift between the two devices and +45 and +75 minutes away from true solar noon for the static and mobile setups respectively. Extrapolation of PAR estimates is far less accurate than in the case where the maximum is contained inside the data and found through interpolation. This result informs us on the potential time span when such mobile measurements should take place. Concentrating measurement efforts in the time span <span class="math inline">\(\pm 2\)</span> hours around the solar noon would yield the best estimates.</p>
+<p>Finally, we run a two-way paired t-test comparing the standard deviation of EPAR of each 5-minute window from the mobile FLOX to the standard deviation of the corresponding 5 minute time span at the reference FLOX. The test shows that there is no significant difference between the level of variability of EPAR between the two setups, meaning that the noise level is similar for the static and the moving device. A similar test on the absolute values reveals 100% certainty that true difference between measured values is 0.03 or larger. This is due to the lack of intercalibration, and stands to show that intercalibration is the most serious consideration before such method can be reliably applied.</p>
+<pre><code>## 
+##  Paired t-test
+## 
+## data:  mobile and diurnal
+## t = 0.98784, df = 34, p-value = 0.3302
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -0.000847278  0.002450063
+## sample estimates:
+## mean of the differences 
+##            0.0008013926</code></pre>
+</div>
+<div id="evaluating-the-variability-of-sif" class="section level3">
+<h3><span class="header-section-number">11.2.2</span> Evaluating the variability of SIF</h3>
+<div class="figure"><span id="fig:unnamed-chunk-65"></span>
+<img src="bookdown_files/figure-html/unnamed-chunk-65-1.png" alt="Histogram distribution of absolute standard deviation at the 5-minute window  FLOX and correlation of the absolute SD with SZA for for mobile (A,C) and diurnal (B,D) devices" width="1152" />
+<p class="caption">
+Figure 11.4: Histogram distribution of absolute standard deviation at the 5-minute window FLOX and correlation of the absolute SD with SZA for for mobile (A,C) and diurnal (B,D) devices
+</p>
+</div>
+<div class="figure"><span id="fig:unnamed-chunk-66"></span>
+<img src="bookdown_files/figure-html/unnamed-chunk-66-1.png" alt="RSD vs. SZA " width="1152" />
+<p class="caption">
+Figure 11.5: RSD vs. SZA
+</p>
+</div>
+<p>The variability in SIF in absolute units (standard deviation) increases with increase in PAR and decrease in SZA for both the mobile and the stationary device. The Pearson’s correlation coefficient is higher at the reference device since the location remains unchanged and the only thing affecting the uncertainty is the increase in light intensity. In contrast to the absolute SD the relative standard deviation is not dependent on time of the day and SZA. Therfore, it is more appropriate to consider the relative variability, especially when comparing different locations and/or crops. The maximum variability for the mobile device within a single five minute window is NA mW.m2.sr.nm in absolute and NA% in relative terms. The maximum absolute standard deviation for the stationary device slightly lower - 0.16, while in relative terms it is again around NA %, On average both devices seem to show similar average variability of 0.08 mW.m2.sr.nm, while the SNR is slightly better for the static system. In conclussion, the within plot variability of SIF recorded using the mobile FLOX device is comparable to the corresponding variability of a typical stationary setup. The statement is also coraborated by the outcome of a two-way paired t-test, which cannot prove a significant difference in SD and RSD values between both devices.</p>
+<pre><code>## 
+##  Paired t-test
+## 
+## data:  mobile and diurnal
+## t = 0.45137, df = 34, p-value = 0.6546
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -0.01605291  0.02521970
+## sample estimates:
+## mean of the differences 
+##             0.004583392</code></pre>
+<pre><code>## 
+##  Paired t-test
+## 
+## data:  mobile and diurnal
+## t = -0.6202, df = 34, p-value = 0.5393
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -1.7386929  0.9256036
+## sample estimates:
+## mean of the differences 
+##              -0.4065446</code></pre>
+</div>
+</div>
+<div id="descriptive-statistics-of-mobile-flox-data" class="section level2">
+<h2><span class="header-section-number">11.3</span> Descriptive statistics of mobile FLOX data</h2>
+<p>The mobile measurement procedure outlined above was used to collect a large dataset on SIF in the time period between 26th and 29th of June with the intent to gather validation data for the images collected by the HyPlant operating at the same time. The map below shows the area overflown by the airborne imaging spectrometer and the locations of the ground measurements.</p>
+<div class="figure">
+<img src="Visuals/Status02Julylocs.png" />
+
+</div>
+<p>The table below summarises the observations taken during the HyFLEX field campaign, One can see that most effort was dedicated to Sugar Beet as the most prominent green crop at time of the field campaign, followed by pea and corn. In addition to vegetation plots, one inpervious plot was sampled (asphalt).</p>
+<table>
+<caption><span id="tab:unnamed-chunk-69">Table 11.4: </span>Summary table of observation performed during the 2018 HyFLEX campaign</caption>
+<thead>
+<tr class="header">
+<th align="left">lu</th>
+<th align="right">n.obs</th>
+<th align="right">n.locs</th>
+<th align="right">SIF_A_ifld</th>
+<th align="right">SIF_B_ifld</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">asphalt</td>
+<td align="right">7</td>
+<td align="right">1</td>
+<td align="right">-0.03</td>
+<td align="right">-0.48</td>
+</tr>
+<tr class="even">
+<td align="left">corn</td>
+<td align="right">87</td>
+<td align="right">15</td>
+<td align="right">1.06</td>
+<td align="right">-0.04</td>
+</tr>
+<tr class="odd">
+<td align="left">grass</td>
+<td align="right">7</td>
+<td align="right">1</td>
+<td align="right">0.41</td>
+<td align="right">-0.98</td>
+</tr>
+<tr class="even">
+<td align="left">pea</td>
+<td align="right">114</td>
+<td align="right">23</td>
+<td align="right">1.25</td>
+<td align="right">0.97</td>
+</tr>
+<tr class="odd">
+<td align="left">potato</td>
+<td align="right">40</td>
+<td align="right">6</td>
+<td align="right">1.97</td>
+<td align="right">0.06</td>
+</tr>
+<tr class="even">
+<td align="left">sugar.beet</td>
+<td align="right">444</td>
+<td align="right">51</td>
+<td align="right">1.55</td>
+<td align="right">0.53</td>
+</tr>
+<tr class="odd">
+<td align="left">wheat</td>
+<td align="right">28</td>
+<td align="right">4</td>
+<td align="right">0.84</td>
+<td align="right">0.24</td>
+</tr>
+</tbody>
+</table>
+<p>Now we can check the data graphically, starting with Sun-induced fluorescence (SIF) and then looking at some of the most important canopy structure measurement (non destructive LAI and chlorophyll). What follows are composite plots (plot constelations) where variables were summarized per crop type using histogram distribution, boxplots, and density distribution plots. Off-diagonals show Pearson’s correlation coefficient (upper pannel) and a scatterplot (lower pannel) for each variable pair.</p>
+<div class="figure"><span id="fig:eda2"></span>
+<img src="bookdown_files/figure-html/eda2-1.png" alt="Scatter, histogram, and box plots for SIF in O2A and O2B bands, and their ratio for five crops taken during a clear sky period between 26th and 29th June 2018 in Selhausen region." width="1152" />
+<p class="caption">
+Figure 11.6: Scatter, histogram, and box plots for SIF in O2A and O2B bands, and their ratio for five crops taken during a clear sky period between 26th and 29th June 2018 in Selhausen region.
+</p>
+</div>
+<p>We observe negligable correlation between both SIF bands and a moderate correlation between SIF in O2A and SIF ratio. At time of measuerement, winter wheat was approaching senescence, sugar beet and potato had fully grown canopy, corn was still in early development stages (height between 1 and 2 meters), and there were both green as well as senescent pea fields.</p>
+<p>SIF 760 is highest in potato and lowest in the senescing winter wheat. Also notice the full reabsorption of SIF 687 by the potato canopy. Potato plants have small leaves well approximated by the turbid medium. The similarly turbid nature in wheat but because it looses chlorophyll reabsorption of SIF 687 is less.</p>
+<p>Observations in pea have the largest variability because we visited two fields with contrasting development stages - young not fully closed canopy, and senescent. The still young pea plots exhibit close to zero SIF in O2B which is seen as a cluster in the exploratory plots. The relationship between SIF ratio and SIF 760 in pea plots follow a negative exponential trend, with senescing plot having higher than 1 sif ratio, while still green plots level off around 0.5 sif ratio.</p>
+<p>The summary table below shows the size of the entire sample, the moments, and ranges of all SIF variables.</p>
+<div id="htmlwidget-eecf0d1ca40dc6df5c5f" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-eecf0d1ca40dc6df5c5f">{"x":{"filter":"none","data":[["Mean","Std.Dev","Min","Q1","Median","Q3","Max","MAD","IQR","CV","Skewness","SE.Skewness","Kurtosis","N.Valid","Pct.Valid"],[0.519,0.773,0.002,0.193,0.294,0.494,8.576,0.187,0.302,1.489,4.651,0.098,29.661,625,100],[1.465,0.399,0.159,1.193,1.453,1.778,2.617,0.421,0.585,0.272,-0.173,0.098,-0.028,625,100],[0.59,0.492,0.006,0.305,0.452,0.67,3.123,0.261,0.365,0.833,1.952,0.098,4.24,625,100]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>SIF ratio<\/th>\n      <th>SIF_A_ifld [mW m-2nm-1sr-1]<\/th>\n      <th>SIF_B_ifld [mW m-2nm-1sr-1]<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"scrollX":true,"columnDefs":[{"width":"30%","targets":[1,2]},{"className":"dt-right","targets":[1,2,3]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-73-1.png" width="1152" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-75-1.png" width="1152" /></p>
+<pre><code>## 
+## Formula: `SIF index` ~ SSasymp(Cab, Asym, R0, lrc)
+## 
+## Parameters:
+##      Estimate Std. Error t value Pr(&gt;|t|)    
+## Asym -0.03801    0.28131  -0.135    0.893    
+## R0   11.69972    1.35217   8.653 1.68e-13 ***
+## lrc  -2.60183    0.14253 -18.254  &lt; 2e-16 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 1.441 on 91 degrees of freedom
+## 
+## Number of iterations to convergence: 0 
+## Achieved convergence tolerance: 1.146e-06</code></pre>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-77-1.png" width="1152" /></p>
+</div>
+<div id="focus-on-nirv-fcvi" class="section level2">
+<h2><span class="header-section-number">11.4</span> focus on nirv fcvi</h2>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-78-1.png" width="1152" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-79-1.png" width="1152" /></p>
+<pre><code>## # A tibble: 2,914 x 4
+##    lu    loc   key   value
+##    &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;dbl&gt;
+##  1 beet  SB0.1 Cab    52.0
+##  2 beet  SB0.2 Cab    69.1
+##  3 beet  SB0.3 Cab    41.7
+##  4 beet  SB0.4 Cab    64.2
+##  5 beet  SB0.5 Cab    63.8
+##  6 beet  SB0.6 Cab    47.0
+##  7 beet  SB0.7 Cab    73.8
+##  8 beet  SB0.8 Cab    33.2
+##  9 beet  SB1.1 Cab    57.7
+## 10 beet  SB1.2 Cab    80.5
+## # ... with 2,904 more rows</code></pre>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-81-1.png" width="1152" /></p>
+</div>
+<div id="discussion-3" class="section level2">
+<h2><span class="header-section-number">11.5</span> Discussion</h2>
+<p>In this chapter we presented a method to collect spatially explicit SIF measurements on the ground. We proposed a 5 minute averaging window as sufficient to summarize the time/location information. We demonstrated that the noise/variability levels of the mobile procedure and the 5 minute averaging do not differ from the variability at a static system. Furthermore, by adopting a two device methodology, we tracked successfully the temporal dynamics of SIF (previous chapter) and the spatial variability of SIF inside one sugar beet crop field. In addition, we collected spatially explicit SIF data over various other crops.</p>
+<p>The measurements conform to the general behaviour of SIF presented in (synthetic SCOPE chapter). A saturation of SIF 760 is visible at larger LAI, while a negative exponential decay is observed for SIF 687 with increase in both LAI and chlorophyll content. Senescence diminishes the effect of reabsorption of SIF 687. One notable difference is the opposite effect chlorophyll content has on SIF 687 in sugar beet. No explanation can be given without a deeper examination of canopy structure and physiology. In order to do so, the spatial sampling in sugar beet was followed by an exhaustive diurnal measurement of fluorescence and relevant physiological and reflectance data. This dataset will be used to parameterize a SCOPE simulation and study the diurnal behaviuor of SIF as a function of physiology and structure (SCOPE chapter).</p>
+<div id="on-the-measurement-protocol" class="section level3">
+<h3><span class="header-section-number">11.5.1</span> On the measurement protocol</h3>
+<p>The need for two devices introduces a level of uncertainty stemming from the need for rigoreous intercalibration, the importance of matching perfectly the time, and the distance between both sensors. In fact, <span class="citation">(Aasen et al. <a href="#ref-Aasen2019">2019</a>)</span> advices against two device approach unless it is absolutely necessary. Although they discuss the usage of two devices in different context, most of their consideration apply to this measurement setup as well. The calibration consideration can be solved by establishing a regular maintenance and calibration schedule at a central facility for all devices used in future coordinated measurement efforts. As to the concerns of time discrepancies and distance between the devices, our approach addresses them by taking an averaging window and confining the case study to a single crop field.</p>
+<p>An alternative to the two device methodology is to perform the diurnal and the mobile measurements on two consecutive days with stable atmospheric conditions. In such case, an assumption is being made that the diurnal curve does not change drastically from one day to another. The assumption can be tested by comparing the fit between PAR readings for both days as shown in this chapter. Such approach can be particularly applicable in Mediterranean regions where more prolonged stable sunny days are prominent during summer. Even further, a day with mobile measurements could be sandwitched between two reference stationary days. In this case the reference measurements should be taken at the same location to infer about any short term changes in the behavior in SIF. A third option is the so-called shuttle option, in which one reference location is revisited in regular intervals during a mobile measurement day to provide a regular snapshots of the diurnal SIF curve for at least on location. Then the diurnal curve can be found by fitting the quadratic function on the revisits. This approach is particularly suitable with fast moving phenotyping systems.</p>
+<p>Regardless whether one or two devices are adopted, there is sense to have sufficient information of both the duirnal cycle and the spatial variability of SIF. In particular, the information can be used in combination to find an empirical model which lets us rescale observations taken across a large spectrum of physiological and illumination conditions (such as the mobile SIF procedure outlined here) and rescale all values to a theoretical reference for comparison purposes. We will address two possible ways to rescale the SIF values and make them comparable in the next chapter.</p>
+
+</div>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Aasen2019">
+<p>Aasen, Helge, Shari Van Wittenberghe, Neus Sabater Medina, Alexander Damm, Yves Goulas, Sebastian Wieneke, Andreas Hueni, et al. 2019. “Sun-Induced Chlorophyll Fluorescence II : Review of Passive Measurement Setups , Protocols , and Their Application at the Leaf to Canopy Level.” <em>Remote Sensing</em> 11 (927).</p>
+</div>
+<div id="ref-Meroni2009">
+<p>Meroni, M., M. Rossini, L. Guanter, L. Alonso, U. Rascher, R. Colombo, and J. Moreno. 2009. “Remote sensing of solar-induced chlorophyll fluorescence: Review of methods and applications.” <em>Remote Sensing of Environment</em> 113 (10): 2037–51. doi:<a href="https://doi.org/10.1016/j.rse.2009.05.003">10.1016/j.rse.2009.05.003</a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="flox1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="flox3.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["bookdown.pdf", "bookdown.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

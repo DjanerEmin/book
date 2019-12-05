@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Remote sensing of vegetation biophysics and SIF | Exploring the effect of canopy structure on top-of-canopy sun-induced fluorescence</title>
+  <meta name="description" content="A PhD thesis for awarding the title Doctor of Agricultural Science" />
+  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Remote sensing of vegetation biophysics and SIF | Exploring the effect of canopy structure on top-of-canopy sun-induced fluorescence" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A PhD thesis for awarding the title Doctor of Agricultural Science" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Remote sensing of vegetation biophysics and SIF | Exploring the effect of canopy structure on top-of-canopy sun-induced fluorescence" />
+  
+  <meta name="twitter:description" content="A PhD thesis for awarding the title Doctor of Agricultural Science" />
+  
+
+<meta name="author" content="Dzhaner Emin" />
+
+
+<meta name="date" content="2019-11-11" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="fluo.html"/>
+<link rel="next" href="factors-affecting-canopy-structure.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.5/datatables.js"></script>
+<link href="libs/dt-core-1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.10.16/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.10.16/js/jquery.dataTables.min.js"></script>
+<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Sun-induced fluorescence</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#section"></a></li>
+<li class="chapter" data-level="" data-path="preamble.html"><a href="preamble.html"><i class="fa fa-check"></i>Preamble</a><ul>
+<li class="chapter" data-level="" data-path="preamble.html"><a href="preamble.html#acknowledgments"><i class="fa fa-check"></i>Acknowledgments</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="part"><span><b>I Theoretical background (Methods)</b></span></li>
+<li class="chapter" data-level="2" data-path="fluo.html"><a href="fluo.html"><i class="fa fa-check"></i><b>2</b> Fluorescence basics</a><ul>
+<li class="chapter" data-level="2.1" data-path="fluo.html"><a href="fluo.html#faith-of-absorbed-light-energy-reaching-the-plant-surface"><i class="fa fa-check"></i><b>2.1</b> Faith of absorbed light energy reaching the plant surface</a></li>
+<li class="chapter" data-level="2.2" data-path="fluo.html"><a href="fluo.html#origin-of-chlorophyll-fluorescence"><i class="fa fa-check"></i><b>2.2</b> Origin of chlorophyll fluorescence</a></li>
+<li class="chapter" data-level="2.3" data-path="fluo.html"><a href="fluo.html#link-between-fluorescence-and-photosynthesis"><i class="fa fa-check"></i><b>2.3</b> Link between fluorescence and photosynthesis</a></li>
+<li class="chapter" data-level="2.4" data-path="fluo.html"><a href="fluo.html#heat-dissipation"><i class="fa fa-check"></i><b>2.4</b> Heat dissipation</a></li>
+<li class="chapter" data-level="2.5" data-path="fluo.html"><a href="fluo.html#measuring-chl-fluorescence"><i class="fa fa-check"></i><b>2.5</b> Measuring Chl fluorescence</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="fluo.html"><a href="fluo.html#pam-fluorimetry---active-methods"><i class="fa fa-check"></i><b>2.5.1</b> PAM fluorimetry - active methods</a></li>
+<li class="chapter" data-level="2.5.2" data-path="fluo.html"><a href="fluo.html#fluorescence-under-natural-conditions-sif"><i class="fa fa-check"></i><b>2.5.2</b> Fluorescence under natural conditions (SIF)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="rs.html"><a href="rs.html"><i class="fa fa-check"></i><b>3</b> Remote sensing of vegetation biophysics and SIF</a><ul>
+<li class="chapter" data-level="3.1" data-path="rs.html"><a href="rs.html#remote-sensing"><i class="fa fa-check"></i><b>3.1</b> Remote sensing</a></li>
+<li class="chapter" data-level="3.2" data-path="rs.html"><a href="rs.html#the-concept-of-scale-in-remote-sensing.-scalability-of-ecological-processes-scale"><i class="fa fa-check"></i><b>3.2</b> The concept of scale in remote sensing. Scalability of ecological processes {scale}</a></li>
+<li class="chapter" data-level="3.3" data-path="rs.html"><a href="rs.html#retrieval-of-sif"><i class="fa fa-check"></i><b>3.3</b> Retrieval of SIF</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="rs.html"><a href="rs.html#fld-principle"><i class="fa fa-check"></i><b>3.3.1</b> FLD principle</a></li>
+<li class="chapter" data-level="3.3.2" data-path="rs.html"><a href="rs.html#spectral-fitting-methods-the-state-of-the-art-sif-retrieval-of-the-entire-sif-spectrum"><i class="fa fa-check"></i><b>3.3.2</b> Spectral fitting methods – the state of the art SIF retrieval of the entire SIF spectrum</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="rs.html"><a href="rs.html#sensor-design-for-sif-acquisition"><i class="fa fa-check"></i><b>3.4</b> Sensor design for SIF acquisition</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="rs.html"><a href="rs.html#flox"><i class="fa fa-check"></i><b>3.4.1</b> Ground sensor design</a></li>
+<li class="chapter" data-level="3.4.2" data-path="rs.html"><a href="rs.html#hyplant"><i class="fa fa-check"></i><b>3.4.2</b> Airborne</a></li>
+<li class="chapter" data-level="3.4.3" data-path="rs.html"><a href="rs.html#spaceborne"><i class="fa fa-check"></i><b>3.4.3</b> Spaceborne</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="factors-affecting-canopy-structure.html"><a href="factors-affecting-canopy-structure.html"><i class="fa fa-check"></i><b>4</b> Factors affecting canopy structure</a><ul>
+<li class="chapter" data-level="4.1" data-path="factors-affecting-canopy-structure.html"><a href="factors-affecting-canopy-structure.html#computational-factors"><i class="fa fa-check"></i><b>4.1</b> Computational Factors</a></li>
+<li class="chapter" data-level="4.2" data-path="factors-affecting-canopy-structure.html"><a href="factors-affecting-canopy-structure.html#environmental-factors"><i class="fa fa-check"></i><b>4.2</b> Environmental Factors</a></li>
+<li class="chapter" data-level="4.3" data-path="factors-affecting-canopy-structure.html"><a href="factors-affecting-canopy-structure.html#physiological-factors"><i class="fa fa-check"></i><b>4.3</b> Physiological Factors</a></li>
+<li class="chapter" data-level="4.4" data-path="factors-affecting-canopy-structure.html"><a href="factors-affecting-canopy-structure.html#discussion"><i class="fa fa-check"></i><b>4.4</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="canopystr.html"><a href="canopystr.html"><i class="fa fa-check"></i><b>5</b> Canopy structure</a><ul>
+<li class="chapter" data-level="5.1" data-path="canopystr.html"><a href="canopystr.html#measuring-canopy-structure"><i class="fa fa-check"></i><b>5.1</b> Measuring canopy structure</a></li>
+<li class="chapter" data-level="5.2" data-path="canopystr.html"><a href="canopystr.html#modeling-canopy-structure"><i class="fa fa-check"></i><b>5.2</b> modeling canopy structure</a></li>
+<li class="chapter" data-level="5.3" data-path="canopystr.html"><a href="canopystr.html#retrieval-of-canopy-structure"><i class="fa fa-check"></i><b>5.3</b> Retrieval of canopy structure</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="canopystr.html"><a href="canopystr.html#look-up-tables"><i class="fa fa-check"></i><b>5.3.1</b> Look-up Tables</a></li>
+<li class="chapter" data-level="5.3.2" data-path="canopystr.html"><a href="canopystr.html#cost-functions"><i class="fa fa-check"></i><b>5.3.2</b> Cost functions</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="canopystr.html"><a href="canopystr.html#the-effect-of-canopy-structure-on-sif"><i class="fa fa-check"></i><b>5.4</b> The effect of canopy structure on SIF</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="bibliometric-analysis-of-sun-induced-fluorescence-literature.html"><a href="bibliometric-analysis-of-sun-induced-fluorescence-literature.html"><i class="fa fa-check"></i><b>6</b> Bibliometric analysis of Sun-induced fluorescence literature</a><ul>
+<li class="chapter" data-level="6.1" data-path="bibliometric-analysis-of-sun-induced-fluorescence-literature.html"><a href="bibliometric-analysis-of-sun-induced-fluorescence-literature.html#descriptive-bibliometric-analysis"><i class="fa fa-check"></i><b>6.1</b> Descriptive bibliometric analysis</a></li>
+<li class="chapter" data-level="6.2" data-path="bibliometric-analysis-of-sun-induced-fluorescence-literature.html"><a href="bibliometric-analysis-of-sun-induced-fluorescence-literature.html#graphical-depiction"><i class="fa fa-check"></i><b>6.2</b> Graphical depiction</a></li>
+<li class="chapter" data-level="6.3" data-path="bibliometric-analysis-of-sun-induced-fluorescence-literature.html"><a href="bibliometric-analysis-of-sun-induced-fluorescence-literature.html#individual-paper-analytics"><i class="fa fa-check"></i><b>6.3</b> Individual paper analytics</a></li>
+<li class="chapter" data-level="6.4" data-path="bibliometric-analysis-of-sun-induced-fluorescence-literature.html"><a href="bibliometric-analysis-of-sun-induced-fluorescence-literature.html#bibliographic-network-matrices"><i class="fa fa-check"></i><b>6.4</b> Bibliographic network matrices</a></li>
+</ul></li>
+<li class="part"><span><b>II Materials and methods</b></span></li>
+<li class="chapter" data-level="7" data-path="studyarea.html"><a href="studyarea.html"><i class="fa fa-check"></i><b>7</b> Study area</a><ul>
+<li class="chapter" data-level="7.1" data-path="studyarea.html"><a href="studyarea.html#location"><i class="fa fa-check"></i><b>7.1</b> Location</a></li>
+<li class="chapter" data-level="7.2" data-path="studyarea.html"><a href="studyarea.html#climate"><i class="fa fa-check"></i><b>7.2</b> Climate</a></li>
+<li class="chapter" data-level="7.3" data-path="studyarea.html"><a href="studyarea.html#land-use"><i class="fa fa-check"></i><b>7.3</b> Land use</a></li>
+<li class="chapter" data-level="7.4" data-path="studyarea.html"><a href="studyarea.html#soilter"><i class="fa fa-check"></i><b>7.4</b> Soil &amp; Terrace</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="sugar-beet.html"><a href="sugar-beet.html"><i class="fa fa-check"></i><b>8</b> Sugar beet</a><ul>
+<li class="chapter" data-level="8.1" data-path="sugar-beet.html"><a href="sugar-beet.html#history-distribution-and-economics"><i class="fa fa-check"></i><b>8.1</b> History, distribution and economics</a></li>
+<li class="chapter" data-level="8.2" data-path="sugar-beet.html"><a href="sugar-beet.html#growth"><i class="fa fa-check"></i><b>8.2</b> Growth</a></li>
+<li class="chapter" data-level="8.3" data-path="sugar-beet.html"><a href="sugar-beet.html#husbandry"><i class="fa fa-check"></i><b>8.3</b> Husbandry</a></li>
+<li class="chapter" data-level="8.4" data-path="sugar-beet.html"><a href="sugar-beet.html#effects-of-canopy-structure"><i class="fa fa-check"></i><b>8.4</b> Effects of canopy structure</a><ul>
+<li class="chapter" data-level="8.4.1" data-path="sugar-beet.html"><a href="sugar-beet.html#canopy-development"><i class="fa fa-check"></i><b>8.4.1</b> Canopy development</a></li>
+<li class="chapter" data-level="8.4.2" data-path="sugar-beet.html"><a href="sugar-beet.html#effect-of-canopy-structure-on-yield"><i class="fa fa-check"></i><b>8.4.2</b> Effect of canopy structure on yield</a></li>
+<li class="chapter" data-level="8.4.3" data-path="sugar-beet.html"><a href="sugar-beet.html#effect-of-canopy-structure-on-radiation-budget-and-optical-properties"><i class="fa fa-check"></i><b>8.4.3</b> Effect of canopy structure on radiation budget and optical properties</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="sugar-beet.html"><a href="sugar-beet.html#other-effects"><i class="fa fa-check"></i><b>8.5</b> Other effects</a><ul>
+<li class="chapter" data-level="8.5.1" data-path="sugar-beet.html"><a href="sugar-beet.html#effect-of-nitrogen"><i class="fa fa-check"></i><b>8.5.1</b> effect of nitrogen</a></li>
+<li class="chapter" data-level="8.5.2" data-path="sugar-beet.html"><a href="sugar-beet.html#effect-of-soil-water"><i class="fa fa-check"></i><b>8.5.2</b> Effect of soil water</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>III Results</b></span></li>
+<li class="chapter" data-level="9" data-path="scope.html"><a href="scope.html"><i class="fa fa-check"></i><b>9</b> Exploring the influence of LAI and Chlorophyll content on TOC SIF using SCOPE simulation</a><ul>
+<li class="chapter" data-level="9.1" data-path="scope.html"><a href="scope.html#simulation"><i class="fa fa-check"></i><b>9.1</b> Simulation</a></li>
+<li class="chapter" data-level="9.2" data-path="scope.html"><a href="scope.html#results"><i class="fa fa-check"></i><b>9.2</b> Results</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="scope.html"><a href="scope.html#sif-as-function-of-lai-and-cab"><i class="fa fa-check"></i><b>9.2.1</b> SIF as function of LAI and Cab</a></li>
+<li class="chapter" data-level="9.2.2" data-path="scope.html"><a href="scope.html#sif-as-a-function-of-vi"><i class="fa fa-check"></i><b>9.2.2</b> SIF as a function of VI</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="scope.html"><a href="scope.html#discussion-1"><i class="fa fa-check"></i><b>9.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="ground-measurements-of-sif.html"><a href="ground-measurements-of-sif.html"><i class="fa fa-check"></i>Ground measurements of SIF</a></li>
+<li class="chapter" data-level="10" data-path="flox1.html"><a href="flox1.html"><i class="fa fa-check"></i><b>10</b> Description of FLOX device and exploratory data analysis of diurnal measurements</a><ul>
+<li class="chapter" data-level="10.1" data-path="flox1.html"><a href="flox1.html#flox-description-and-metadata"><i class="fa fa-check"></i><b>10.1</b> FLOX description and metadata</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="flox1.html"><a href="flox1.html#metadata"><i class="fa fa-check"></i><b>10.1.1</b> Metadata</a></li>
+<li class="chapter" data-level="10.1.2" data-path="flox1.html"><a href="flox1.html#temperature-of-device-housing-and-ccd"><i class="fa fa-check"></i><b>10.1.2</b> Temperature of device housing and CCD</a></li>
+<li class="chapter" data-level="10.1.3" data-path="flox1.html"><a href="flox1.html#humidity"><i class="fa fa-check"></i><b>10.1.3</b> Humidity</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="flox1.html"><a href="flox1.html#exploratory-analysis-of-diurnal-sif-for-two-crops"><i class="fa fa-check"></i><b>10.2</b> Exploratory analysis of diurnal SIF for two crops</a><ul>
+<li class="chapter" data-level="10.2.1" data-path="flox1.html"><a href="flox1.html#three-days-diurnal-measurements-in-sugar-beet"><i class="fa fa-check"></i><b>10.2.1</b> Three days diurnal measurements in sugar beet</a></li>
+<li class="chapter" data-level="10.2.2" data-path="flox1.html"><a href="flox1.html#diurnal-development-of-sif-in-winter-wheat"><i class="fa fa-check"></i><b>10.2.2</b> Diurnal development of SIF in Winter wheat</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="flox1.html"><a href="flox1.html#descriptive-statistics"><i class="fa fa-check"></i><b>10.3</b> Descriptive statistics</a><ul>
+<li class="chapter" data-level="10.3.1" data-path="flox1.html"><a href="flox1.html#sif-value-ranges.-comparison-between-ifld-and-sfm-values"><i class="fa fa-check"></i><b>10.3.1</b> SIF value ranges. Comparison between iFLD and SFM values</a></li>
+<li class="chapter" data-level="10.3.2" data-path="flox1.html"><a href="flox1.html#stability-of-sif-measurements"><i class="fa fa-check"></i><b>10.3.2</b> Stability of SIF measurements</a></li>
+</ul></li>
+<li class="chapter" data-level="10.4" data-path="flox1.html"><a href="flox1.html#discussion-2"><i class="fa fa-check"></i><b>10.4</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="flox2.html"><a href="flox2.html"><i class="fa fa-check"></i><b>11</b> Development and evaluation of a mobile measurement procedure for TOC SIF</a><ul>
+<li class="chapter" data-level="11.1" data-path="flox2.html"><a href="flox2.html#developing-a-mobile-measurement-protocol"><i class="fa fa-check"></i><b>11.1</b> Developing a mobile measurement protocol</a><ul>
+<li class="chapter" data-level="11.1.1" data-path="flox2.html"><a href="flox2.html#setup"><i class="fa fa-check"></i><b>11.1.1</b> Setup</a></li>
+<li class="chapter" data-level="11.1.2" data-path="flox2.html"><a href="flox2.html#procedure"><i class="fa fa-check"></i><b>11.1.2</b> Procedure</a></li>
+<li class="chapter" data-level="11.1.3" data-path="flox2.html"><a href="flox2.html#test-case"><i class="fa fa-check"></i><b>11.1.3</b> Test case</a></li>
+<li class="chapter" data-level="11.1.4" data-path="flox2.html"><a href="flox2.html#post-processing"><i class="fa fa-check"></i><b>11.1.4</b> Post-processing</a></li>
+<li class="chapter" data-level="11.1.5" data-path="flox2.html"><a href="flox2.html#quality-check"><i class="fa fa-check"></i><b>11.1.5</b> Quality check</a></li>
+<li class="chapter" data-level="11.1.6" data-path="flox2.html"><a href="flox2.html#finding-location-average-and-corresponding-reference-sif"><i class="fa fa-check"></i><b>11.1.6</b> Finding location average and corresponding reference SIF</a></li>
+</ul></li>
+<li class="chapter" data-level="11.2" data-path="flox2.html"><a href="flox2.html#evaluation-of-methodology"><i class="fa fa-check"></i><b>11.2</b> Evaluation of methodology</a><ul>
+<li class="chapter" data-level="11.2.1" data-path="flox2.html"><a href="flox2.html#using-par-readings"><i class="fa fa-check"></i><b>11.2.1</b> Using PAR readings</a></li>
+<li class="chapter" data-level="11.2.2" data-path="flox2.html"><a href="flox2.html#evaluating-the-variability-of-sif"><i class="fa fa-check"></i><b>11.2.2</b> Evaluating the variability of SIF</a></li>
+</ul></li>
+<li class="chapter" data-level="11.3" data-path="flox2.html"><a href="flox2.html#descriptive-statistics-of-mobile-flox-data"><i class="fa fa-check"></i><b>11.3</b> Descriptive statistics of mobile FLOX data</a></li>
+<li class="chapter" data-level="11.4" data-path="flox2.html"><a href="flox2.html#focus-on-nirv-fcvi"><i class="fa fa-check"></i><b>11.4</b> focus on nirv fcvi</a></li>
+<li class="chapter" data-level="11.5" data-path="flox2.html"><a href="flox2.html#discussion-3"><i class="fa fa-check"></i><b>11.5</b> Discussion</a><ul>
+<li class="chapter" data-level="11.5.1" data-path="flox2.html"><a href="flox2.html#on-the-measurement-protocol"><i class="fa fa-check"></i><b>11.5.1</b> On the measurement protocol</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="flox3.html"><a href="flox3.html"><i class="fa fa-check"></i><b>12</b> Diurnal rescaling procedure</a><ul>
+<li class="chapter" data-level="12.1" data-path="flox3.html"><a href="flox3.html#the-need-for-rescaling-explained"><i class="fa fa-check"></i><b>12.1</b> The need for rescaling explained</a></li>
+<li class="chapter" data-level="12.2" data-path="flox3.html"><a href="flox3.html#developing-a-rescaling-approach-based-on-empirical-relationship-between-sif-and-lai"><i class="fa fa-check"></i><b>12.2</b> Developing a rescaling approach based on empirical relationship between SIF and LAI</a><ul>
+<li class="chapter" data-level="12.2.1" data-path="flox3.html"><a href="flox3.html#data"><i class="fa fa-check"></i><b>12.2.1</b> Data</a></li>
+<li class="chapter" data-level="12.2.2" data-path="flox3.html"><a href="flox3.html#empirical-relationship"><i class="fa fa-check"></i><b>12.2.2</b> Empirical relationship</a></li>
+<li class="chapter" data-level="12.2.3" data-path="flox3.html"><a href="flox3.html#case-study-hyplant-validation"><i class="fa fa-check"></i><b>12.2.3</b> Case study hyplant validation</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="flox3.html"><a href="flox3.html#develping-a-priori-shape-based-on-the-quadratic-fit-on-par"><i class="fa fa-check"></i><b>12.3</b> Develping a-priori shape based on the quadratic fit on par</a></li>
+<li class="chapter" data-level="12.4" data-path="flox3.html"><a href="flox3.html#discussion-4"><i class="fa fa-check"></i><b>12.4</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="airborne-measurements-of-sif.html"><a href="airborne-measurements-of-sif.html"><i class="fa fa-check"></i>Airborne measurements of SIF</a></li>
+<li class="chapter" data-level="13" data-path="hyplant1.html"><a href="hyplant1.html"><i class="fa fa-check"></i><b>13</b> Exploratory analysis of HyPlant data</a><ul>
+<li class="chapter" data-level="13.1" data-path="hyplant1.html"><a href="hyplant1.html#hyplant-data"><i class="fa fa-check"></i><b>13.1</b> HyPlant Data</a></li>
+<li class="chapter" data-level="13.2" data-path="hyplant1.html"><a href="hyplant1.html#outlier-detection"><i class="fa fa-check"></i><b>13.2</b> Outlier detection</a></li>
+<li class="chapter" data-level="13.3" data-path="hyplant1.html"><a href="hyplant1.html#exploratory-analysis-of-sif"><i class="fa fa-check"></i><b>13.3</b> Exploratory analysis of SIF</a><ul>
+<li class="chapter" data-level="13.3.1" data-path="hyplant1.html"><a href="hyplant1.html#summary-stats"><i class="fa fa-check"></i><b>13.3.1</b> Summary stats</a></li>
+<li class="chapter" data-level="13.3.2" data-path="hyplant1.html"><a href="hyplant1.html#histogram-distribution"><i class="fa fa-check"></i><b>13.3.2</b> Histogram distribution</a></li>
+<li class="chapter" data-level="13.3.3" data-path="hyplant1.html"><a href="hyplant1.html#field-average"><i class="fa fa-check"></i><b>13.3.3</b> Field average</a></li>
+<li class="chapter" data-level="13.3.4" data-path="hyplant1.html"><a href="hyplant1.html#terrace-association"><i class="fa fa-check"></i><b>13.3.4</b> Terrace association</a></li>
+<li class="chapter" data-level="13.3.5" data-path="hyplant1.html"><a href="hyplant1.html#soil"><i class="fa fa-check"></i><b>13.3.5</b> Soil</a></li>
+<li class="chapter" data-level="13.3.6" data-path="hyplant1.html"><a href="hyplant1.html#scale-dependence"><i class="fa fa-check"></i><b>13.3.6</b> Scale dependence</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="hyplant2.html"><a href="hyplant2.html"><i class="fa fa-check"></i><b>14</b> Retrieval of LAI and Cab from HyPlant Reflectance</a><ul>
+<li class="chapter" data-level="14.1" data-path="hyplant2.html"><a href="hyplant2.html#materials"><i class="fa fa-check"></i><b>14.1</b> Materials</a><ul>
+<li class="chapter" data-level="14.1.1" data-path="rs.html"><a href="rs.html#hyplant"><i class="fa fa-check"></i><b>14.1.1</b> HyPlant</a></li>
+<li class="chapter" data-level="14.1.2" data-path="hyplant2.html"><a href="hyplant2.html#study-area"><i class="fa fa-check"></i><b>14.1.2</b> Study Area</a></li>
+<li class="chapter" data-level="14.1.3" data-path="hyplant2.html"><a href="hyplant2.html#ground-truth"><i class="fa fa-check"></i><b>14.1.3</b> Ground truth</a></li>
+<li class="chapter" data-level="14.1.4" data-path="hyplant2.html"><a href="hyplant2.html#lut-generation"><i class="fa fa-check"></i><b>14.1.4</b> LUT generation</a></li>
+<li class="chapter" data-level="14.1.5" data-path="hyplant2.html"><a href="hyplant2.html#cost-function-selection"><i class="fa fa-check"></i><b>14.1.5</b> Cost function selection</a></li>
+</ul></li>
+<li class="chapter" data-level="14.2" data-path="hyplant2.html"><a href="hyplant2.html#results-1"><i class="fa fa-check"></i><b>14.2</b> Results</a><ul>
+<li class="chapter" data-level="14.2.1" data-path="hyplant2.html"><a href="hyplant2.html#cost-function-evaluation-table"><i class="fa fa-check"></i><b>14.2.1</b> Cost function evaluation table</a></li>
+<li class="chapter" data-level="14.2.2" data-path="hyplant2.html"><a href="hyplant2.html#lai-observed-vs.predicted"><i class="fa fa-check"></i><b>14.2.2</b> LAI observed vs. predicted</a></li>
+<li class="chapter" data-level="14.2.3" data-path="hyplant2.html"><a href="hyplant2.html#residuals"><i class="fa fa-check"></i><b>14.2.3</b> Residuals</a></li>
+<li class="chapter" data-level="14.2.4" data-path="hyplant2.html"><a href="hyplant2.html#spectral-reflectance-observed-vs.predicted"><i class="fa fa-check"></i><b>14.2.4</b> Spectral reflectance observed vs. predicted</a></li>
+<li class="chapter" data-level="14.2.5" data-path="hyplant2.html"><a href="hyplant2.html#maps"><i class="fa fa-check"></i><b>14.2.5</b> Maps</a></li>
+<li class="chapter" data-level="14.2.6" data-path="hyplant2.html"><a href="hyplant2.html#compare-to-ndvi"><i class="fa fa-check"></i><b>14.2.6</b> Compare to NDVI</a></li>
+</ul></li>
+<li class="chapter" data-level="14.3" data-path="hyplant2.html"><a href="hyplant2.html#discussion-5"><i class="fa fa-check"></i><b>14.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="hyplant3.html"><a href="hyplant3.html"><i class="fa fa-check"></i><b>15</b> Exploring the relationship between LAI and Chlorophyll and SIF</a><ul>
+<li class="chapter" data-level="15.1" data-path="hyplant3.html"><a href="hyplant3.html#data-and-rq"><i class="fa fa-check"></i><b>15.1</b> Data and RQ</a><ul>
+<li class="chapter" data-level="15.1.1" data-path="hyplant3.html"><a href="hyplant3.html#rq"><i class="fa fa-check"></i><b>15.1.1</b> RQ</a></li>
+<li class="chapter" data-level="15.1.2" data-path="hyplant3.html"><a href="hyplant3.html#data-1"><i class="fa fa-check"></i><b>15.1.2</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="15.2" data-path="hyplant3.html"><a href="hyplant3.html#field-level"><i class="fa fa-check"></i><b>15.2</b> Field level</a><ul>
+<li class="chapter" data-level="15.2.1" data-path="hyplant3.html"><a href="hyplant3.html#data-partitioning"><i class="fa fa-check"></i><b>15.2.1</b> Data partitioning</a></li>
+<li class="chapter" data-level="15.2.2" data-path="hyplant3.html"><a href="hyplant3.html#models-on-the-field-level"><i class="fa fa-check"></i><b>15.2.2</b> Models on the field level</a></li>
+<li class="chapter" data-level="15.2.3" data-path="hyplant3.html"><a href="hyplant3.html#summary"><i class="fa fa-check"></i><b>15.2.3</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="15.3" data-path="hyplant3.html"><a href="hyplant3.html#agrosystem-level"><i class="fa fa-check"></i><b>15.3</b> Agrosystem level</a><ul>
+<li class="chapter" data-level="15.3.1" data-path="hyplant3.html"><a href="hyplant3.html#linear-model-for-lai"><i class="fa fa-check"></i><b>15.3.1</b> Linear model for LAI</a></li>
+<li class="chapter" data-level="15.3.2" data-path="hyplant3.html"><a href="hyplant3.html#stewise-model-selection"><i class="fa fa-check"></i><b>15.3.2</b> Stewise model selection</a></li>
+</ul></li>
+<li class="chapter" data-level="15.4" data-path="hyplant3.html"><a href="hyplant3.html#discussion-6"><i class="fa fa-check"></i><b>15.4</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="hyplant4.html"><a href="hyplant4.html"><i class="fa fa-check"></i><b>16</b> Evaluation of TCAR/OSACI to correct for Cab. Lidar data</a></li>
+<li class="chapter" data-level="17" data-path="hyplant5.html"><a href="hyplant5.html"><i class="fa fa-check"></i><b>17</b> Evaluation of proxy estimates for canopy structure for spatial upscaling of Top-of-Canopy Sun-induced Fluorescence</a><ul>
+<li class="chapter" data-level="17.1" data-path="hyplant5.html"><a href="hyplant5.html#methods"><i class="fa fa-check"></i><b>17.1</b> Methods</a><ul>
+<li class="chapter" data-level="17.1.1" data-path="hyplant5.html"><a href="hyplant5.html#theoretical-background"><i class="fa fa-check"></i><b>17.1.1</b> Theoretical background</a></li>
+<li class="chapter" data-level="17.1.2" data-path="hyplant5.html"><a href="hyplant5.html#rescaling-sif.-location-model-for-high-resolution-remote-sensing-data-hyplant"><i class="fa fa-check"></i><b>17.1.2</b> Rescaling SIF. Location model for high resolution remote sensing data (HyPlant)</a></li>
+<li class="chapter" data-level="17.1.3" data-path="hyplant5.html"><a href="hyplant5.html#data-used"><i class="fa fa-check"></i><b>17.1.3</b> Data used</a></li>
+<li class="chapter" data-level="17.1.4" data-path="hyplant5.html"><a href="hyplant5.html#selection-of-candidate-proxies-for-gamma"><i class="fa fa-check"></i><b>17.1.4</b> Selection of candidate proxies for <span class="math inline">\(\Gamma\)</span></a></li>
+<li class="chapter" data-level="17.1.5" data-path="hyplant5.html"><a href="hyplant5.html#monte-carlo-approach-to-find-the-best-reference-location"><i class="fa fa-check"></i><b>17.1.5</b> Monte Carlo approach to find the best reference location</a></li>
+<li class="chapter" data-level="17.1.6" data-path="hyplant5.html"><a href="hyplant5.html#evaluation-statistics"><i class="fa fa-check"></i><b>17.1.6</b> Evaluation statistics</a></li>
+</ul></li>
+<li class="chapter" data-level="17.2" data-path="hyplant5.html"><a href="hyplant5.html#results-2"><i class="fa fa-check"></i><b>17.2</b> Results</a><ul>
+<li class="chapter" data-level="17.2.1" data-path="hyplant5.html"><a href="hyplant5.html#interpretation-of-spatial-patterns-of-true-sif-vis-and-calculated-analytical-gamma"><i class="fa fa-check"></i><b>17.2.1</b> Interpretation of spatial patterns of true SIF, VIs, and calculated analytical <span class="math inline">\(\Gamma\)</span></a></li>
+<li class="chapter" data-level="17.2.2" data-path="hyplant5.html"><a href="hyplant5.html#evaluation-of-predictive-performance-and-error-decomposition-for-the-four-candidate-proxies"><i class="fa fa-check"></i><b>17.2.2</b> Evaluation of predictive performance and error decomposition for the four candidate proxies</a></li>
+<li class="chapter" data-level="17.2.3" data-path="hyplant5.html"><a href="hyplant5.html#sensitivity-to-the-selected-reference-location"><i class="fa fa-check"></i><b>17.2.3</b> Sensitivity to the selected reference location</a></li>
+<li class="chapter" data-level="17.2.4" data-path="hyplant5.html"><a href="hyplant5.html#spatial-patterns-of-residuals"><i class="fa fa-check"></i><b>17.2.4</b> Spatial patterns of residuals</a></li>
+</ul></li>
+<li class="chapter" data-level="17.3" data-path="hyplant5.html"><a href="hyplant5.html#discussion-7"><i class="fa fa-check"></i><b>17.3</b> Discussion</a><ul>
+<li class="chapter" data-level="17.3.1" data-path="hyplant5.html"><a href="hyplant5.html#on-derivation-of-proxy-estimates-for-gamma"><i class="fa fa-check"></i><b>17.3.1</b> On derivation of proxy estimates for <span class="math inline">\(\Gamma\)</span></a></li>
+<li class="chapter" data-level="17.3.2" data-path="hyplant5.html"><a href="hyplant5.html#on-the-evaluation-methodology-and-the-results"><i class="fa fa-check"></i><b>17.3.2</b> On the evaluation methodology and the results</a></li>
+<li class="chapter" data-level="17.3.3" data-path="hyplant5.html"><a href="hyplant5.html#on-possible-application-in-the-upscaling-of-sif"><i class="fa fa-check"></i><b>17.3.3</b> On possible application in the upscaling of SIF</a></li>
+<li class="chapter" data-level="17.3.4" data-path="hyplant5.html"><a href="hyplant5.html#conclusion"><i class="fa fa-check"></i><b>17.3.4</b> Conclusion</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="hyplant6.html"><a href="hyplant6.html"><i class="fa fa-check"></i><b>18</b> From HyPlant to FLEX upscaling procedure</a><ul>
+<li class="chapter" data-level="18.1" data-path="hyplant6.html"><a href="hyplant6.html#flex-and-hyplant"><i class="fa fa-check"></i><b>18.1</b> FLEX and HyPlant</a></li>
+<li class="chapter" data-level="18.2" data-path="hyplant6.html"><a href="hyplant6.html#input-data"><i class="fa fa-check"></i><b>18.2</b> Input data</a></li>
+</ul></li>
+<li class="chapter" data-level="19" data-path="flox-sif-vs-vi-flox4.html"><a href="flox-sif-vs-vi-flox4.html"><i class="fa fa-check"></i><b>19</b> FLOX SIF vs VI {flox4}</a><ul>
+<li class="chapter" data-level="19.1" data-path="flox-sif-vs-vi-flox4.html"><a href="flox-sif-vs-vi-flox4.html#sif-vi-relationship-at-flox-scale"><i class="fa fa-check"></i><b>19.1</b> sif vi relationship at flox scale</a></li>
+<li class="chapter" data-level="19.2" data-path="flox-sif-vs-vi-flox4.html"><a href="flox-sif-vs-vi-flox4.html#focus-on-nirv-fcvi-1"><i class="fa fa-check"></i><b>19.2</b> focus on nirv fcvi</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Exploring the effect of canopy structure on top-of-canopy sun-induced fluorescence</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="rs" class="section level1">
+<h1><span class="header-section-number">Chapter 3</span> Remote sensing of vegetation biophysics and SIF</h1>
+<div id="remote-sensing" class="section level2">
+<h2><span class="header-section-number">3.1</span> Remote sensing</h2>
+<p>Remote sensing (RS) is defined as the non-invasive measurement of electromagnetic radiation. Implied in this defintion is that the measurements are done from a distance (cm to km) (Gamon, in Functional Plant Ecology). Because chemical elements reflect unique spectral signature, RS can be used to infer biochemical composition (at small distances) or plant composition and diversity across larger spatial scales. The non-invasive and repetitive nature of the methods makes RS valuable approach in areas such precision agriculture, environmental monitoring and management, and carbon budgeting to name just a few.</p>
+<!---
+Because the amount of chlorophyll and other pigments in plants determines the levels of photosynthesis (photosynthetic efficiency), reflectance based estimates of those biochemical composition have been used as a proxy for the efficiency term in Perman efficiency model. Furthermore, because the LUE concept is scalable both in temporal and spatial domain, proxies at each scale have been developed. For example consider the widely popular vegetation indices NDVI. At the global scale it is narrowly correlated with light interceptance - the main driver of LUE, and it was successfully used to track seasonal pattern of gross primary productivity (GPP). However, at finer spatiotemporal scales NDVI is less sensitive to subtle changes in evironmental conditions. Therefore, different alternatives are used to track short term dynamic responses of vegetation productivity. 
+
+
+At proximal scales the dynamism of photosynthetic efficiency of plants can be detected by measuring subtle changes in ranges of the electromagnetic spectrum corresponding to chlorophyll concentration and xantophyll cycle - the conversion of violaxanthny to zeaxanthyn is detectable in the 530-570 nm range. These measurements are possible with high spectral sampling resolution. (More on this - in the box)
+--->
+<p>The possibility to retrieve fluorescence from hyperspectral reflectance provides a new opportunity for the remote characterization of plant status and potentially can lead to improved estimation of global terrestrial primary productivity by transferring the Earth observation techniques from detection of canopy biophysics to the realm of ecosystem functioning <span class="citation">(F. Magnani et al. <a href="#ref-Magnani2014">2014</a>)</span>. One must consider the detectability of the process in respect to the spatiotemporal scale at which it is observed.</p>
+</div>
+<div id="the-concept-of-scale-in-remote-sensing.-scalability-of-ecological-processes-scale" class="section level2">
+<h2><span class="header-section-number">3.2</span> The concept of scale in remote sensing. Scalability of ecological processes {scale}</h2>
+<p>The term scale has many meanings in the specialized literature. In the realm of geography alone, scale refers to four distinct concepts. The first and most known concept of scale is the <em>cartographic scale</em> – the scale ratio of the distance between two points in the real word to the distance of these points on a map. The second interpretation of scale is the <em>geographical scale (or extent)</em>. It describes the boundaries inside which the geographical phenomenon occurs. Often it signifies the extent of a study area or just the area of coverage of a geographical map. The third and fourth definitions of scale (<em>operational</em> and <em>topographic</em> scales, respectively) emerged together with advances of complex system research and remote sensing. These are slightly less known but it is important to be defined for each spatially distributed process.</p>
+<p>A so called operational scale is the level of which certain geographic phenomenon operates (functions). A operational scale can only be defined over a process. It is the smallest distance at which the phenomenon is relevant and distinguishable. For example, the effect of elevation and topography on the vegetation composition have a larger operational scale in flat areas but significantly smaller operational scale in mountaneuos regions, where changes in slope and aspect can occur in several meters. The operational scale intrinsicaly depends on the definition of the process within the system. For example, in a network analysis, the daily, work-related commute from suburbs to the city has a smaller operational scale than the weekend, or holiday travel. The operational scale is not always known but very important in order to correctly choose the fourth definition of scale – the topographic scale.</p>
+<p>The topographic scale is the level of detail depicted on a map. In the context of digital remote sensing - it is the resolution or pixel size of a remote sensing image. Especilly in the context of digital remote sensing, there is a trade of between information gain and computational burden when choosing the resolution of an image. Taking the elevation example from the previous paragraph, one should choose topographically finer scale (larger spatial resolution) to study the effects of topography in a mountaneous region, whereas a coarser topographic scale (smaller spatial resolution) can suffice in less hilly landscapes. In practice, when the exact operational scale of the proces of interest is unknown, fractal analysis can be performed to infer the best topographic scale to use.</p>
+<p>Using this nomenclature we can define a hierarchical scaling structure of the process of fluorescence emittance (Figure <a href="rs.html#fig:scale">3.1</a>).</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="st">&quot;Visuals/scale1.png&quot;</span>)</code></pre></div>
+<div class="figure"><span id="fig:scale"></span>
+<img src="Visuals/scale1.png" alt="Factors affecting light interraction and SIF at different operational scales." width="322" />
+<p class="caption">
+Figure 3.1: Factors affecting light interraction and SIF at different operational scales.
+</p>
+</div>
+</div>
+<div id="retrieval-of-sif" class="section level2">
+<h2><span class="header-section-number">3.3</span> Retrieval of SIF</h2>
+<div id="fld-principle" class="section level3">
+<h3><span class="header-section-number">3.3.1</span> FLD principle</h3>
+<p>The methodology used to estimate sun-induced fluorescence under natural conditions uses the fact that incoming radiation traveling through Earths atmosphere gets absorbed by elements in the atmosphere elements (the <a href="https://en.wikipedia.org/wiki/Fraunhofer_lines">Fraunhofer line</a> depth principle (FLD) <span class="citation">(<span class="citeproc-not-found" data-reference-id="Plascyk1975"><strong>???</strong></span>)</span>. Most often, three Fraunhofer lines related to water and oxygen (telluric) absorption termed Hα, O2-B and O2-A are used for fluorescence retrieval (Figure <a href="rs.html#fig:meroni">3.2</a>). From these, the latter two, telluric oxygen-B and oxygen-A bands, are producing the most robust results. The main reason is that these regions also coincide relatively well with the two peaks of the fluorescence emission. The level of infilling of the fraunhofer lines depends on the amount of reflected radiation and, for vegetative surfaces, includes a contribution by sun-induced fluorescence. For example, non fluorescent surfaces will have lower recorded radiance values, while vegetation surfaces will add up to the total emission – or the level of infilling. This fact can be used to retroactively infer the amount of SIF contribution inside the wells.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="st">&quot;Visuals/retrieval1.png&quot;</span>)</code></pre></div>
+<div class="figure"><span id="fig:meroni"></span>
+<img src="Visuals/retrieval1.png" alt="Incident irradiance at the tree absorption features used for fluorescence retrieval at three different spectral resolutions. Simulated data. *Source: [@Meroni2009]*" width="672" />
+<p class="caption">
+Figure 3.2: Incident irradiance at the tree absorption features used for fluorescence retrieval at three different spectral resolutions. Simulated data. <em>Source: <span class="citation">(M. Meroni et al. <a href="#ref-Meroni2009">2009</a>)</span></em>
+</p>
+</div>
+<div class="figure">
+<img src="Visuals/retrieval1.png" alt="Incident irradiance at the tree absorption features used for fluorescence retrieval at three different spectral resolutions. Simulated data. Source: (M. Meroni et al. 2009)" />
+<p class="caption">Incident irradiance at the tree absorption features used for fluorescence retrieval at three different spectral resolutions. Simulated data. <em>Source: <span class="citation">(M. Meroni et al. <a href="#ref-Meroni2009">2009</a>)</span></em></p>
+</div>
+<p>In order to estimate the level of infilling caused by SIF, values measured outside and inside of the Fraunhofer absorption feature (inside the well and on the shoulders) are needed. Then SIF is calculated by solving the following equation system:</p>
+<p><span class="math display">\[ L(\lambda_{in}) = \frac{r(\lambda_{in}) E(\lambda_{in})}{\pi} + F(\lambda_{in})\]</span> <span class="math display">\[ L(\lambda_{out}) = \frac{r(\lambda_{out}) E(\lambda_{out})}{\pi} + F(\lambda_{out})\]</span></p>
+<p>Rewritten as:</p>
+<p><span class="math display">\[r = \frac{L(\lambda_{out}) - L(\lambda_{in})}{E(\lambda_{out}) - E(\lambda_{in})} \cdot \pi\]</span> <span class="math display">\[F = \frac{E(\lambda_{out})L(\lambda_{in}) - L(\lambda_{out})E(\lambda_{in})}{E(\lambda_{out}) - E(\lambda_{in})}\]</span></p>
+<p>where <span class="math inline">\(L_{in}\)</span> and <span class="math inline">\(L_{out}\)</span> are values of radiation upwelling from target outside and inside of the Fraunhofer absorption feature respectively, r is the pure reflectance (e.g. without fluorescence contribution, E is the target irradiance, and F is the fluorescence (Meroni et al., 2009). Because radiance values are being used, resulting F estimates correspond to actual amount of emitted energy in the form of electromagnetic flux in physical units (Wm-2sr-1µm-1). This calculation assumes constant F and r values across the spectrum which is not realistic. To compensate for non-constancy radiation values outside of the absorption feature are averaged across several bands in the 3FLD method (Maier et al., 2003) or additional parameterization is adopted in the cFLD method <span class="citation">(GomezChova et al. <a href="#ref-GomezChova2006">2006</a>)</span>. Above mentioned methods are generally termed multispectral methods as they utilize several bands around the Fraunhofer absorption features. A specific case of cFLD is the improved FLD method (iFLD) which introduces two correction coefficients that relate the values of the fluorescence and the reflectance inside and outside of the absorption band. The novelty lies with the use of the whole spectrum around the absorption band to derive these coefficients <span class="citation">(L. Alonso et al. <a href="#ref-Alonso2008">2008</a>)</span>.</p>
+</div>
+<div id="spectral-fitting-methods-the-state-of-the-art-sif-retrieval-of-the-entire-sif-spectrum" class="section level3">
+<h3><span class="header-section-number">3.3.2</span> Spectral fitting methods – the state of the art SIF retrieval of the entire SIF spectrum</h3>
+<p>The potential of gaining additional accuracy by using the information contained across the entire spectrum is let to the development of the spectral fitting method. The rationale is to use mathematical functions to model the canopy reflectance and fluorescence at different wavelengths. In what is currently the most advanced and complex F retrieval methods, both reflectance and F are defined by spectral curve fitting, thus relaxing the previous FLD assumptions from constancy to linear/quadratic variation of both variables. By fitting cubic, spline, or higher order polynomials within the spectral windows centered at the main absorption features, discrete estimates for F inside the absorption features is calculated. However the possibility to extract the whole F spectrum by extending the fitting approach to the entire fluorescence region provides potentially further valuable information. The spectral fitting method relies on inversion of the reflectance spectrum and takes advantage of high spectral resolution configuration of new sensors in order to obtain the full spectral coverage. However, complications may occur due to the complex nature of F signal and shift of peak position due to changes in photosystem functioning. Nevertheless, this approach provides relatively high accuracy with the potential for full spectral retrieval <span class="citation">(S. Cogliati et al. <a href="#ref-Cogliati2015">2015</a>)</span>.</p>
+</div>
+</div>
+<div id="sensor-design-for-sif-acquisition" class="section level2">
+<h2><span class="header-section-number">3.4</span> Sensor design for SIF acquisition</h2>
+<p>Ever since it was shown SIF could be retrieved from hyperspectral data [cite], efforts have surged to design and implement measurement devices optimized for SIF retrieval. These efforts were supported through diverse scientific funding programs such as the COST actions <a href="https://www.cost.eu/actions/ES0903/#tabs%7CName:overview">EUROSPEC</a> and <a href="https://www.cost.eu/actions/ES1309/#tabs%7CName:overview">OPTIMISE</a>, which intended to aid the retrieval of robust SIF data, the establishment of a common measurement protocol, and the development of a global network of measurement stations. Devices suitable for measuring across wide range of spatiotemporal scales were developed and some are currently in operational stage. At leaf and canopy levels (proximal scale), retrieval of SIF is possible using high-resolution point spectrometers specifically optimized for SIF retrieval <span class="citation">(Kebabian et al. <a href="#ref-Kebabian1999">1999</a>; GomezChova et al. <a href="#ref-GomezChova2006">2006</a>; Fournier et al. <a href="#ref-Fournier2012">2012</a>; A. Burkart et al. <a href="#ref-Burkart2015">2015</a>)</span>. Currently they deliver valuable information about the temporal dynamics (diurnal to seasonal) of SIF. In the air (regional scale), imaging spectrometers mounted on airplane carriers enable SIF retrieval over larger areas. UAV based lightweight spectroscopy technology will cover an intermediate (local) scale between the abovementioned proximal and regional. Finally, several efforts were focused on retrieval of SIF from satellite hyperspectral data. In the near future, a dedicated sensor on board of the <a href="https://earth.esa.int/web/guest/missions/esa-future-missions/flex">eight scientific satellite mission of the European Space Agency</a> will cover the Earth’s surface and deliver bi-weekly SIF estimates.</p>
+<div id="flox" class="section level3">
+<h3><span class="header-section-number">3.4.1</span> Ground sensor design</h3>
+<p>Currently, a variety of instrumental designs based on hyperspectral point-spectrometer are available. Most of them are point spectrometers. In general, ground devices include the following elements: a box housing the electronics with separate coolining compartment for spectrometers, optic fibers, installation platform (a tower or tripod), and a power supply (Figure <a href="rs.html#fig:photospec">3.3</a>).</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="st">&quot;Visuals/photospec.png&quot;</span>)</code></pre></div>
+<div class="figure"><span id="fig:photospec"></span>
+<img src="Visuals/photospec.png" alt="A shematic view of PhotoSpec - a point spectrometer for SIF measurements. *Source: [@Grossmann2018]*" width="498" />
+<p class="caption">
+Figure 3.3: A shematic view of PhotoSpec - a point spectrometer for SIF measurements. <em>Source: <span class="citation">(Grossmann et al. <a href="#ref-Grossmann2018">2018</a>)</span></em>
+</p>
+</div>
+<p>Calculating reflectance requires recording incoming and reflected radiation simultaneously. This is accomplished through, either white reference panel or second upward looking optical fiber equipped with a cosine receptor capturing the hemispherical irradiance. In the former case the measuring optic fiber alternates between the target and the white reference via rotational mechanism. In the latter case, the spectrometer receives alternating signal from the downward (target) and upward (irradiance) looking optic fibers via a shutter installed between the fibers and the spectrometer.</p>
+<p>Comparative studies showed that retrieval of fluorescence is possible with spectrometers with high SNR and high spectral resolution in the range between 650 and 800. Therefore, most designs will include a hyperspectral point-spectrometer (QE Pro Ocean optics or similar) which can be programmed at high spectral resolution in the range between 600 and 800 nm. Furthermore, in most cases a second spectrometer is also included having a wider spectral range, covering the VIS and NIR, for reference or other hyperspectral retrieval tasks.</p>
+<p>Based on the programming of the instrument and the integration time of the spectrometer, temporal sampling of such proximal sensing devices can be as low as half a minute. This temporal resolution comes at expense of the spatial resolution. Because most ground devices are based on point spectrometer, they can only measure one point. The size of the footprint depends on the IFOV of the fiber optics and the height of installation. Nevertheless, when installed on a permanent position, such devices have helped to understand the diurnal and seasonal behavior of SIF above the canopy [cite]. It was revealed that diurnal development of SIF of unstressed crops follows the intensity of incoming light [cite], while a midday depression has been observed in stressed plants [cite].</p>
+<p>The <a href="https://www.jb-hyperspectral.com/products/flox/">FLuorescence bOX</a> (FLOX) and its precursor the SIF-system (SIFsys) were developed at the <a href="https://www.fzj.de/ibg/ibg-2/EN/Home/home_node.html">Department of Plant Sciences</a> in Forschungszentrum Julich and currently are vital part of the ground component of SIF retrieval and validation. The FLOX instrument houses two spectrometers – <a href="https://oceanoptics.com/product/flame-nir-spectrometer/">FLAME</a> and <a href="https://oceanoptics.com/product-category/qe-pro-series/">QE Pro</a> (Ocean Optics), isolated in a cooling chamber with stable temperature. They record radiation in the visible to near infrared (VNIR) range and in the fluorescence range respectively, in both downward and upward directions through two separate fiber optics. A mechanical shutter alternates the signal between both optical fibers towards the QE Pro spectrometer (note: the alternating shutter system which was included in the original design was replaced in later designs). This almost simultaneous measurement of incoming and outgoing radiation enables calculation of spectral reflectance and subsequent SIF retrieval. Additionally, hyperspectral analysis such as calculation of narrowband hyperspectral reflectance vegetation products (VI) can be performed. Its high temporal resolution of data acquisition, waterproof design, and its flexibility in powering options, make the FLOX particularly suitable for studying seasonal dynamics of reflectance and SIF in natural conditions. Currently, data from the boxes represent the main ground measurements of SIF to be used for calibration purposes of aerial and satellite based SIF retrievals. In fact, FLOX measurements are an integral part of the FLEX sensor development. EDA of FLOX data can be seen in Chapter FLOX EDA.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="st">&quot;Visuals/flox.png&quot;</span>)</code></pre></div>
+<div class="figure"><span id="fig:pic-flox"></span>
+<img src="Visuals/flox.png" alt="FLOX in use on a tower and as a backpack" width="553" />
+<p class="caption">
+Figure 3.4: FLOX in use on a tower and as a backpack
+</p>
+</div>
+</div>
+<div id="hyplant" class="section level3">
+<h3><span class="header-section-number">3.4.2</span> Airborne</h3>
+<p>Airborne spectrometers can deliver high spectral and spatial resolution data on demand which improved scientific understanding of natural processes in the intermediate spatial scale. For example, increased spectral resolution helped improve our understanding of vegetation dynamics and the spatial variability of biochemical vegetation traits. The list of operational airborne spectrometer fleet is growing every year. Some of the most notable instruments in this list include <a href="http://www.apex-esa.org/">APEX</a>, <a href="http://aviris.jpl.nasa.gov/">AVIRIS</a>, <a href="http://www.itres.com/">CASI</a>, and HyPlant <span class="citation">(Rascher et al. <a href="#ref-Rascher2015">2015</a>)</span>. While the former three have been developed to serve as general purpose hyperspectral imagers, HyPlant was designed specifically with SIF retrieval in mind. This new airborne instrument was built with the aim to provide very high spectral resolution data in the fluorescence retrieval.</p>
+<p>HyPlant consist of two sensing modules – a dual-channel broad band imager in the VIS and NIR spectrum (380-2500 nm) with 622 spectral bands (DUAL), and a second, high resolution imaging spectrometer (FLUO) covering the red and NIR regions (670-780 nm). The latter is specifically designed for fluorescence retrieval providing the highestto date spectral resolution in the oxygen absorption bands within the fluorescence emission spectrum (Table 1). While the design of FLUO was purposefully focused on delivering high spectral resolution in the fluorescence emission range, the second instrument (DUAL) is a more standard all-round hyperspectral imager providing data for a wide range of research questions in the traditional hyperspectral domain.In fact, the data recorded using DUAL was used to derive plant biophysical and structural parameters in chapter Retrieval. Combined with the parallel acquisition of SIF through the FLUO module it provides the unique opportunity to study the effect of canopy biophysics on the top-of-canopy SIF.(in chapter SIF-LAI relationship)</p>
+<p>Table (#tab:hyplant) HyPlant sensor characteristics</p>
+<table>
+<colgroup>
+<col width="42%" />
+<col width="18%" />
+<col width="11%" />
+<col width="27%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Sensor</th>
+<th>Dual channel</th>
+<th></th>
+<th>Fluorescence module</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Spectral performance</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Wavelength range [nm]</td>
+<td>380 - 970</td>
+<td>970 - 2500</td>
+<td>670 - 780</td>
+</tr>
+<tr class="odd">
+<td>Bands</td>
+<td>350,0</td>
+<td>272,0</td>
+<td>1024</td>
+</tr>
+<tr class="even">
+<td>Wavelength sampling interval [nm]</td>
+<td>1,7</td>
+<td>5,5</td>
+<td>0,11</td>
+</tr>
+<tr class="odd">
+<td>Wavelength resolution (FWHM) [nm]</td>
+<td>4,0</td>
+<td>13,3</td>
+<td>0,25 at o2-A</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>0,23 at O2-B</td>
+</tr>
+<tr class="odd">
+<td>Band broadening [nm]</td>
+<td>0,2</td>
+<td>0,2</td>
+<td>0,01 at o2-A</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>0,03 at O2-B</td>
+</tr>
+<tr class="odd">
+<td>Spectral shift [nm]</td>
+<td>1,2</td>
+<td>2,4</td>
+<td>&lt; 0,04</td>
+</tr>
+<tr class="even">
+<td>Smiling [nm]</td>
+<td>0,4</td>
+<td>1,2</td>
+<td>&lt;0,01 at O2-A˙ 0,01 at O2-B</td>
+</tr>
+<tr class="odd">
+<td>Radiometric performance</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Signal to noise ratio with full-scale signal</td>
+<td>-510</td>
+<td>-1100</td>
+<td>-240</td>
+</tr>
+<tr class="odd">
+<td>Stray light and pixel cross talk</td>
+<td></td>
+<td></td>
+<td>&lt;0,5</td>
+</tr>
+<tr class="even">
+<td>Spatial performance</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Spatial pixels</td>
+<td>384</td>
+<td>384</td>
+<td>384</td>
+</tr>
+<tr class="even">
+<td>Field of view [deg]</td>
+<td>32,3</td>
+<td></td>
+<td>32,3</td>
+</tr>
+<tr class="odd">
+<td>Instanteneus field of view [deg]</td>
+<td>0,0832</td>
+<td></td>
+<td>0,0832</td>
+</tr>
+<tr class="even">
+<td>Swath [m]</td>
+<td>380 at 600 m agl</td>
+<td></td>
+<td>380 at 600 m agl</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>1140 at 1780 m agl</td>
+<td></td>
+<td>1140 at 1780 m agl</td>
+</tr>
+<tr class="even">
+<td>Spatial sampling interval (across track) [m]</td>
+<td>0,98 at 600 m agl˙</td>
+<td></td>
+<td>0,98 at 600 m agl</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>2,94 at 1780 m agl</td>
+<td></td>
+<td>2,94 at 1780 m agl</td>
+</tr>
+<tr class="even">
+<td>Sensor type</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Type</td>
+<td>CMOS</td>
+<td>MCT</td>
+<td>sCMOS</td>
+</tr>
+<tr class="even">
+<td>Dynamir range [bit]</td>
+<td>12</td>
+<td>14</td>
+<td>16</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="spaceborne" class="section level3">
+<h3><span class="header-section-number">3.4.3</span> Spaceborne</h3>
+<p>Retrieval of SIF from space borne hyperspectral imagery have been reported from several working groups (e.g. Frankenberg et al., 2011; Joiner et al., 2012). Data from sensors such as GOSAT’s TANSO-FTS sensor, the GOME-2 sensor flying as part of the EUMETSAT Polar System MetOp mission series, and SCIAMACHY on board ENVISAT provide the needed high spectral resolution in the red to far-red range. Originally, these sensors were designed for detection and characterization of atmospheric chemistry and, thus, operate at coarse spatial resolution (≥30 km2). Newer missions , such as NASA’s OCO-2, measure at finer spatial resolution (~3 km2) while giving opportunity for SIF retrieval in the far-red (Frankenberg et al., 2014). Recently, Europe’s Sentinel-5 Precursor (TROPOMI sensor) improved the temporal scale at which sun-induced fluorescence data can be delivered (Köhler 2018). Still, the relatively large pixel size (approx. 7 km2) does not match the operational scale at which SIF becomes relevant for management practices or physiological aplications. Finer scale imagery (300 m2) in which middle to large land management units are distinguishable will be provided by the FLORIS Sensor on board of the ESA’s forthcoming eight scientific satellite mission – the Fluorescence Explorer (FLEX).</p>
+<p>Table (#tab:satellites) Hyperspectral missions</p>
+<table>
+<thead>
+<tr class="header">
+<th>Status</th>
+<th>Satellite</th>
+<th>Sensor name</th>
+<th>Resolution</th>
+<th>References</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Discontinued</td>
+<td>ENVISAT</td>
+<td>MERIS</td>
+<td></td>
+<td>(Guanter et al.,2007)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>ENVISAT</td>
+<td>SCIAMACHY</td>
+<td>&gt;30 km2</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>MetOp</td>
+<td>GOME-2</td>
+<td>&gt;30 km2</td>
+<td>(Joiner et al. 2013)</td>
+</tr>
+<tr class="even">
+<td>Operational</td>
+<td>GOSAT</td>
+<td>TANSO-FTS</td>
+<td>10 km2 at nadir</td>
+<td>(Frankenberg et al.2011)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>(Joiner et al.2011)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>(Joiner et al.2011)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>OCO-2</td>
+<td></td>
+<td>Spatial:~3 km2</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Future</td>
+<td>Sentinel-5</td>
+<td>TROPOMI</td>
+<td>Spatial:~7 km2</td>
+<td>(Kohler et al. 2018)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>FLEX</td>
+<td>FLORIS</td>
+<td>Spatial: 300 m2</td>
+<td>(Drusch et al. 2017)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>(Coppo et al. 2017)</td>
+</tr>
+</tbody>
+</table>
+<p>The FLEX mission is proposed as tandem concept with Sentinel-3. The coupling between the two satellites arises from the need to accurately characterize atmospheric and land surface conditions at the time of overpass. Accounting for atmospheric disturbances is important for consistent retrieval of SIF, in particular for the atmospheric correction component. At the end, data from Sentinel-3 and FLEX will be delivered as batch organized in high level data products.</p>
+<p>The FLEX satellite will provide a global spatial coverage of the land surface between 56oS and 75oN, including coastal waters within 50 km, larger islands (&gt;100 km2), and shallow sea waters (&lt;10 m in depth). The equatorial crossing time is chosen to be around the highest levels of diurnal SIF yield – at 10.00. This means that the crossing over Europe will be between 10.30 for southern Spain and 11.30 for northern Finland. The revisit time is set to one month at the equator and approx. two weeks in northern latitudes. For a comprehensinve information of FLEX see the <a href="https://esamultimedia.esa.int/docs/EarthObservation/SP1330-2_FLEX.pdf">mission selection report</a>.</p>
+<p>Table (#tab:FLEX) FLORIS sensor characteristics</p>
+<table>
+<colgroup>
+<col width="19%" />
+<col width="6%" />
+<col width="14%" />
+<col width="7%" />
+<col width="5%" />
+<col width="6%" />
+<col width="10%" />
+<col width="7%" />
+<col width="5%" />
+<col width="10%" />
+<col width="5%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>PRI band</th>
+<th>Chlorophyll absorption</th>
+<th>O2-B band</th>
+<th></th>
+<th>Red-edge</th>
+<th></th>
+<th>O2-A band</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Spectral performance</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Spectral interval (nm)</td>
+<td>500-600</td>
+<td>600-677</td>
+<td>677-686</td>
+<td>686-697</td>
+<td>697-740</td>
+<td>740-755</td>
+<td>755-759</td>
+<td>759-762</td>
+<td>762-769</td>
+<td>769-780</td>
+</tr>
+<tr class="odd">
+<td>Spectral resolution (FWHM)</td>
+<td>3</td>
+<td>3</td>
+<td>0.6</td>
+<td>0.3</td>
+<td>2</td>
+<td>0.7</td>
+<td>0.7</td>
+<td>0.3</td>
+<td>0.3</td>
+<td>0.7</td>
+</tr>
+<tr class="even">
+<td>Spectral sampling interval</td>
+<td>2</td>
+<td>2</td>
+<td>0.5</td>
+<td>0.1</td>
+<td>0.65</td>
+<td>0.5</td>
+<td>0.5</td>
+<td>0.1</td>
+<td>0.1</td>
+<td>0.5</td>
+</tr>
+<tr class="odd">
+<td>Number of Bands</td>
+<td>50</td>
+<td>38</td>
+<td>18</td>
+<td>110</td>
+<td>66</td>
+<td>30</td>
+<td>10</td>
+<td>130</td>
+<td>70</td>
+<td>22</td>
+</tr>
+<tr class="even">
+<td>Radiometric performance</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>SNR</td>
+<td>245</td>
+<td>245</td>
+<td>340</td>
+<td>175</td>
+<td>425</td>
+<td>Linear 510-1015</td>
+<td>1015</td>
+<td>115</td>
+<td>Linear 115-455</td>
+<td>1015</td>
+</tr>
+<tr class="even">
+<td>Spatial performance</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Swath</td>
+<td>150 km</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Spatial sampling interval</td>
+<td>300 m</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Spatial pixels (across track)</td>
+<td>500</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Alonso2008">
+<p>Alonso, Luis, Luis Gómez-Chova, Joan Vila-Francés, Julia Amorós-López, Luis Guanter, Javier Calpe, and José Moreno. 2008. “Improved fraunhofer line discrimination method for vegetation fluorescence quantification.” <em>IEEE Geoscience and Remote Sensing Letters</em> 5 (4): 620–24. doi:<a href="https://doi.org/10.1109/LGRS.2008.2001180">10.1109/LGRS.2008.2001180</a>.</p>
+</div>
+<div id="ref-Burkart2015">
+<p>Burkart, Andreas, Anke Schickling, Maria Pilar, Cendrero Mateo, Thomas Jan Wrobel, Micol Rossini, Sergio Cogliati, Tommaso Julitta, and Uwe Rascher. 2015. “A Method for Uncertainty Assessment of Passive Sun-Induced Chlorophyll Fluorescence Retrieval Using an Infrared Reference Light.” <em>IEEE Sensors Journal</em> 15 (8): 4603–11.</p>
+</div>
+<div id="ref-Cogliati2015">
+<p>Cogliati, S., W. Verhoef, S. Kraft, N. Sabater, L. Alonso, J. Vicent, J. Moreno, M. Drusch, and R. Colombo. 2015. “Retrieval of sun-induced fluorescence using advanced spectral fitting methods.” <em>Remote Sensing of Environment</em> 169: 344–57. doi:<a href="https://doi.org/10.1016/j.rse.2015.08.022">10.1016/j.rse.2015.08.022</a>.</p>
+</div>
+<div id="ref-Fournier2012">
+<p>Fournier, A., F. Daumard, S. Champagne, A. Ounis, Y. Goulas, and I. Moya. 2012. “Effect of canopy structure on sun-induced chlorophyll fluorescence.” <em>ISPRS Journal of Photogrammetry and Remote Sensing</em> 68: 112–20. doi:<a href="https://doi.org/10.1016/j.isprsjprs.2012.01.003">10.1016/j.isprsjprs.2012.01.003</a>.</p>
+</div>
+<div id="ref-GomezChova2006">
+<p>GomezChova, L, L AlonsoChorda, J Amoros Lopez, J Vila Frances, S del ValleTascon, J Calpe, and J Moreno. 2006. “Solar induced fluorescence measurements using a field spectroradiometer.” <em>Earth Observation for Vegetation Monitoring and Water Management</em> 852 (1): 274–81.</p>
+</div>
+<div id="ref-Grossmann2018">
+<p>Grossmann, Katja, Christian Frankenberg, Troy S. Magney, Stephen C. Hurlock, Ulrike Seibt, and Jochen Stutz. 2018. “PhotoSpec: A new instrument to measure spatially distributed red and far-red Solar-Induced Chlorophyll Fluorescence.” <em>Remote Sensing of Environment</em> 216 (November 2017). Elsevier: 311–27. doi:<a href="https://doi.org/10.1016/j.rse.2018.07.002">10.1016/j.rse.2018.07.002</a>.</p>
+</div>
+<div id="ref-Kebabian1999">
+<p>Kebabian, Paul L., Arnold F. Theisen, Spiros Kallelis, and Andrew Freedman. 1999. “A passive two-band sensor of sunlight-excited plant fluorescence.” <em>Review of Scientific Instruments</em> 70 (11). AIP Publishing: 4386. doi:<a href="https://doi.org/10.1063/1.1150083">10.1063/1.1150083</a>.</p>
+</div>
+<div id="ref-Magnani2014">
+<p>Magnani, F., S. Raddi, G. Mohammed, and E. M. Middleton. 2014. “Let’s exploit available knowledge on vegetation fluorescence.” <em>Proceedings of the National Academy of Sciences</em> 111 (25). National Academy of Sciences: E2510–E2510. doi:<a href="https://doi.org/10.1073/pnas.1406600111">10.1073/pnas.1406600111</a>.</p>
+</div>
+<div id="ref-Meroni2009">
+<p>Meroni, M., M. Rossini, L. Guanter, L. Alonso, U. Rascher, R. Colombo, and J. Moreno. 2009. “Remote sensing of solar-induced chlorophyll fluorescence: Review of methods and applications.” <em>Remote Sensing of Environment</em> 113 (10): 2037–51. doi:<a href="https://doi.org/10.1016/j.rse.2009.05.003">10.1016/j.rse.2009.05.003</a>.</p>
+</div>
+<div id="ref-Rascher2015">
+<p>Rascher, U., L. Alonso, A. Burkart, C. Cilia, S. Cogliati, R. Colombo, A. Damm, et al. 2015. “Sun-induced fluorescence - a new probe of photosynthesis: First maps from the imaging spectrometer HyPlant.” <em>Global Change Biology</em> 21 (12): 4673–84. doi:<a href="https://doi.org/10.1111/gcb.13017">10.1111/gcb.13017</a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="fluo.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="factors-affecting-canopy-structure.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["bookdown.pdf", "bookdown.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

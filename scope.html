@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 9 Exploring the influence of LAI and Chlorophyll content on TOC SIF using SCOPE simulation | Exploring the effect of canopy structure on top-of-canopy sun-induced fluorescence</title>
+  <meta name="description" content="A PhD thesis for awarding the title Doctor of Agricultural Science" />
+  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 9 Exploring the influence of LAI and Chlorophyll content on TOC SIF using SCOPE simulation | Exploring the effect of canopy structure on top-of-canopy sun-induced fluorescence" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A PhD thesis for awarding the title Doctor of Agricultural Science" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 9 Exploring the influence of LAI and Chlorophyll content on TOC SIF using SCOPE simulation | Exploring the effect of canopy structure on top-of-canopy sun-induced fluorescence" />
+  
+  <meta name="twitter:description" content="A PhD thesis for awarding the title Doctor of Agricultural Science" />
+  
+
+<meta name="author" content="Dzhaner Emin" />
+
+
+<meta name="date" content="2019-11-11" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="sugar-beet.html"/>
+<link rel="next" href="ground-measurements-of-sif.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.5/datatables.js"></script>
+<link href="libs/dt-core-1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.10.16/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.10.16/js/jquery.dataTables.min.js"></script>
+<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Sun-induced fluorescence</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#section"></a></li>
+<li class="chapter" data-level="" data-path="preamble.html"><a href="preamble.html"><i class="fa fa-check"></i>Preamble</a><ul>
+<li class="chapter" data-level="" data-path="preamble.html"><a href="preamble.html#acknowledgments"><i class="fa fa-check"></i>Acknowledgments</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="part"><span><b>I Theoretical background (Methods)</b></span></li>
+<li class="chapter" data-level="2" data-path="fluo.html"><a href="fluo.html"><i class="fa fa-check"></i><b>2</b> Fluorescence basics</a><ul>
+<li class="chapter" data-level="2.1" data-path="fluo.html"><a href="fluo.html#faith-of-absorbed-light-energy-reaching-the-plant-surface"><i class="fa fa-check"></i><b>2.1</b> Faith of absorbed light energy reaching the plant surface</a></li>
+<li class="chapter" data-level="2.2" data-path="fluo.html"><a href="fluo.html#origin-of-chlorophyll-fluorescence"><i class="fa fa-check"></i><b>2.2</b> Origin of chlorophyll fluorescence</a></li>
+<li class="chapter" data-level="2.3" data-path="fluo.html"><a href="fluo.html#link-between-fluorescence-and-photosynthesis"><i class="fa fa-check"></i><b>2.3</b> Link between fluorescence and photosynthesis</a></li>
+<li class="chapter" data-level="2.4" data-path="fluo.html"><a href="fluo.html#heat-dissipation"><i class="fa fa-check"></i><b>2.4</b> Heat dissipation</a></li>
+<li class="chapter" data-level="2.5" data-path="fluo.html"><a href="fluo.html#measuring-chl-fluorescence"><i class="fa fa-check"></i><b>2.5</b> Measuring Chl fluorescence</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="fluo.html"><a href="fluo.html#pam-fluorimetry---active-methods"><i class="fa fa-check"></i><b>2.5.1</b> PAM fluorimetry - active methods</a></li>
+<li class="chapter" data-level="2.5.2" data-path="fluo.html"><a href="fluo.html#fluorescence-under-natural-conditions-sif"><i class="fa fa-check"></i><b>2.5.2</b> Fluorescence under natural conditions (SIF)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="rs.html"><a href="rs.html"><i class="fa fa-check"></i><b>3</b> Remote sensing of vegetation biophysics and SIF</a><ul>
+<li class="chapter" data-level="3.1" data-path="rs.html"><a href="rs.html#remote-sensing"><i class="fa fa-check"></i><b>3.1</b> Remote sensing</a></li>
+<li class="chapter" data-level="3.2" data-path="rs.html"><a href="rs.html#the-concept-of-scale-in-remote-sensing.-scalability-of-ecological-processes-scale"><i class="fa fa-check"></i><b>3.2</b> The concept of scale in remote sensing. Scalability of ecological processes {scale}</a></li>
+<li class="chapter" data-level="3.3" data-path="rs.html"><a href="rs.html#retrieval-of-sif"><i class="fa fa-check"></i><b>3.3</b> Retrieval of SIF</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="rs.html"><a href="rs.html#fld-principle"><i class="fa fa-check"></i><b>3.3.1</b> FLD principle</a></li>
+<li class="chapter" data-level="3.3.2" data-path="rs.html"><a href="rs.html#spectral-fitting-methods-the-state-of-the-art-sif-retrieval-of-the-entire-sif-spectrum"><i class="fa fa-check"></i><b>3.3.2</b> Spectral fitting methods – the state of the art SIF retrieval of the entire SIF spectrum</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="rs.html"><a href="rs.html#sensor-design-for-sif-acquisition"><i class="fa fa-check"></i><b>3.4</b> Sensor design for SIF acquisition</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="rs.html"><a href="rs.html#flox"><i class="fa fa-check"></i><b>3.4.1</b> Ground sensor design</a></li>
+<li class="chapter" data-level="3.4.2" data-path="rs.html"><a href="rs.html#hyplant"><i class="fa fa-check"></i><b>3.4.2</b> Airborne</a></li>
+<li class="chapter" data-level="3.4.3" data-path="rs.html"><a href="rs.html#spaceborne"><i class="fa fa-check"></i><b>3.4.3</b> Spaceborne</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="factors-affecting-canopy-structure.html"><a href="factors-affecting-canopy-structure.html"><i class="fa fa-check"></i><b>4</b> Factors affecting canopy structure</a><ul>
+<li class="chapter" data-level="4.1" data-path="factors-affecting-canopy-structure.html"><a href="factors-affecting-canopy-structure.html#computational-factors"><i class="fa fa-check"></i><b>4.1</b> Computational Factors</a></li>
+<li class="chapter" data-level="4.2" data-path="factors-affecting-canopy-structure.html"><a href="factors-affecting-canopy-structure.html#environmental-factors"><i class="fa fa-check"></i><b>4.2</b> Environmental Factors</a></li>
+<li class="chapter" data-level="4.3" data-path="factors-affecting-canopy-structure.html"><a href="factors-affecting-canopy-structure.html#physiological-factors"><i class="fa fa-check"></i><b>4.3</b> Physiological Factors</a></li>
+<li class="chapter" data-level="4.4" data-path="factors-affecting-canopy-structure.html"><a href="factors-affecting-canopy-structure.html#discussion"><i class="fa fa-check"></i><b>4.4</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="canopystr.html"><a href="canopystr.html"><i class="fa fa-check"></i><b>5</b> Canopy structure</a><ul>
+<li class="chapter" data-level="5.1" data-path="canopystr.html"><a href="canopystr.html#measuring-canopy-structure"><i class="fa fa-check"></i><b>5.1</b> Measuring canopy structure</a></li>
+<li class="chapter" data-level="5.2" data-path="canopystr.html"><a href="canopystr.html#modeling-canopy-structure"><i class="fa fa-check"></i><b>5.2</b> modeling canopy structure</a></li>
+<li class="chapter" data-level="5.3" data-path="canopystr.html"><a href="canopystr.html#retrieval-of-canopy-structure"><i class="fa fa-check"></i><b>5.3</b> Retrieval of canopy structure</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="canopystr.html"><a href="canopystr.html#look-up-tables"><i class="fa fa-check"></i><b>5.3.1</b> Look-up Tables</a></li>
+<li class="chapter" data-level="5.3.2" data-path="canopystr.html"><a href="canopystr.html#cost-functions"><i class="fa fa-check"></i><b>5.3.2</b> Cost functions</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="canopystr.html"><a href="canopystr.html#the-effect-of-canopy-structure-on-sif"><i class="fa fa-check"></i><b>5.4</b> The effect of canopy structure on SIF</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="bibliometric-analysis-of-sun-induced-fluorescence-literature.html"><a href="bibliometric-analysis-of-sun-induced-fluorescence-literature.html"><i class="fa fa-check"></i><b>6</b> Bibliometric analysis of Sun-induced fluorescence literature</a><ul>
+<li class="chapter" data-level="6.1" data-path="bibliometric-analysis-of-sun-induced-fluorescence-literature.html"><a href="bibliometric-analysis-of-sun-induced-fluorescence-literature.html#descriptive-bibliometric-analysis"><i class="fa fa-check"></i><b>6.1</b> Descriptive bibliometric analysis</a></li>
+<li class="chapter" data-level="6.2" data-path="bibliometric-analysis-of-sun-induced-fluorescence-literature.html"><a href="bibliometric-analysis-of-sun-induced-fluorescence-literature.html#graphical-depiction"><i class="fa fa-check"></i><b>6.2</b> Graphical depiction</a></li>
+<li class="chapter" data-level="6.3" data-path="bibliometric-analysis-of-sun-induced-fluorescence-literature.html"><a href="bibliometric-analysis-of-sun-induced-fluorescence-literature.html#individual-paper-analytics"><i class="fa fa-check"></i><b>6.3</b> Individual paper analytics</a></li>
+<li class="chapter" data-level="6.4" data-path="bibliometric-analysis-of-sun-induced-fluorescence-literature.html"><a href="bibliometric-analysis-of-sun-induced-fluorescence-literature.html#bibliographic-network-matrices"><i class="fa fa-check"></i><b>6.4</b> Bibliographic network matrices</a></li>
+</ul></li>
+<li class="part"><span><b>II Materials and methods</b></span></li>
+<li class="chapter" data-level="7" data-path="studyarea.html"><a href="studyarea.html"><i class="fa fa-check"></i><b>7</b> Study area</a><ul>
+<li class="chapter" data-level="7.1" data-path="studyarea.html"><a href="studyarea.html#location"><i class="fa fa-check"></i><b>7.1</b> Location</a></li>
+<li class="chapter" data-level="7.2" data-path="studyarea.html"><a href="studyarea.html#climate"><i class="fa fa-check"></i><b>7.2</b> Climate</a></li>
+<li class="chapter" data-level="7.3" data-path="studyarea.html"><a href="studyarea.html#land-use"><i class="fa fa-check"></i><b>7.3</b> Land use</a></li>
+<li class="chapter" data-level="7.4" data-path="studyarea.html"><a href="studyarea.html#soilter"><i class="fa fa-check"></i><b>7.4</b> Soil &amp; Terrace</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="sugar-beet.html"><a href="sugar-beet.html"><i class="fa fa-check"></i><b>8</b> Sugar beet</a><ul>
+<li class="chapter" data-level="8.1" data-path="sugar-beet.html"><a href="sugar-beet.html#history-distribution-and-economics"><i class="fa fa-check"></i><b>8.1</b> History, distribution and economics</a></li>
+<li class="chapter" data-level="8.2" data-path="sugar-beet.html"><a href="sugar-beet.html#growth"><i class="fa fa-check"></i><b>8.2</b> Growth</a></li>
+<li class="chapter" data-level="8.3" data-path="sugar-beet.html"><a href="sugar-beet.html#husbandry"><i class="fa fa-check"></i><b>8.3</b> Husbandry</a></li>
+<li class="chapter" data-level="8.4" data-path="sugar-beet.html"><a href="sugar-beet.html#effects-of-canopy-structure"><i class="fa fa-check"></i><b>8.4</b> Effects of canopy structure</a><ul>
+<li class="chapter" data-level="8.4.1" data-path="sugar-beet.html"><a href="sugar-beet.html#canopy-development"><i class="fa fa-check"></i><b>8.4.1</b> Canopy development</a></li>
+<li class="chapter" data-level="8.4.2" data-path="sugar-beet.html"><a href="sugar-beet.html#effect-of-canopy-structure-on-yield"><i class="fa fa-check"></i><b>8.4.2</b> Effect of canopy structure on yield</a></li>
+<li class="chapter" data-level="8.4.3" data-path="sugar-beet.html"><a href="sugar-beet.html#effect-of-canopy-structure-on-radiation-budget-and-optical-properties"><i class="fa fa-check"></i><b>8.4.3</b> Effect of canopy structure on radiation budget and optical properties</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="sugar-beet.html"><a href="sugar-beet.html#other-effects"><i class="fa fa-check"></i><b>8.5</b> Other effects</a><ul>
+<li class="chapter" data-level="8.5.1" data-path="sugar-beet.html"><a href="sugar-beet.html#effect-of-nitrogen"><i class="fa fa-check"></i><b>8.5.1</b> effect of nitrogen</a></li>
+<li class="chapter" data-level="8.5.2" data-path="sugar-beet.html"><a href="sugar-beet.html#effect-of-soil-water"><i class="fa fa-check"></i><b>8.5.2</b> Effect of soil water</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>III Results</b></span></li>
+<li class="chapter" data-level="9" data-path="scope.html"><a href="scope.html"><i class="fa fa-check"></i><b>9</b> Exploring the influence of LAI and Chlorophyll content on TOC SIF using SCOPE simulation</a><ul>
+<li class="chapter" data-level="9.1" data-path="scope.html"><a href="scope.html#simulation"><i class="fa fa-check"></i><b>9.1</b> Simulation</a></li>
+<li class="chapter" data-level="9.2" data-path="scope.html"><a href="scope.html#results"><i class="fa fa-check"></i><b>9.2</b> Results</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="scope.html"><a href="scope.html#sif-as-function-of-lai-and-cab"><i class="fa fa-check"></i><b>9.2.1</b> SIF as function of LAI and Cab</a></li>
+<li class="chapter" data-level="9.2.2" data-path="scope.html"><a href="scope.html#sif-as-a-function-of-vi"><i class="fa fa-check"></i><b>9.2.2</b> SIF as a function of VI</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="scope.html"><a href="scope.html#discussion-1"><i class="fa fa-check"></i><b>9.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="ground-measurements-of-sif.html"><a href="ground-measurements-of-sif.html"><i class="fa fa-check"></i>Ground measurements of SIF</a></li>
+<li class="chapter" data-level="10" data-path="flox1.html"><a href="flox1.html"><i class="fa fa-check"></i><b>10</b> Description of FLOX device and exploratory data analysis of diurnal measurements</a><ul>
+<li class="chapter" data-level="10.1" data-path="flox1.html"><a href="flox1.html#flox-description-and-metadata"><i class="fa fa-check"></i><b>10.1</b> FLOX description and metadata</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="flox1.html"><a href="flox1.html#metadata"><i class="fa fa-check"></i><b>10.1.1</b> Metadata</a></li>
+<li class="chapter" data-level="10.1.2" data-path="flox1.html"><a href="flox1.html#temperature-of-device-housing-and-ccd"><i class="fa fa-check"></i><b>10.1.2</b> Temperature of device housing and CCD</a></li>
+<li class="chapter" data-level="10.1.3" data-path="flox1.html"><a href="flox1.html#humidity"><i class="fa fa-check"></i><b>10.1.3</b> Humidity</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="flox1.html"><a href="flox1.html#exploratory-analysis-of-diurnal-sif-for-two-crops"><i class="fa fa-check"></i><b>10.2</b> Exploratory analysis of diurnal SIF for two crops</a><ul>
+<li class="chapter" data-level="10.2.1" data-path="flox1.html"><a href="flox1.html#three-days-diurnal-measurements-in-sugar-beet"><i class="fa fa-check"></i><b>10.2.1</b> Three days diurnal measurements in sugar beet</a></li>
+<li class="chapter" data-level="10.2.2" data-path="flox1.html"><a href="flox1.html#diurnal-development-of-sif-in-winter-wheat"><i class="fa fa-check"></i><b>10.2.2</b> Diurnal development of SIF in Winter wheat</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="flox1.html"><a href="flox1.html#descriptive-statistics"><i class="fa fa-check"></i><b>10.3</b> Descriptive statistics</a><ul>
+<li class="chapter" data-level="10.3.1" data-path="flox1.html"><a href="flox1.html#sif-value-ranges.-comparison-between-ifld-and-sfm-values"><i class="fa fa-check"></i><b>10.3.1</b> SIF value ranges. Comparison between iFLD and SFM values</a></li>
+<li class="chapter" data-level="10.3.2" data-path="flox1.html"><a href="flox1.html#stability-of-sif-measurements"><i class="fa fa-check"></i><b>10.3.2</b> Stability of SIF measurements</a></li>
+</ul></li>
+<li class="chapter" data-level="10.4" data-path="flox1.html"><a href="flox1.html#discussion-2"><i class="fa fa-check"></i><b>10.4</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="flox2.html"><a href="flox2.html"><i class="fa fa-check"></i><b>11</b> Development and evaluation of a mobile measurement procedure for TOC SIF</a><ul>
+<li class="chapter" data-level="11.1" data-path="flox2.html"><a href="flox2.html#developing-a-mobile-measurement-protocol"><i class="fa fa-check"></i><b>11.1</b> Developing a mobile measurement protocol</a><ul>
+<li class="chapter" data-level="11.1.1" data-path="flox2.html"><a href="flox2.html#setup"><i class="fa fa-check"></i><b>11.1.1</b> Setup</a></li>
+<li class="chapter" data-level="11.1.2" data-path="flox2.html"><a href="flox2.html#procedure"><i class="fa fa-check"></i><b>11.1.2</b> Procedure</a></li>
+<li class="chapter" data-level="11.1.3" data-path="flox2.html"><a href="flox2.html#test-case"><i class="fa fa-check"></i><b>11.1.3</b> Test case</a></li>
+<li class="chapter" data-level="11.1.4" data-path="flox2.html"><a href="flox2.html#post-processing"><i class="fa fa-check"></i><b>11.1.4</b> Post-processing</a></li>
+<li class="chapter" data-level="11.1.5" data-path="flox2.html"><a href="flox2.html#quality-check"><i class="fa fa-check"></i><b>11.1.5</b> Quality check</a></li>
+<li class="chapter" data-level="11.1.6" data-path="flox2.html"><a href="flox2.html#finding-location-average-and-corresponding-reference-sif"><i class="fa fa-check"></i><b>11.1.6</b> Finding location average and corresponding reference SIF</a></li>
+</ul></li>
+<li class="chapter" data-level="11.2" data-path="flox2.html"><a href="flox2.html#evaluation-of-methodology"><i class="fa fa-check"></i><b>11.2</b> Evaluation of methodology</a><ul>
+<li class="chapter" data-level="11.2.1" data-path="flox2.html"><a href="flox2.html#using-par-readings"><i class="fa fa-check"></i><b>11.2.1</b> Using PAR readings</a></li>
+<li class="chapter" data-level="11.2.2" data-path="flox2.html"><a href="flox2.html#evaluating-the-variability-of-sif"><i class="fa fa-check"></i><b>11.2.2</b> Evaluating the variability of SIF</a></li>
+</ul></li>
+<li class="chapter" data-level="11.3" data-path="flox2.html"><a href="flox2.html#descriptive-statistics-of-mobile-flox-data"><i class="fa fa-check"></i><b>11.3</b> Descriptive statistics of mobile FLOX data</a></li>
+<li class="chapter" data-level="11.4" data-path="flox2.html"><a href="flox2.html#focus-on-nirv-fcvi"><i class="fa fa-check"></i><b>11.4</b> focus on nirv fcvi</a></li>
+<li class="chapter" data-level="11.5" data-path="flox2.html"><a href="flox2.html#discussion-3"><i class="fa fa-check"></i><b>11.5</b> Discussion</a><ul>
+<li class="chapter" data-level="11.5.1" data-path="flox2.html"><a href="flox2.html#on-the-measurement-protocol"><i class="fa fa-check"></i><b>11.5.1</b> On the measurement protocol</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="flox3.html"><a href="flox3.html"><i class="fa fa-check"></i><b>12</b> Diurnal rescaling procedure</a><ul>
+<li class="chapter" data-level="12.1" data-path="flox3.html"><a href="flox3.html#the-need-for-rescaling-explained"><i class="fa fa-check"></i><b>12.1</b> The need for rescaling explained</a></li>
+<li class="chapter" data-level="12.2" data-path="flox3.html"><a href="flox3.html#developing-a-rescaling-approach-based-on-empirical-relationship-between-sif-and-lai"><i class="fa fa-check"></i><b>12.2</b> Developing a rescaling approach based on empirical relationship between SIF and LAI</a><ul>
+<li class="chapter" data-level="12.2.1" data-path="flox3.html"><a href="flox3.html#data"><i class="fa fa-check"></i><b>12.2.1</b> Data</a></li>
+<li class="chapter" data-level="12.2.2" data-path="flox3.html"><a href="flox3.html#empirical-relationship"><i class="fa fa-check"></i><b>12.2.2</b> Empirical relationship</a></li>
+<li class="chapter" data-level="12.2.3" data-path="flox3.html"><a href="flox3.html#case-study-hyplant-validation"><i class="fa fa-check"></i><b>12.2.3</b> Case study hyplant validation</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="flox3.html"><a href="flox3.html#develping-a-priori-shape-based-on-the-quadratic-fit-on-par"><i class="fa fa-check"></i><b>12.3</b> Develping a-priori shape based on the quadratic fit on par</a></li>
+<li class="chapter" data-level="12.4" data-path="flox3.html"><a href="flox3.html#discussion-4"><i class="fa fa-check"></i><b>12.4</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="airborne-measurements-of-sif.html"><a href="airborne-measurements-of-sif.html"><i class="fa fa-check"></i>Airborne measurements of SIF</a></li>
+<li class="chapter" data-level="13" data-path="hyplant1.html"><a href="hyplant1.html"><i class="fa fa-check"></i><b>13</b> Exploratory analysis of HyPlant data</a><ul>
+<li class="chapter" data-level="13.1" data-path="hyplant1.html"><a href="hyplant1.html#hyplant-data"><i class="fa fa-check"></i><b>13.1</b> HyPlant Data</a></li>
+<li class="chapter" data-level="13.2" data-path="hyplant1.html"><a href="hyplant1.html#outlier-detection"><i class="fa fa-check"></i><b>13.2</b> Outlier detection</a></li>
+<li class="chapter" data-level="13.3" data-path="hyplant1.html"><a href="hyplant1.html#exploratory-analysis-of-sif"><i class="fa fa-check"></i><b>13.3</b> Exploratory analysis of SIF</a><ul>
+<li class="chapter" data-level="13.3.1" data-path="hyplant1.html"><a href="hyplant1.html#summary-stats"><i class="fa fa-check"></i><b>13.3.1</b> Summary stats</a></li>
+<li class="chapter" data-level="13.3.2" data-path="hyplant1.html"><a href="hyplant1.html#histogram-distribution"><i class="fa fa-check"></i><b>13.3.2</b> Histogram distribution</a></li>
+<li class="chapter" data-level="13.3.3" data-path="hyplant1.html"><a href="hyplant1.html#field-average"><i class="fa fa-check"></i><b>13.3.3</b> Field average</a></li>
+<li class="chapter" data-level="13.3.4" data-path="hyplant1.html"><a href="hyplant1.html#terrace-association"><i class="fa fa-check"></i><b>13.3.4</b> Terrace association</a></li>
+<li class="chapter" data-level="13.3.5" data-path="hyplant1.html"><a href="hyplant1.html#soil"><i class="fa fa-check"></i><b>13.3.5</b> Soil</a></li>
+<li class="chapter" data-level="13.3.6" data-path="hyplant1.html"><a href="hyplant1.html#scale-dependence"><i class="fa fa-check"></i><b>13.3.6</b> Scale dependence</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="hyplant2.html"><a href="hyplant2.html"><i class="fa fa-check"></i><b>14</b> Retrieval of LAI and Cab from HyPlant Reflectance</a><ul>
+<li class="chapter" data-level="14.1" data-path="hyplant2.html"><a href="hyplant2.html#materials"><i class="fa fa-check"></i><b>14.1</b> Materials</a><ul>
+<li class="chapter" data-level="14.1.1" data-path="rs.html"><a href="rs.html#hyplant"><i class="fa fa-check"></i><b>14.1.1</b> HyPlant</a></li>
+<li class="chapter" data-level="14.1.2" data-path="hyplant2.html"><a href="hyplant2.html#study-area"><i class="fa fa-check"></i><b>14.1.2</b> Study Area</a></li>
+<li class="chapter" data-level="14.1.3" data-path="hyplant2.html"><a href="hyplant2.html#ground-truth"><i class="fa fa-check"></i><b>14.1.3</b> Ground truth</a></li>
+<li class="chapter" data-level="14.1.4" data-path="hyplant2.html"><a href="hyplant2.html#lut-generation"><i class="fa fa-check"></i><b>14.1.4</b> LUT generation</a></li>
+<li class="chapter" data-level="14.1.5" data-path="hyplant2.html"><a href="hyplant2.html#cost-function-selection"><i class="fa fa-check"></i><b>14.1.5</b> Cost function selection</a></li>
+</ul></li>
+<li class="chapter" data-level="14.2" data-path="hyplant2.html"><a href="hyplant2.html#results-1"><i class="fa fa-check"></i><b>14.2</b> Results</a><ul>
+<li class="chapter" data-level="14.2.1" data-path="hyplant2.html"><a href="hyplant2.html#cost-function-evaluation-table"><i class="fa fa-check"></i><b>14.2.1</b> Cost function evaluation table</a></li>
+<li class="chapter" data-level="14.2.2" data-path="hyplant2.html"><a href="hyplant2.html#lai-observed-vs.predicted"><i class="fa fa-check"></i><b>14.2.2</b> LAI observed vs. predicted</a></li>
+<li class="chapter" data-level="14.2.3" data-path="hyplant2.html"><a href="hyplant2.html#residuals"><i class="fa fa-check"></i><b>14.2.3</b> Residuals</a></li>
+<li class="chapter" data-level="14.2.4" data-path="hyplant2.html"><a href="hyplant2.html#spectral-reflectance-observed-vs.predicted"><i class="fa fa-check"></i><b>14.2.4</b> Spectral reflectance observed vs. predicted</a></li>
+<li class="chapter" data-level="14.2.5" data-path="hyplant2.html"><a href="hyplant2.html#maps"><i class="fa fa-check"></i><b>14.2.5</b> Maps</a></li>
+<li class="chapter" data-level="14.2.6" data-path="hyplant2.html"><a href="hyplant2.html#compare-to-ndvi"><i class="fa fa-check"></i><b>14.2.6</b> Compare to NDVI</a></li>
+</ul></li>
+<li class="chapter" data-level="14.3" data-path="hyplant2.html"><a href="hyplant2.html#discussion-5"><i class="fa fa-check"></i><b>14.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="hyplant3.html"><a href="hyplant3.html"><i class="fa fa-check"></i><b>15</b> Exploring the relationship between LAI and Chlorophyll and SIF</a><ul>
+<li class="chapter" data-level="15.1" data-path="hyplant3.html"><a href="hyplant3.html#data-and-rq"><i class="fa fa-check"></i><b>15.1</b> Data and RQ</a><ul>
+<li class="chapter" data-level="15.1.1" data-path="hyplant3.html"><a href="hyplant3.html#rq"><i class="fa fa-check"></i><b>15.1.1</b> RQ</a></li>
+<li class="chapter" data-level="15.1.2" data-path="hyplant3.html"><a href="hyplant3.html#data-1"><i class="fa fa-check"></i><b>15.1.2</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="15.2" data-path="hyplant3.html"><a href="hyplant3.html#field-level"><i class="fa fa-check"></i><b>15.2</b> Field level</a><ul>
+<li class="chapter" data-level="15.2.1" data-path="hyplant3.html"><a href="hyplant3.html#data-partitioning"><i class="fa fa-check"></i><b>15.2.1</b> Data partitioning</a></li>
+<li class="chapter" data-level="15.2.2" data-path="hyplant3.html"><a href="hyplant3.html#models-on-the-field-level"><i class="fa fa-check"></i><b>15.2.2</b> Models on the field level</a></li>
+<li class="chapter" data-level="15.2.3" data-path="hyplant3.html"><a href="hyplant3.html#summary"><i class="fa fa-check"></i><b>15.2.3</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="15.3" data-path="hyplant3.html"><a href="hyplant3.html#agrosystem-level"><i class="fa fa-check"></i><b>15.3</b> Agrosystem level</a><ul>
+<li class="chapter" data-level="15.3.1" data-path="hyplant3.html"><a href="hyplant3.html#linear-model-for-lai"><i class="fa fa-check"></i><b>15.3.1</b> Linear model for LAI</a></li>
+<li class="chapter" data-level="15.3.2" data-path="hyplant3.html"><a href="hyplant3.html#stewise-model-selection"><i class="fa fa-check"></i><b>15.3.2</b> Stewise model selection</a></li>
+</ul></li>
+<li class="chapter" data-level="15.4" data-path="hyplant3.html"><a href="hyplant3.html#discussion-6"><i class="fa fa-check"></i><b>15.4</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="hyplant4.html"><a href="hyplant4.html"><i class="fa fa-check"></i><b>16</b> Evaluation of TCAR/OSACI to correct for Cab. Lidar data</a></li>
+<li class="chapter" data-level="17" data-path="hyplant5.html"><a href="hyplant5.html"><i class="fa fa-check"></i><b>17</b> Evaluation of proxy estimates for canopy structure for spatial upscaling of Top-of-Canopy Sun-induced Fluorescence</a><ul>
+<li class="chapter" data-level="17.1" data-path="hyplant5.html"><a href="hyplant5.html#methods"><i class="fa fa-check"></i><b>17.1</b> Methods</a><ul>
+<li class="chapter" data-level="17.1.1" data-path="hyplant5.html"><a href="hyplant5.html#theoretical-background"><i class="fa fa-check"></i><b>17.1.1</b> Theoretical background</a></li>
+<li class="chapter" data-level="17.1.2" data-path="hyplant5.html"><a href="hyplant5.html#rescaling-sif.-location-model-for-high-resolution-remote-sensing-data-hyplant"><i class="fa fa-check"></i><b>17.1.2</b> Rescaling SIF. Location model for high resolution remote sensing data (HyPlant)</a></li>
+<li class="chapter" data-level="17.1.3" data-path="hyplant5.html"><a href="hyplant5.html#data-used"><i class="fa fa-check"></i><b>17.1.3</b> Data used</a></li>
+<li class="chapter" data-level="17.1.4" data-path="hyplant5.html"><a href="hyplant5.html#selection-of-candidate-proxies-for-gamma"><i class="fa fa-check"></i><b>17.1.4</b> Selection of candidate proxies for <span class="math inline">\(\Gamma\)</span></a></li>
+<li class="chapter" data-level="17.1.5" data-path="hyplant5.html"><a href="hyplant5.html#monte-carlo-approach-to-find-the-best-reference-location"><i class="fa fa-check"></i><b>17.1.5</b> Monte Carlo approach to find the best reference location</a></li>
+<li class="chapter" data-level="17.1.6" data-path="hyplant5.html"><a href="hyplant5.html#evaluation-statistics"><i class="fa fa-check"></i><b>17.1.6</b> Evaluation statistics</a></li>
+</ul></li>
+<li class="chapter" data-level="17.2" data-path="hyplant5.html"><a href="hyplant5.html#results-2"><i class="fa fa-check"></i><b>17.2</b> Results</a><ul>
+<li class="chapter" data-level="17.2.1" data-path="hyplant5.html"><a href="hyplant5.html#interpretation-of-spatial-patterns-of-true-sif-vis-and-calculated-analytical-gamma"><i class="fa fa-check"></i><b>17.2.1</b> Interpretation of spatial patterns of true SIF, VIs, and calculated analytical <span class="math inline">\(\Gamma\)</span></a></li>
+<li class="chapter" data-level="17.2.2" data-path="hyplant5.html"><a href="hyplant5.html#evaluation-of-predictive-performance-and-error-decomposition-for-the-four-candidate-proxies"><i class="fa fa-check"></i><b>17.2.2</b> Evaluation of predictive performance and error decomposition for the four candidate proxies</a></li>
+<li class="chapter" data-level="17.2.3" data-path="hyplant5.html"><a href="hyplant5.html#sensitivity-to-the-selected-reference-location"><i class="fa fa-check"></i><b>17.2.3</b> Sensitivity to the selected reference location</a></li>
+<li class="chapter" data-level="17.2.4" data-path="hyplant5.html"><a href="hyplant5.html#spatial-patterns-of-residuals"><i class="fa fa-check"></i><b>17.2.4</b> Spatial patterns of residuals</a></li>
+</ul></li>
+<li class="chapter" data-level="17.3" data-path="hyplant5.html"><a href="hyplant5.html#discussion-7"><i class="fa fa-check"></i><b>17.3</b> Discussion</a><ul>
+<li class="chapter" data-level="17.3.1" data-path="hyplant5.html"><a href="hyplant5.html#on-derivation-of-proxy-estimates-for-gamma"><i class="fa fa-check"></i><b>17.3.1</b> On derivation of proxy estimates for <span class="math inline">\(\Gamma\)</span></a></li>
+<li class="chapter" data-level="17.3.2" data-path="hyplant5.html"><a href="hyplant5.html#on-the-evaluation-methodology-and-the-results"><i class="fa fa-check"></i><b>17.3.2</b> On the evaluation methodology and the results</a></li>
+<li class="chapter" data-level="17.3.3" data-path="hyplant5.html"><a href="hyplant5.html#on-possible-application-in-the-upscaling-of-sif"><i class="fa fa-check"></i><b>17.3.3</b> On possible application in the upscaling of SIF</a></li>
+<li class="chapter" data-level="17.3.4" data-path="hyplant5.html"><a href="hyplant5.html#conclusion"><i class="fa fa-check"></i><b>17.3.4</b> Conclusion</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="hyplant6.html"><a href="hyplant6.html"><i class="fa fa-check"></i><b>18</b> From HyPlant to FLEX upscaling procedure</a><ul>
+<li class="chapter" data-level="18.1" data-path="hyplant6.html"><a href="hyplant6.html#flex-and-hyplant"><i class="fa fa-check"></i><b>18.1</b> FLEX and HyPlant</a></li>
+<li class="chapter" data-level="18.2" data-path="hyplant6.html"><a href="hyplant6.html#input-data"><i class="fa fa-check"></i><b>18.2</b> Input data</a></li>
+</ul></li>
+<li class="chapter" data-level="19" data-path="flox-sif-vs-vi-flox4.html"><a href="flox-sif-vs-vi-flox4.html"><i class="fa fa-check"></i><b>19</b> FLOX SIF vs VI {flox4}</a><ul>
+<li class="chapter" data-level="19.1" data-path="flox-sif-vs-vi-flox4.html"><a href="flox-sif-vs-vi-flox4.html#sif-vi-relationship-at-flox-scale"><i class="fa fa-check"></i><b>19.1</b> sif vi relationship at flox scale</a></li>
+<li class="chapter" data-level="19.2" data-path="flox-sif-vs-vi-flox4.html"><a href="flox-sif-vs-vi-flox4.html#focus-on-nirv-fcvi-1"><i class="fa fa-check"></i><b>19.2</b> focus on nirv fcvi</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Exploring the effect of canopy structure on top-of-canopy sun-induced fluorescence</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="scope" class="section level1">
+<h1><span class="header-section-number">Chapter 9</span> Exploring the influence of LAI and Chlorophyll content on TOC SIF using SCOPE simulation</h1>
+<p>Radiative transfer (RT) models are useful to explore the sensitivity and interdependence of SIF to various factors. In fact, extensive analysis based on the Sobol’s sensitivity criterion <span class="citation">(Sobol <a href="#ref-Sobol1990">1990</a>)</span> revealed that TOC SIF is mainly controlled by LAI and Cab. Actually, these two, together with leaf architecture and the maximum potential carboxilation rate (Vcmax) explain up to 95% of the variations in total canopy fluorescence <span class="citation">(J. Verrelst et al. <a href="#ref-Verrelst2015b">2015</a>)</span>.</p>
+<p>In the field, only two narrow bands from the total SIF emission are retrievable - the oxygen absorption bands<span class="citation">(M. Meroni et al. <a href="#ref-Meroni2009">2009</a>)</span>. These two estimates can be combined into a simple ratio, or an empirical formulation can be applied to get the total SIF in the range from 650 to 800. However, having two independent SIF estimates lets us define more complex transformations such as normalized indices or or other ratios. In this chapter we will simulate SIF for varying LAI and Cab using SCOPE and explore the sensitivity of SIF in the two retrieval bands to LAI, Cab, and standard vegetation indices. Then we will define several SIF indices and explore their sensitivity to the input LAI and Cab, and the vegetation indices.</p>
+<p>SCOPE (Soil Canopy Observation, Photochemistry and Energy fluxes) is a vertical integrated radiative transfer and energy balance model linking visible and thermal infrared radiation to the heat and water fluxes from vegetation. A special routine is dedicated to calculating photosynthetic rate and chlorophyll fluorescence integrated over the whole canopy. The SCOPE model consist of separate cascading modules organized in: 1/ module for calculating incident solar radiation, 2/ module for calculating thermal radiation, 3/ energy balance module for latent and sensible heat flux, and 4/ a dedicated fluorescence module. The last, fluorescence module is based on the FluorSAIL model and calculates FTOC radiance spectrum from leaf level also accounting for canopy geometry. It gives the opportunity to control for canopy biophysical parameters and explore the sensitivity of the F signal to difference in leaf area and leaf chlorophyll levels <span class="citation">(C. van der Tol et al. <a href="#ref-VanderTol2009">2009</a>)</span>.</p>
+<div id="simulation" class="section level2">
+<h2><span class="header-section-number">9.1</span> Simulation</h2>
+<p>We used SCOPE (v.1.70) to simulate the effect of LAI and chlorophyll content on the hemispherical integrated reflectance and fluorescence for an unstressed C3 plant. To do so, we constrained all input parameters except LAI and Cab to their recommended default values (Table <a href="scope.html#tab:table1-1">9.1</a>), while letting LAI to vary between 0.25 and 10 units, and Cab - between 10 and 100 g.cm<sup>-2</sup>. This resulted in a simulation with 760 permutations of possible LAI and Cab combinations. Fluorescence was estimated using the biophysical routine in <span class="citation">(Collatz et al. <a href="#ref-Collatz1991">1991</a>)</span> and a mechanistic sub model based on a theoretical relationship (MD-12) described in <span class="citation">(<span class="citeproc-not-found" data-reference-id="Tol2014"><strong>???</strong></span>)</span>. The simulation was performed using ARTMO software (v. 3.21)<span class="citation">(<span class="citeproc-not-found" data-reference-id="Verrelst2016"><strong>???</strong></span>)</span></p>
+<table>
+<caption><span id="tab:table1-1">Table 9.1: </span>SCOPE input parameters used for the test simulation</caption>
+<thead>
+<tr class="header">
+<th align="left">Input parameters</th>
+<th align="left">Values</th>
+<th align="left">units</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Chlorophyll concentration</td>
+<td align="left">10 - 100</td>
+<td align="left">[g cm-2]</td>
+</tr>
+<tr class="even">
+<td align="left">Leaf area index</td>
+<td align="left">0.25 - 10</td>
+<td align="left">[unitless]</td>
+</tr>
+<tr class="odd">
+<td align="left">broadband incoming shortwave radiation (0.4-2.5 um)</td>
+<td align="left">600.0000</td>
+<td align="left">[W m-2]</td>
+</tr>
+<tr class="even">
+<td align="left">air temperature</td>
+<td align="left">20.0000</td>
+<td align="left">[T]</td>
+</tr>
+<tr class="odd">
+<td align="left">air pressure</td>
+<td align="left">970.0000</td>
+<td align="left">[hPa]</td>
+</tr>
+<tr class="even">
+<td align="left">atmospheric vapour pressure</td>
+<td align="left">15.0000</td>
+<td align="left">[hPa]</td>
+</tr>
+<tr class="odd">
+<td align="left">wind speed at height z</td>
+<td align="left">2.0000</td>
+<td align="left">[m s-1]</td>
+</tr>
+<tr class="even">
+<td align="left">atmospheric CO2 concentration</td>
+<td align="left">380.0000</td>
+<td align="left">[ppm]</td>
+</tr>
+<tr class="odd">
+<td align="left">atmospheric O2 concentration</td>
+<td align="left">209.0000</td>
+<td align="left">[ppm]</td>
+</tr>
+<tr class="even">
+<td align="left">leaf thickness parameters</td>
+<td align="left">1.4000</td>
+<td align="left">[unitless]</td>
+</tr>
+<tr class="odd">
+<td align="left">leaf water equivalent layer</td>
+<td align="left">0.0090</td>
+<td align="left">[cm]</td>
+</tr>
+<tr class="even">
+<td align="left">Dry matter content</td>
+<td align="left">0.0120</td>
+<td align="left">[g cm-2]</td>
+</tr>
+<tr class="odd">
+<td align="left">scenecent material fraction</td>
+<td align="left">0.0000</td>
+<td align="left">[fraction]</td>
+</tr>
+<tr class="even">
+<td align="left">Carotenoid content</td>
+<td align="left">20.0000</td>
+<td align="left">[ug cm-2]</td>
+</tr>
+<tr class="odd">
+<td align="left">leaf width</td>
+<td align="left">0.1000</td>
+<td align="left">[m]</td>
+</tr>
+<tr class="even">
+<td align="left">vegetation height</td>
+<td align="left">1.0000</td>
+<td align="left">[m]</td>
+</tr>
+<tr class="odd">
+<td align="left">soil boundary layer resistance</td>
+<td align="left">10.0000</td>
+<td align="left">[s m-1]</td>
+</tr>
+<tr class="even">
+<td align="left">within canopy layer resistance</td>
+<td align="left">0.0000</td>
+<td align="left">[s m-1]</td>
+</tr>
+<tr class="odd">
+<td align="left">leaf boundary resistance</td>
+<td align="left">10.0000</td>
+<td align="left">[s m-1]</td>
+</tr>
+<tr class="even">
+<td align="left">observation zenith angle</td>
+<td align="left">0.0000</td>
+<td align="left">[deg]</td>
+</tr>
+<tr class="odd">
+<td align="left">solar zenith angle</td>
+<td align="left">55.0000</td>
+<td align="left">[deg]</td>
+</tr>
+<tr class="even">
+<td align="left">azimuthal difference between solar and observation angle</td>
+<td align="left">90.0000</td>
+<td align="left">[deg]</td>
+</tr>
+<tr class="odd">
+<td align="left">soil resistance for evaporation from the pore space</td>
+<td align="left">500.0000</td>
+<td align="left">[s m-1]</td>
+</tr>
+<tr class="even">
+<td align="left">volumetric soil moisture content in the root zone</td>
+<td align="left">0.2500</td>
+<td align="left">[unitless]</td>
+</tr>
+<tr class="odd">
+<td align="left">Spectrum number (column in the database soil_file)</td>
+<td align="left">1.0000</td>
+<td align="left">[unitless]</td>
+</tr>
+<tr class="even">
+<td align="left">maximum carboxylation capacity (at optimum temperature)</td>
+<td align="left">30.0000</td>
+<td align="left">[umol m-2 s-1]</td>
+</tr>
+<tr class="odd">
+<td align="left">Ball-Berry stomatal conductance parameter</td>
+<td align="left">8.0000</td>
+<td align="left">[unitless]</td>
+</tr>
+<tr class="even">
+<td align="left">Extinction coefficient for Vcmax in the vertical (maximum at the top). 0 for uniform Vcmax</td>
+<td align="left">0.6396</td>
+<td align="left">[unitless]</td>
+</tr>
+<tr class="odd">
+<td align="left">Respiration = Rdparam*Vcmcax</td>
+<td align="left">0.0150</td>
+<td align="left">[unitless]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="results" class="section level2">
+<h2><span class="header-section-number">9.2</span> Results</h2>
+<p>From the full hemispherical fluorescence spectrum we extracted fluorescence for the two retrieval regions typically retrieved from hyperspectral data - fluorescence at 687 nm and 760 nm (Figure <a href="scope.html#fig:sif-ref">9.1</a>) and used these two values to calculate SIF indices.</p>
+<div class="figure"><span id="fig:sif-ref"></span>
+<img src="bookdown_files/figure-html/sif-ref-1.png" alt="Fluorescence output for a range of LAI and Cab values from SCOPE simulation." width="1152" />
+<p class="caption">
+Figure 9.1: Fluorescence output for a range of LAI and Cab values from SCOPE simulation.
+</p>
+</div>
+<p>The output reflectance was used to calculate VI following the definitions in Rascher (2015) and Badgley (2017) and Haboubane (2002). NIRv was calculated using reflectance at 800 nm and not radiance.</p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-30-1.png" width="1152" /></p>
+<p>Below are the definitions for the different SIF estimates and the traditional and newly developed vegetation indices and a descriptive data table (Table <a href="scope.html#fig:tab">9.2</a>):</p>
+<p><strong>SIF indices</strong></p>
+<ul>
+<li><p>SIF ratio: <span class="math inline">\(SIFr = \frac{F_{687}}{F_{760}}\)</span></p></li>
+<li><p>SIF total: <span class="math inline">\(SIFtot = F_{760} + F_{687}\)</span></p></li>
+<li><p>SIF index: <span class="math inline">\(SIFi = SIFtot*SIFr\)</span></p></li>
+<li><p>SIF difference: <span class="math inline">\(SIFdif = F_{760} - F_{687}\)</span></p></li>
+<li><p>SIF index2: <span class="math inline">\(SIFi2 = SIFdif*SIFr\)</span></p></li>
+<li><p>SIF normalised difference: <span class="math inline">\(ndSIF = \frac{F_{760} - F_{687}}{F_{760} + F_{687}}\)</span></p></li>
+</ul>
+<p><strong>Vegetation indices</strong></p>
+<ul>
+<li><p>Normalized Difference Vegetation Index: <span class="math inline">\(NDVI = \frac{R_{800} - R_{670}}{R_{800} + R_{670}}\)</span></p></li>
+<li><p>Near-infrared Corrected NDVI: <span class="math inline">\(NIRv = NDVI . R_{800}\)</span></p></li>
+<li><p>Simple Ratio Vegetation Index: <span class="math inline">\(SR = R_{800}/R_{670}\)</span></p></li>
+<li><p>Enhanced Vegetation Index: <span class="math inline">\(EVI = 2.5\cdot \frac{R_{800}-R_{670}}{R_{800}+6\cdot R_{670} + 7.5\cdot R_{480}+1 }\)</span></p></li>
+<li><p>Triangular Chlorophyll Absorption Index: <span class="math inline">\(TCARI = 3 \cdot (R_{700} - R_{670}) - 0.2 \cdot (R_{700} - R_{550}) \cdot \frac{R_{700}}{R_{670}}\)</span></p></li>
+<li><p>Optimized Soil Adjusted Vegetation Index: <span class="math inline">\(OSAVI = (1+0.16) \cdot \frac{R_{800}-R_{670}}{R_{800} + R_{670} + 0.16}\)</span></p></li>
+<li><p>TCARI/OSAVI</p></li>
+</ul>
+<div class="figure"><span id="fig:tab"></span>
+<div id="htmlwidget-9715eeed36a272252c25" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9715eeed36a272252c25">{"x":{"filter":"none","data":[["Mean","Std.Dev","Min","Q1","Median","Q3","Max","MAD","IQR","CV","Skewness","SE.Skewness","Kurtosis","N.Valid","Pct.Valid"],[55,27.404,10,30,55,80,100,37.065,50,0.498,0,0.089,-1.211,760,100],[0.631,0.133,0.157,0.59,0.687,0.722,0.734,0.061,0.132,0.211,-1.792,0.089,2.61,760,100],[5.716,1.062,2.351,5.296,5.39,5.944,8.64,0.248,0.647,0.186,0.496,0.089,2.384,760,100],[8.23,1.931,1.206,7.264,8.853,9.755,10.324,1.585,2.489,0.235,-1.255,0.089,1.155,760,100],[5.125,2.888,0.25,2.625,5.125,7.625,10,3.706,4.875,0.563,0,0.089,-1.206,760,100],[0.858,0.145,0.248,0.862,0.923,0.936,0.938,0.021,0.074,0.169,-2.526,0.089,5.987,760,100],[0.331,0.081,0.064,0.312,0.365,0.388,0.395,0.04,0.076,0.243,-1.678,0.089,2.02,760,100],[0.715,0.126,0.208,0.693,0.771,0.79,0.795,0.033,0.096,0.177,-2.296,0.089,4.828,760,100],[2.514,2.289,-4.04,1.179,3.24,4.386,4.992,2.056,3.197,0.911,-0.977,0.089,0.013,760,100],[10.208,3.635,4.383,8.166,8.619,10.793,24.072,0.812,2.626,0.356,2.01,0.089,3.685,760,100],[0.077,0.162,-1.254,0.077,0.144,0.16,0.165,0.029,0.083,2.121,-3.405,0.089,15.377,760,100],[0.167,0.161,-0.462,0.092,0.23,0.292,0.32,0.115,0.2,0.965,-1.311,0.089,1.044,760,100],[0.756,0.316,0.515,0.548,0.626,0.831,2.715,0.143,0.283,0.418,2.219,0.089,5.962,760,100],[13.946,2.114,4.482,14.001,14.498,15.094,15.665,0.835,1.091,0.152,-2.727,0.089,7.726,760,100],[148.983,82.68,62.252,78.88,118.967,201.345,352.992,72.245,121.21,0.555,0.906,0.089,-0.329,760,100],[108.043,66.647,20.855,51.815,83.324,149.953,274.39,52.465,98.066,0.617,0.946,0.089,-0.206,760,100],[242.969,177.382,42.865,93.991,180.866,357.281,676.721,161.356,263.121,0.73,0.85,0.089,-0.372,760,100],[180.337,141.375,8.9,61.812,137.66,276.642,530.795,128.711,214.691,0.784,0.892,0.089,-0.282,760,100],[21.422,9.885,1.658,13.534,25.072,30.454,31.37,8.792,16.916,0.461,-0.659,0.089,-1.041,760,100],[0.1,0.078,0.023,0.039,0.071,0.137,0.322,0.057,0.097,0.782,1.216,0.089,0.556,760,100],[0.148,0.121,0.029,0.055,0.105,0.199,0.541,0.09,0.144,0.82,1.292,0.089,0.85,760,100]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Cab<\/th>\n      <th>EVI<\/th>\n      <th>F687<\/th>\n      <th>F760<\/th>\n      <th>LAI<\/th>\n      <th>NDVI<\/th>\n      <th>NIRv<\/th>\n      <th>OSAVI<\/th>\n      <th>SIF difference<\/th>\n      <th>SIF index<\/th>\n      <th>SIF index2<\/th>\n      <th>SIF nd<\/th>\n      <th>SIF ratio<\/th>\n      <th>SIF total<\/th>\n      <th>SIFiTCARI<\/th>\n      <th>SIFiTCOS<\/th>\n      <th>SIFtTCARI<\/th>\n      <th>SIFtTCOS<\/th>\n      <th>SR<\/th>\n      <th>TCARI<\/th>\n      <th>TCARI/OSAVI<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"scrollX":true,"columnDefs":[{"width":"30%","targets":[1,2]},{"className":"dt-right","targets":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 9.2: Descriptive statistics for the data used in this chapter
+</p>
+</div>
+<div id="sif-as-function-of-lai-and-cab" class="section level3">
+<h3><span class="header-section-number">9.2.1</span> SIF as function of LAI and Cab</h3>
+<p>The two SIF estimates retrievable by remote sensing data () show non-linear relationship with LAI and Cab (figure <a href="#sif-laicab"><strong>??</strong></a>). For far-red fluorescence the shape of the curve is positive while for red fluorescence - it is positive vs. LAI and negative vs. Cab. Thus, LAI leads to increase in total SIF emittance but saturates at high canopy densities. Chlorophyll also leads to increase in emitted SIF 760 while it leads to decrease in in SIF687 due to reabsorption.</p>
+<div class="figure"><span id="fig:sif-laicab"></span>
+<img src="bookdown_files/figure-html/sif-laicab-1.png" alt="SIF in the two retrieval regions as a function of LAI and chlorophyll content" width="1152" />
+<p class="caption">
+Figure 9.3: SIF in the two retrieval regions as a function of LAI and chlorophyll content
+</p>
+</div>
+<p>A four parameter model can describe the combined effect of LAI and Cab on the SIF 760. The model has the following shape:</p>
+<span class="math display">\[\begin{equation} 
+SIF_{760} = (p_1 \cdot (1 - e^{-p_2 \cdot C_{ab}}) + p_3) \cdot (1- e^{-(p_4 - 0.1*ln(Cab)) \ \cdot LAI^{0.9})})
+\end{equation}\]</span>
+<pre><code>## Nonlinear regression model
+##   model: F760 ~ F760_fit(LAI, Cab, p1, p2, p3, p4)
+##    data: vi
+##      p1      p2      p3      p4 
+## 6.37838 0.03588 4.04047 0.64745 
+##  residual sum-of-squares: 2.206
+## 
+## Number of iterations to convergence: 8 
+## Achieved convergence tolerance: 4.112e-06</code></pre>
+<div class="figure"><span id="fig:08-scope-huber"></span>
+<img src="bookdown_files/figure-html/08-scope-huber-1.png" alt="Four parameter non-linear fit for $SIF_{760}$ vs. LAI and Chlorophyll" width="1152" />
+<p class="caption">
+Figure 9.4: Four parameter non-linear fit for <span class="math inline">\(SIF_{760}\)</span> vs. LAI and Chlorophyll
+</p>
+</div>
+<p>A simple additive model can fit locally the relationship between total emitted fluorescence, LAI, and Ca moderately well (R<sup>2</sup> = 0.725). We will fit a linear model for LAI between 0.75 and 6, and Cab between 25 and 80.</p>
+<div class="figure"><span id="fig:unnamed-chunk-32"></span>
+<img src="bookdown_files/figure-html/unnamed-chunk-32-1.png" alt="Total fluorescence ($SIF_{687} + SIF_{760}$) a a function of chlorophyll content and LAI" width="1152" />
+<p class="caption">
+Figure 9.5: Total fluorescence (<span class="math inline">\(SIF_{687} + SIF_{760}\)</span>) a a function of chlorophyll content and LAI
+</p>
+</div>
+<pre><code>## 
+## Call:
+## lm(formula = `SIF total` ~ LAI + Cab, data = .)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -2.2308 -0.3452  0.1484  0.5762  0.7363 
+## 
+## Coefficients:
+##              Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept) 10.478989   0.209950  49.912  &lt; 2e-16 ***
+## LAI          0.729298   0.031840  22.905  &lt; 2e-16 ***
+## Cab          0.017851   0.003356   5.319  2.7e-07 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.6985 on 207 degrees of freedom
+## Multiple R-squared:  0.7276, Adjusted R-squared:  0.725 
+## F-statistic: 276.5 on 2 and 207 DF,  p-value: &lt; 2.2e-16</code></pre>
+<p>The multiplicative of the ratio and the total SIF (the SIF index) is independend of LAI and can be described by a negative exponential function of chlorophyll content. This is especially true for LAI &gt; 0.5.</p>
+<pre><code>## 
+## Formula: `SIF index` ~ SSasymp(Cab, Asym, R0, lrc)
+## 
+## Parameters:
+##      Estimate Std. Error t value Pr(&gt;|t|)    
+## Asym  8.09267    0.04436  182.44   &lt;2e-16 ***
+## R0   38.08037    0.62245   61.18   &lt;2e-16 ***
+## lrc  -2.51570    0.01899 -132.49   &lt;2e-16 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.8438 on 757 degrees of freedom
+## 
+## Number of iterations to convergence: 0 
+## Achieved convergence tolerance: 2.028e-07</code></pre>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-36-1.png" width="672" /></p>
+</div>
+<div id="sif-as-a-function-of-vi" class="section level3">
+<h3><span class="header-section-number">9.2.2</span> SIF as a function of VI</h3>
+<p>Most of the vegetation indices have a saturating curve in relation to LAI. As was shown in <span class="citation">(Haboudane et al. <a href="#ref-Habobane2002">2002</a>)</span>, the TCARI/OSAVI ratio can be modelled by a negative exponential curve (plots not shown). The relationship of VIs and SIF is thus also very non-linear. Nevertheless, some linearisation is possible after transformation as we will see.</p>
+<p>The F760 has positive, somewhat linear realtionship with EVI, NDVI, NIRV vegetation indices. However, there is a big spread around a potential linear fit depending on the Cab. F687 saturates with most of the indices. The linearity is more tigh when the total SIF is considered. Total SIF vs. NDVI can be approximated with a linear model.</p>
+<div class="figure"><span id="fig:unnamed-chunk-37"></span>
+<img src="bookdown_files/figure-html/unnamed-chunk-37-1.png" alt="The effect of VI on $SIF_{760}$" width="1152" />
+<p class="caption">
+Figure 9.6: The effect of VI on <span class="math inline">\(SIF_{760}\)</span>
+</p>
+</div>
+<div class="figure"><span id="fig:unnamed-chunk-38"></span>
+<img src="bookdown_files/figure-html/unnamed-chunk-38-1.png" alt="The effect of VI on $SIF_{687}$" width="1152" />
+<p class="caption">
+Figure 9.7: The effect of VI on <span class="math inline">\(SIF_{687}\)</span>
+</p>
+</div>
+<div class="figure"><span id="fig:unnamed-chunk-39"></span>
+<img src="bookdown_files/figure-html/unnamed-chunk-39-1.png" alt="The effect of VI on $SIF_{ratio}$" width="1152" />
+<p class="caption">
+Figure 9.8: The effect of VI on <span class="math inline">\(SIF_{ratio}\)</span>
+</p>
+</div>
+<p>Total fluorescence has the potential to be used as indicator. Notably, it can be linearly modeled by NDVI. Since NDVI is a proxy for light interception, total SIF is expected to be somewhat linear to the intercepted light. Interesting is also the potential to use the slope of a linear fit between SIF total and TCARI to infer about the Chlorophyll content. <img src="bookdown_files/figure-html/unnamed-chunk-40-1.png" width="1152" /></p>
+<p>Total fluorescence (the sum) is positively correlated with NDVI. Below is a linear fit between total SIF and NDVI.</p>
+<pre><code>## 
+## Call:
+## lm(formula = `SIF total` ~ NDVI, data = vi)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -1.01841 -0.34926 -0.03373  0.28750  1.40750 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)   1.7376     0.1020   17.04   &lt;2e-16 ***
+## NDVI         14.2227     0.1171  121.43   &lt;2e-16 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.4678 on 758 degrees of freedom
+## Multiple R-squared:  0.9511, Adjusted R-squared:  0.951 
+## F-statistic: 1.475e+04 on 1 and 758 DF,  p-value: &lt; 2.2e-16</code></pre>
+<p>Finally, normalizing total fluorescence by TCARI and taking the square root leads to linear relationship with Cab in which the slope of the relatioship depends on the LAI.</p>
+<span class="math display">\[\begin{equation} 
+\sqrt{\frac{F_{687} + F_{760}}{TCARI}} = a1 \cdot LAI + a_2 \cdot Cab + a_3 \cdot LAI \cdot Cab + a_4
+\end{equation}\]</span>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-42-1.png" width="672" /></p>
+<pre><code>## 
+## Call:
+## lm(formula = y ~ LAI * Cab, data = v3)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -5.5149 -0.5604  0.0324  0.5919  2.9659 
+## 
+## Coefficients:
+##              Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  4.880876   0.249980   19.52  &lt; 2e-16 ***
+## LAI         -0.317258   0.072927   -4.35  1.7e-05 ***
+## Cab          0.133420   0.004069   32.79  &lt; 2e-16 ***
+## LAI:Cab      0.017987   0.001187   15.15  &lt; 2e-16 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 1.127 on 433 degrees of freedom
+## Multiple R-squared:  0.9574, Adjusted R-squared:  0.9571 
+## F-statistic:  3240 on 3 and 433 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<div id="discussion-1" class="section level2">
+<h2><span class="header-section-number">9.3</span> Discussion</h2>
+<p>The effect of canopy LAI and Cab is wavelength dependent. The non-linear nature of the signal is due to reabsorption effects mainly. There is a potential, however, to straighten the relationship between canopy structure and SIF by taking some transformations of the data or fit locally a linear model. TCARI and OSAVI as well as NDVI can be used to normalize the effects of canopy structure. We found a very strong linear relationship between Total SIF and NDVI, a very strong exponential decay between SIF index and Cab, and a very strong linear relationship between normalized and transformed Total SIF and Cab and LAI. In addition we defined a 4-parameter functional form for F760 as a function of Cab and LAI.</p>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Collatz1991">
+<p>Collatz, G James, J. Timothy Ball, Cyril Grivet, and Joseph A. Berry. 1991. “Physiological and environmental regulation of stomatal conductance , photosynthesis and transpiration : a model that includes a laminar boundary layer *.” <em>Agricultural and Forest Meteorology</em> 54 (1074): 107–36.</p>
+</div>
+<div id="ref-Habobane2002">
+<p>Haboudane, Driss, John R. Miller, Nicolas Tremblay, Pablo J. Zarco-Tejada, and Louise Dextraze. 2002. “Integrated Narrow-Band Vegetation Indices for Prediction of Crop Chlorophyll Content for Application to Precision Agriculture.” <em>Remote Sensing of Environment</em> 81 (2): 416–26. doi:<a href="https://doi.org/https://doi.org/10.1016/S0034-4257(02)00018-4">https://doi.org/10.1016/S0034-4257(02)00018-4</a>.</p>
+</div>
+<div id="ref-Meroni2009">
+<p>Meroni, M., M. Rossini, L. Guanter, L. Alonso, U. Rascher, R. Colombo, and J. Moreno. 2009. “Remote sensing of solar-induced chlorophyll fluorescence: Review of methods and applications.” <em>Remote Sensing of Environment</em> 113 (10): 2037–51. doi:<a href="https://doi.org/10.1016/j.rse.2009.05.003">10.1016/j.rse.2009.05.003</a>.</p>
+</div>
+<div id="ref-Sobol1990">
+<p>Sobol. 1990. “On Sensitivity Estimation for Nonlinear Mathematical Models.” <em>Matem. Mod.</em> 2 (1): 112–18. <a href="https://zbmath.org/?q=an:0974.00506" class="uri">https://zbmath.org/?q=an:0974.00506</a>.</p>
+</div>
+<div id="ref-VanderTol2009">
+<p>Tol, C. van der, W. Verhoef, J. Timmermans, a. Verhoef, and Z. Su. 2009. “An integrated model of soil-canopy spectral radiances, photosynthesis, fluorescence, temperature and energy balance.” <em>Biogeosciences</em> 6 (12): 3109–29. doi:<a href="https://doi.org/10.5194/bg-6-3109-2009">10.5194/bg-6-3109-2009</a>.</p>
+</div>
+<div id="ref-Verrelst2015b">
+<p>Verrelst, Jochem, Juan Pablo Rivera, Christiaan van der Tol, Federico Magnani, Gina Mohammed, and Jose Moreno. 2015. “Global Sensitivity Analysis of the Scope Model: What Drives Simulated Canopy-Leaving Sun-Induced Fluorescence?” <em>Remote Sensing of Environment</em> 166: 8–21. doi:<a href="https://doi.org/https://doi.org/10.1016/j.rse.2015.06.002">https://doi.org/10.1016/j.rse.2015.06.002</a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="sugar-beet.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ground-measurements-of-sif.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["bookdown.pdf", "bookdown.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

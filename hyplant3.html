@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 15 Exploring the relationship between LAI and Chlorophyll and SIF | Exploring the effect of canopy structure on top-of-canopy sun-induced fluorescence</title>
+  <meta name="description" content="A PhD thesis for awarding the title Doctor of Agricultural Science" />
+  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 15 Exploring the relationship between LAI and Chlorophyll and SIF | Exploring the effect of canopy structure on top-of-canopy sun-induced fluorescence" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A PhD thesis for awarding the title Doctor of Agricultural Science" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 15 Exploring the relationship between LAI and Chlorophyll and SIF | Exploring the effect of canopy structure on top-of-canopy sun-induced fluorescence" />
+  
+  <meta name="twitter:description" content="A PhD thesis for awarding the title Doctor of Agricultural Science" />
+  
+
+<meta name="author" content="Dzhaner Emin" />
+
+
+<meta name="date" content="2019-11-11" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="hyplant2.html"/>
+<link rel="next" href="hyplant4.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.5/datatables.js"></script>
+<link href="libs/dt-core-1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.10.16/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.10.16/js/jquery.dataTables.min.js"></script>
+<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Sun-induced fluorescence</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#section"></a></li>
+<li class="chapter" data-level="" data-path="preamble.html"><a href="preamble.html"><i class="fa fa-check"></i>Preamble</a><ul>
+<li class="chapter" data-level="" data-path="preamble.html"><a href="preamble.html#acknowledgments"><i class="fa fa-check"></i>Acknowledgments</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="part"><span><b>I Theoretical background (Methods)</b></span></li>
+<li class="chapter" data-level="2" data-path="fluo.html"><a href="fluo.html"><i class="fa fa-check"></i><b>2</b> Fluorescence basics</a><ul>
+<li class="chapter" data-level="2.1" data-path="fluo.html"><a href="fluo.html#faith-of-absorbed-light-energy-reaching-the-plant-surface"><i class="fa fa-check"></i><b>2.1</b> Faith of absorbed light energy reaching the plant surface</a></li>
+<li class="chapter" data-level="2.2" data-path="fluo.html"><a href="fluo.html#origin-of-chlorophyll-fluorescence"><i class="fa fa-check"></i><b>2.2</b> Origin of chlorophyll fluorescence</a></li>
+<li class="chapter" data-level="2.3" data-path="fluo.html"><a href="fluo.html#link-between-fluorescence-and-photosynthesis"><i class="fa fa-check"></i><b>2.3</b> Link between fluorescence and photosynthesis</a></li>
+<li class="chapter" data-level="2.4" data-path="fluo.html"><a href="fluo.html#heat-dissipation"><i class="fa fa-check"></i><b>2.4</b> Heat dissipation</a></li>
+<li class="chapter" data-level="2.5" data-path="fluo.html"><a href="fluo.html#measuring-chl-fluorescence"><i class="fa fa-check"></i><b>2.5</b> Measuring Chl fluorescence</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="fluo.html"><a href="fluo.html#pam-fluorimetry---active-methods"><i class="fa fa-check"></i><b>2.5.1</b> PAM fluorimetry - active methods</a></li>
+<li class="chapter" data-level="2.5.2" data-path="fluo.html"><a href="fluo.html#fluorescence-under-natural-conditions-sif"><i class="fa fa-check"></i><b>2.5.2</b> Fluorescence under natural conditions (SIF)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="rs.html"><a href="rs.html"><i class="fa fa-check"></i><b>3</b> Remote sensing of vegetation biophysics and SIF</a><ul>
+<li class="chapter" data-level="3.1" data-path="rs.html"><a href="rs.html#remote-sensing"><i class="fa fa-check"></i><b>3.1</b> Remote sensing</a></li>
+<li class="chapter" data-level="3.2" data-path="rs.html"><a href="rs.html#the-concept-of-scale-in-remote-sensing.-scalability-of-ecological-processes-scale"><i class="fa fa-check"></i><b>3.2</b> The concept of scale in remote sensing. Scalability of ecological processes {scale}</a></li>
+<li class="chapter" data-level="3.3" data-path="rs.html"><a href="rs.html#retrieval-of-sif"><i class="fa fa-check"></i><b>3.3</b> Retrieval of SIF</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="rs.html"><a href="rs.html#fld-principle"><i class="fa fa-check"></i><b>3.3.1</b> FLD principle</a></li>
+<li class="chapter" data-level="3.3.2" data-path="rs.html"><a href="rs.html#spectral-fitting-methods-the-state-of-the-art-sif-retrieval-of-the-entire-sif-spectrum"><i class="fa fa-check"></i><b>3.3.2</b> Spectral fitting methods – the state of the art SIF retrieval of the entire SIF spectrum</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="rs.html"><a href="rs.html#sensor-design-for-sif-acquisition"><i class="fa fa-check"></i><b>3.4</b> Sensor design for SIF acquisition</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="rs.html"><a href="rs.html#flox"><i class="fa fa-check"></i><b>3.4.1</b> Ground sensor design</a></li>
+<li class="chapter" data-level="3.4.2" data-path="rs.html"><a href="rs.html#hyplant"><i class="fa fa-check"></i><b>3.4.2</b> Airborne</a></li>
+<li class="chapter" data-level="3.4.3" data-path="rs.html"><a href="rs.html#spaceborne"><i class="fa fa-check"></i><b>3.4.3</b> Spaceborne</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="factors-affecting-canopy-structure.html"><a href="factors-affecting-canopy-structure.html"><i class="fa fa-check"></i><b>4</b> Factors affecting canopy structure</a><ul>
+<li class="chapter" data-level="4.1" data-path="factors-affecting-canopy-structure.html"><a href="factors-affecting-canopy-structure.html#computational-factors"><i class="fa fa-check"></i><b>4.1</b> Computational Factors</a></li>
+<li class="chapter" data-level="4.2" data-path="factors-affecting-canopy-structure.html"><a href="factors-affecting-canopy-structure.html#environmental-factors"><i class="fa fa-check"></i><b>4.2</b> Environmental Factors</a></li>
+<li class="chapter" data-level="4.3" data-path="factors-affecting-canopy-structure.html"><a href="factors-affecting-canopy-structure.html#physiological-factors"><i class="fa fa-check"></i><b>4.3</b> Physiological Factors</a></li>
+<li class="chapter" data-level="4.4" data-path="factors-affecting-canopy-structure.html"><a href="factors-affecting-canopy-structure.html#discussion"><i class="fa fa-check"></i><b>4.4</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="canopystr.html"><a href="canopystr.html"><i class="fa fa-check"></i><b>5</b> Canopy structure</a><ul>
+<li class="chapter" data-level="5.1" data-path="canopystr.html"><a href="canopystr.html#measuring-canopy-structure"><i class="fa fa-check"></i><b>5.1</b> Measuring canopy structure</a></li>
+<li class="chapter" data-level="5.2" data-path="canopystr.html"><a href="canopystr.html#modeling-canopy-structure"><i class="fa fa-check"></i><b>5.2</b> modeling canopy structure</a></li>
+<li class="chapter" data-level="5.3" data-path="canopystr.html"><a href="canopystr.html#retrieval-of-canopy-structure"><i class="fa fa-check"></i><b>5.3</b> Retrieval of canopy structure</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="canopystr.html"><a href="canopystr.html#look-up-tables"><i class="fa fa-check"></i><b>5.3.1</b> Look-up Tables</a></li>
+<li class="chapter" data-level="5.3.2" data-path="canopystr.html"><a href="canopystr.html#cost-functions"><i class="fa fa-check"></i><b>5.3.2</b> Cost functions</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="canopystr.html"><a href="canopystr.html#the-effect-of-canopy-structure-on-sif"><i class="fa fa-check"></i><b>5.4</b> The effect of canopy structure on SIF</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="bibliometric-analysis-of-sun-induced-fluorescence-literature.html"><a href="bibliometric-analysis-of-sun-induced-fluorescence-literature.html"><i class="fa fa-check"></i><b>6</b> Bibliometric analysis of Sun-induced fluorescence literature</a><ul>
+<li class="chapter" data-level="6.1" data-path="bibliometric-analysis-of-sun-induced-fluorescence-literature.html"><a href="bibliometric-analysis-of-sun-induced-fluorescence-literature.html#descriptive-bibliometric-analysis"><i class="fa fa-check"></i><b>6.1</b> Descriptive bibliometric analysis</a></li>
+<li class="chapter" data-level="6.2" data-path="bibliometric-analysis-of-sun-induced-fluorescence-literature.html"><a href="bibliometric-analysis-of-sun-induced-fluorescence-literature.html#graphical-depiction"><i class="fa fa-check"></i><b>6.2</b> Graphical depiction</a></li>
+<li class="chapter" data-level="6.3" data-path="bibliometric-analysis-of-sun-induced-fluorescence-literature.html"><a href="bibliometric-analysis-of-sun-induced-fluorescence-literature.html#individual-paper-analytics"><i class="fa fa-check"></i><b>6.3</b> Individual paper analytics</a></li>
+<li class="chapter" data-level="6.4" data-path="bibliometric-analysis-of-sun-induced-fluorescence-literature.html"><a href="bibliometric-analysis-of-sun-induced-fluorescence-literature.html#bibliographic-network-matrices"><i class="fa fa-check"></i><b>6.4</b> Bibliographic network matrices</a></li>
+</ul></li>
+<li class="part"><span><b>II Materials and methods</b></span></li>
+<li class="chapter" data-level="7" data-path="studyarea.html"><a href="studyarea.html"><i class="fa fa-check"></i><b>7</b> Study area</a><ul>
+<li class="chapter" data-level="7.1" data-path="studyarea.html"><a href="studyarea.html#location"><i class="fa fa-check"></i><b>7.1</b> Location</a></li>
+<li class="chapter" data-level="7.2" data-path="studyarea.html"><a href="studyarea.html#climate"><i class="fa fa-check"></i><b>7.2</b> Climate</a></li>
+<li class="chapter" data-level="7.3" data-path="studyarea.html"><a href="studyarea.html#land-use"><i class="fa fa-check"></i><b>7.3</b> Land use</a></li>
+<li class="chapter" data-level="7.4" data-path="studyarea.html"><a href="studyarea.html#soilter"><i class="fa fa-check"></i><b>7.4</b> Soil &amp; Terrace</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="sugar-beet.html"><a href="sugar-beet.html"><i class="fa fa-check"></i><b>8</b> Sugar beet</a><ul>
+<li class="chapter" data-level="8.1" data-path="sugar-beet.html"><a href="sugar-beet.html#history-distribution-and-economics"><i class="fa fa-check"></i><b>8.1</b> History, distribution and economics</a></li>
+<li class="chapter" data-level="8.2" data-path="sugar-beet.html"><a href="sugar-beet.html#growth"><i class="fa fa-check"></i><b>8.2</b> Growth</a></li>
+<li class="chapter" data-level="8.3" data-path="sugar-beet.html"><a href="sugar-beet.html#husbandry"><i class="fa fa-check"></i><b>8.3</b> Husbandry</a></li>
+<li class="chapter" data-level="8.4" data-path="sugar-beet.html"><a href="sugar-beet.html#effects-of-canopy-structure"><i class="fa fa-check"></i><b>8.4</b> Effects of canopy structure</a><ul>
+<li class="chapter" data-level="8.4.1" data-path="sugar-beet.html"><a href="sugar-beet.html#canopy-development"><i class="fa fa-check"></i><b>8.4.1</b> Canopy development</a></li>
+<li class="chapter" data-level="8.4.2" data-path="sugar-beet.html"><a href="sugar-beet.html#effect-of-canopy-structure-on-yield"><i class="fa fa-check"></i><b>8.4.2</b> Effect of canopy structure on yield</a></li>
+<li class="chapter" data-level="8.4.3" data-path="sugar-beet.html"><a href="sugar-beet.html#effect-of-canopy-structure-on-radiation-budget-and-optical-properties"><i class="fa fa-check"></i><b>8.4.3</b> Effect of canopy structure on radiation budget and optical properties</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="sugar-beet.html"><a href="sugar-beet.html#other-effects"><i class="fa fa-check"></i><b>8.5</b> Other effects</a><ul>
+<li class="chapter" data-level="8.5.1" data-path="sugar-beet.html"><a href="sugar-beet.html#effect-of-nitrogen"><i class="fa fa-check"></i><b>8.5.1</b> effect of nitrogen</a></li>
+<li class="chapter" data-level="8.5.2" data-path="sugar-beet.html"><a href="sugar-beet.html#effect-of-soil-water"><i class="fa fa-check"></i><b>8.5.2</b> Effect of soil water</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>III Results</b></span></li>
+<li class="chapter" data-level="9" data-path="scope.html"><a href="scope.html"><i class="fa fa-check"></i><b>9</b> Exploring the influence of LAI and Chlorophyll content on TOC SIF using SCOPE simulation</a><ul>
+<li class="chapter" data-level="9.1" data-path="scope.html"><a href="scope.html#simulation"><i class="fa fa-check"></i><b>9.1</b> Simulation</a></li>
+<li class="chapter" data-level="9.2" data-path="scope.html"><a href="scope.html#results"><i class="fa fa-check"></i><b>9.2</b> Results</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="scope.html"><a href="scope.html#sif-as-function-of-lai-and-cab"><i class="fa fa-check"></i><b>9.2.1</b> SIF as function of LAI and Cab</a></li>
+<li class="chapter" data-level="9.2.2" data-path="scope.html"><a href="scope.html#sif-as-a-function-of-vi"><i class="fa fa-check"></i><b>9.2.2</b> SIF as a function of VI</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="scope.html"><a href="scope.html#discussion-1"><i class="fa fa-check"></i><b>9.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="ground-measurements-of-sif.html"><a href="ground-measurements-of-sif.html"><i class="fa fa-check"></i>Ground measurements of SIF</a></li>
+<li class="chapter" data-level="10" data-path="flox1.html"><a href="flox1.html"><i class="fa fa-check"></i><b>10</b> Description of FLOX device and exploratory data analysis of diurnal measurements</a><ul>
+<li class="chapter" data-level="10.1" data-path="flox1.html"><a href="flox1.html#flox-description-and-metadata"><i class="fa fa-check"></i><b>10.1</b> FLOX description and metadata</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="flox1.html"><a href="flox1.html#metadata"><i class="fa fa-check"></i><b>10.1.1</b> Metadata</a></li>
+<li class="chapter" data-level="10.1.2" data-path="flox1.html"><a href="flox1.html#temperature-of-device-housing-and-ccd"><i class="fa fa-check"></i><b>10.1.2</b> Temperature of device housing and CCD</a></li>
+<li class="chapter" data-level="10.1.3" data-path="flox1.html"><a href="flox1.html#humidity"><i class="fa fa-check"></i><b>10.1.3</b> Humidity</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="flox1.html"><a href="flox1.html#exploratory-analysis-of-diurnal-sif-for-two-crops"><i class="fa fa-check"></i><b>10.2</b> Exploratory analysis of diurnal SIF for two crops</a><ul>
+<li class="chapter" data-level="10.2.1" data-path="flox1.html"><a href="flox1.html#three-days-diurnal-measurements-in-sugar-beet"><i class="fa fa-check"></i><b>10.2.1</b> Three days diurnal measurements in sugar beet</a></li>
+<li class="chapter" data-level="10.2.2" data-path="flox1.html"><a href="flox1.html#diurnal-development-of-sif-in-winter-wheat"><i class="fa fa-check"></i><b>10.2.2</b> Diurnal development of SIF in Winter wheat</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="flox1.html"><a href="flox1.html#descriptive-statistics"><i class="fa fa-check"></i><b>10.3</b> Descriptive statistics</a><ul>
+<li class="chapter" data-level="10.3.1" data-path="flox1.html"><a href="flox1.html#sif-value-ranges.-comparison-between-ifld-and-sfm-values"><i class="fa fa-check"></i><b>10.3.1</b> SIF value ranges. Comparison between iFLD and SFM values</a></li>
+<li class="chapter" data-level="10.3.2" data-path="flox1.html"><a href="flox1.html#stability-of-sif-measurements"><i class="fa fa-check"></i><b>10.3.2</b> Stability of SIF measurements</a></li>
+</ul></li>
+<li class="chapter" data-level="10.4" data-path="flox1.html"><a href="flox1.html#discussion-2"><i class="fa fa-check"></i><b>10.4</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="flox2.html"><a href="flox2.html"><i class="fa fa-check"></i><b>11</b> Development and evaluation of a mobile measurement procedure for TOC SIF</a><ul>
+<li class="chapter" data-level="11.1" data-path="flox2.html"><a href="flox2.html#developing-a-mobile-measurement-protocol"><i class="fa fa-check"></i><b>11.1</b> Developing a mobile measurement protocol</a><ul>
+<li class="chapter" data-level="11.1.1" data-path="flox2.html"><a href="flox2.html#setup"><i class="fa fa-check"></i><b>11.1.1</b> Setup</a></li>
+<li class="chapter" data-level="11.1.2" data-path="flox2.html"><a href="flox2.html#procedure"><i class="fa fa-check"></i><b>11.1.2</b> Procedure</a></li>
+<li class="chapter" data-level="11.1.3" data-path="flox2.html"><a href="flox2.html#test-case"><i class="fa fa-check"></i><b>11.1.3</b> Test case</a></li>
+<li class="chapter" data-level="11.1.4" data-path="flox2.html"><a href="flox2.html#post-processing"><i class="fa fa-check"></i><b>11.1.4</b> Post-processing</a></li>
+<li class="chapter" data-level="11.1.5" data-path="flox2.html"><a href="flox2.html#quality-check"><i class="fa fa-check"></i><b>11.1.5</b> Quality check</a></li>
+<li class="chapter" data-level="11.1.6" data-path="flox2.html"><a href="flox2.html#finding-location-average-and-corresponding-reference-sif"><i class="fa fa-check"></i><b>11.1.6</b> Finding location average and corresponding reference SIF</a></li>
+</ul></li>
+<li class="chapter" data-level="11.2" data-path="flox2.html"><a href="flox2.html#evaluation-of-methodology"><i class="fa fa-check"></i><b>11.2</b> Evaluation of methodology</a><ul>
+<li class="chapter" data-level="11.2.1" data-path="flox2.html"><a href="flox2.html#using-par-readings"><i class="fa fa-check"></i><b>11.2.1</b> Using PAR readings</a></li>
+<li class="chapter" data-level="11.2.2" data-path="flox2.html"><a href="flox2.html#evaluating-the-variability-of-sif"><i class="fa fa-check"></i><b>11.2.2</b> Evaluating the variability of SIF</a></li>
+</ul></li>
+<li class="chapter" data-level="11.3" data-path="flox2.html"><a href="flox2.html#descriptive-statistics-of-mobile-flox-data"><i class="fa fa-check"></i><b>11.3</b> Descriptive statistics of mobile FLOX data</a></li>
+<li class="chapter" data-level="11.4" data-path="flox2.html"><a href="flox2.html#focus-on-nirv-fcvi"><i class="fa fa-check"></i><b>11.4</b> focus on nirv fcvi</a></li>
+<li class="chapter" data-level="11.5" data-path="flox2.html"><a href="flox2.html#discussion-3"><i class="fa fa-check"></i><b>11.5</b> Discussion</a><ul>
+<li class="chapter" data-level="11.5.1" data-path="flox2.html"><a href="flox2.html#on-the-measurement-protocol"><i class="fa fa-check"></i><b>11.5.1</b> On the measurement protocol</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="flox3.html"><a href="flox3.html"><i class="fa fa-check"></i><b>12</b> Diurnal rescaling procedure</a><ul>
+<li class="chapter" data-level="12.1" data-path="flox3.html"><a href="flox3.html#the-need-for-rescaling-explained"><i class="fa fa-check"></i><b>12.1</b> The need for rescaling explained</a></li>
+<li class="chapter" data-level="12.2" data-path="flox3.html"><a href="flox3.html#developing-a-rescaling-approach-based-on-empirical-relationship-between-sif-and-lai"><i class="fa fa-check"></i><b>12.2</b> Developing a rescaling approach based on empirical relationship between SIF and LAI</a><ul>
+<li class="chapter" data-level="12.2.1" data-path="flox3.html"><a href="flox3.html#data"><i class="fa fa-check"></i><b>12.2.1</b> Data</a></li>
+<li class="chapter" data-level="12.2.2" data-path="flox3.html"><a href="flox3.html#empirical-relationship"><i class="fa fa-check"></i><b>12.2.2</b> Empirical relationship</a></li>
+<li class="chapter" data-level="12.2.3" data-path="flox3.html"><a href="flox3.html#case-study-hyplant-validation"><i class="fa fa-check"></i><b>12.2.3</b> Case study hyplant validation</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="flox3.html"><a href="flox3.html#develping-a-priori-shape-based-on-the-quadratic-fit-on-par"><i class="fa fa-check"></i><b>12.3</b> Develping a-priori shape based on the quadratic fit on par</a></li>
+<li class="chapter" data-level="12.4" data-path="flox3.html"><a href="flox3.html#discussion-4"><i class="fa fa-check"></i><b>12.4</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="airborne-measurements-of-sif.html"><a href="airborne-measurements-of-sif.html"><i class="fa fa-check"></i>Airborne measurements of SIF</a></li>
+<li class="chapter" data-level="13" data-path="hyplant1.html"><a href="hyplant1.html"><i class="fa fa-check"></i><b>13</b> Exploratory analysis of HyPlant data</a><ul>
+<li class="chapter" data-level="13.1" data-path="hyplant1.html"><a href="hyplant1.html#hyplant-data"><i class="fa fa-check"></i><b>13.1</b> HyPlant Data</a></li>
+<li class="chapter" data-level="13.2" data-path="hyplant1.html"><a href="hyplant1.html#outlier-detection"><i class="fa fa-check"></i><b>13.2</b> Outlier detection</a></li>
+<li class="chapter" data-level="13.3" data-path="hyplant1.html"><a href="hyplant1.html#exploratory-analysis-of-sif"><i class="fa fa-check"></i><b>13.3</b> Exploratory analysis of SIF</a><ul>
+<li class="chapter" data-level="13.3.1" data-path="hyplant1.html"><a href="hyplant1.html#summary-stats"><i class="fa fa-check"></i><b>13.3.1</b> Summary stats</a></li>
+<li class="chapter" data-level="13.3.2" data-path="hyplant1.html"><a href="hyplant1.html#histogram-distribution"><i class="fa fa-check"></i><b>13.3.2</b> Histogram distribution</a></li>
+<li class="chapter" data-level="13.3.3" data-path="hyplant1.html"><a href="hyplant1.html#field-average"><i class="fa fa-check"></i><b>13.3.3</b> Field average</a></li>
+<li class="chapter" data-level="13.3.4" data-path="hyplant1.html"><a href="hyplant1.html#terrace-association"><i class="fa fa-check"></i><b>13.3.4</b> Terrace association</a></li>
+<li class="chapter" data-level="13.3.5" data-path="hyplant1.html"><a href="hyplant1.html#soil"><i class="fa fa-check"></i><b>13.3.5</b> Soil</a></li>
+<li class="chapter" data-level="13.3.6" data-path="hyplant1.html"><a href="hyplant1.html#scale-dependence"><i class="fa fa-check"></i><b>13.3.6</b> Scale dependence</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="hyplant2.html"><a href="hyplant2.html"><i class="fa fa-check"></i><b>14</b> Retrieval of LAI and Cab from HyPlant Reflectance</a><ul>
+<li class="chapter" data-level="14.1" data-path="hyplant2.html"><a href="hyplant2.html#materials"><i class="fa fa-check"></i><b>14.1</b> Materials</a><ul>
+<li class="chapter" data-level="14.1.1" data-path="rs.html"><a href="rs.html#hyplant"><i class="fa fa-check"></i><b>14.1.1</b> HyPlant</a></li>
+<li class="chapter" data-level="14.1.2" data-path="hyplant2.html"><a href="hyplant2.html#study-area"><i class="fa fa-check"></i><b>14.1.2</b> Study Area</a></li>
+<li class="chapter" data-level="14.1.3" data-path="hyplant2.html"><a href="hyplant2.html#ground-truth"><i class="fa fa-check"></i><b>14.1.3</b> Ground truth</a></li>
+<li class="chapter" data-level="14.1.4" data-path="hyplant2.html"><a href="hyplant2.html#lut-generation"><i class="fa fa-check"></i><b>14.1.4</b> LUT generation</a></li>
+<li class="chapter" data-level="14.1.5" data-path="hyplant2.html"><a href="hyplant2.html#cost-function-selection"><i class="fa fa-check"></i><b>14.1.5</b> Cost function selection</a></li>
+</ul></li>
+<li class="chapter" data-level="14.2" data-path="hyplant2.html"><a href="hyplant2.html#results-1"><i class="fa fa-check"></i><b>14.2</b> Results</a><ul>
+<li class="chapter" data-level="14.2.1" data-path="hyplant2.html"><a href="hyplant2.html#cost-function-evaluation-table"><i class="fa fa-check"></i><b>14.2.1</b> Cost function evaluation table</a></li>
+<li class="chapter" data-level="14.2.2" data-path="hyplant2.html"><a href="hyplant2.html#lai-observed-vs.predicted"><i class="fa fa-check"></i><b>14.2.2</b> LAI observed vs. predicted</a></li>
+<li class="chapter" data-level="14.2.3" data-path="hyplant2.html"><a href="hyplant2.html#residuals"><i class="fa fa-check"></i><b>14.2.3</b> Residuals</a></li>
+<li class="chapter" data-level="14.2.4" data-path="hyplant2.html"><a href="hyplant2.html#spectral-reflectance-observed-vs.predicted"><i class="fa fa-check"></i><b>14.2.4</b> Spectral reflectance observed vs. predicted</a></li>
+<li class="chapter" data-level="14.2.5" data-path="hyplant2.html"><a href="hyplant2.html#maps"><i class="fa fa-check"></i><b>14.2.5</b> Maps</a></li>
+<li class="chapter" data-level="14.2.6" data-path="hyplant2.html"><a href="hyplant2.html#compare-to-ndvi"><i class="fa fa-check"></i><b>14.2.6</b> Compare to NDVI</a></li>
+</ul></li>
+<li class="chapter" data-level="14.3" data-path="hyplant2.html"><a href="hyplant2.html#discussion-5"><i class="fa fa-check"></i><b>14.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="hyplant3.html"><a href="hyplant3.html"><i class="fa fa-check"></i><b>15</b> Exploring the relationship between LAI and Chlorophyll and SIF</a><ul>
+<li class="chapter" data-level="15.1" data-path="hyplant3.html"><a href="hyplant3.html#data-and-rq"><i class="fa fa-check"></i><b>15.1</b> Data and RQ</a><ul>
+<li class="chapter" data-level="15.1.1" data-path="hyplant3.html"><a href="hyplant3.html#rq"><i class="fa fa-check"></i><b>15.1.1</b> RQ</a></li>
+<li class="chapter" data-level="15.1.2" data-path="hyplant3.html"><a href="hyplant3.html#data-1"><i class="fa fa-check"></i><b>15.1.2</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="15.2" data-path="hyplant3.html"><a href="hyplant3.html#field-level"><i class="fa fa-check"></i><b>15.2</b> Field level</a><ul>
+<li class="chapter" data-level="15.2.1" data-path="hyplant3.html"><a href="hyplant3.html#data-partitioning"><i class="fa fa-check"></i><b>15.2.1</b> Data partitioning</a></li>
+<li class="chapter" data-level="15.2.2" data-path="hyplant3.html"><a href="hyplant3.html#models-on-the-field-level"><i class="fa fa-check"></i><b>15.2.2</b> Models on the field level</a></li>
+<li class="chapter" data-level="15.2.3" data-path="hyplant3.html"><a href="hyplant3.html#summary"><i class="fa fa-check"></i><b>15.2.3</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="15.3" data-path="hyplant3.html"><a href="hyplant3.html#agrosystem-level"><i class="fa fa-check"></i><b>15.3</b> Agrosystem level</a><ul>
+<li class="chapter" data-level="15.3.1" data-path="hyplant3.html"><a href="hyplant3.html#linear-model-for-lai"><i class="fa fa-check"></i><b>15.3.1</b> Linear model for LAI</a></li>
+<li class="chapter" data-level="15.3.2" data-path="hyplant3.html"><a href="hyplant3.html#stewise-model-selection"><i class="fa fa-check"></i><b>15.3.2</b> Stewise model selection</a></li>
+</ul></li>
+<li class="chapter" data-level="15.4" data-path="hyplant3.html"><a href="hyplant3.html#discussion-6"><i class="fa fa-check"></i><b>15.4</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="hyplant4.html"><a href="hyplant4.html"><i class="fa fa-check"></i><b>16</b> Evaluation of TCAR/OSACI to correct for Cab. Lidar data</a></li>
+<li class="chapter" data-level="17" data-path="hyplant5.html"><a href="hyplant5.html"><i class="fa fa-check"></i><b>17</b> Evaluation of proxy estimates for canopy structure for spatial upscaling of Top-of-Canopy Sun-induced Fluorescence</a><ul>
+<li class="chapter" data-level="17.1" data-path="hyplant5.html"><a href="hyplant5.html#methods"><i class="fa fa-check"></i><b>17.1</b> Methods</a><ul>
+<li class="chapter" data-level="17.1.1" data-path="hyplant5.html"><a href="hyplant5.html#theoretical-background"><i class="fa fa-check"></i><b>17.1.1</b> Theoretical background</a></li>
+<li class="chapter" data-level="17.1.2" data-path="hyplant5.html"><a href="hyplant5.html#rescaling-sif.-location-model-for-high-resolution-remote-sensing-data-hyplant"><i class="fa fa-check"></i><b>17.1.2</b> Rescaling SIF. Location model for high resolution remote sensing data (HyPlant)</a></li>
+<li class="chapter" data-level="17.1.3" data-path="hyplant5.html"><a href="hyplant5.html#data-used"><i class="fa fa-check"></i><b>17.1.3</b> Data used</a></li>
+<li class="chapter" data-level="17.1.4" data-path="hyplant5.html"><a href="hyplant5.html#selection-of-candidate-proxies-for-gamma"><i class="fa fa-check"></i><b>17.1.4</b> Selection of candidate proxies for <span class="math inline">\(\Gamma\)</span></a></li>
+<li class="chapter" data-level="17.1.5" data-path="hyplant5.html"><a href="hyplant5.html#monte-carlo-approach-to-find-the-best-reference-location"><i class="fa fa-check"></i><b>17.1.5</b> Monte Carlo approach to find the best reference location</a></li>
+<li class="chapter" data-level="17.1.6" data-path="hyplant5.html"><a href="hyplant5.html#evaluation-statistics"><i class="fa fa-check"></i><b>17.1.6</b> Evaluation statistics</a></li>
+</ul></li>
+<li class="chapter" data-level="17.2" data-path="hyplant5.html"><a href="hyplant5.html#results-2"><i class="fa fa-check"></i><b>17.2</b> Results</a><ul>
+<li class="chapter" data-level="17.2.1" data-path="hyplant5.html"><a href="hyplant5.html#interpretation-of-spatial-patterns-of-true-sif-vis-and-calculated-analytical-gamma"><i class="fa fa-check"></i><b>17.2.1</b> Interpretation of spatial patterns of true SIF, VIs, and calculated analytical <span class="math inline">\(\Gamma\)</span></a></li>
+<li class="chapter" data-level="17.2.2" data-path="hyplant5.html"><a href="hyplant5.html#evaluation-of-predictive-performance-and-error-decomposition-for-the-four-candidate-proxies"><i class="fa fa-check"></i><b>17.2.2</b> Evaluation of predictive performance and error decomposition for the four candidate proxies</a></li>
+<li class="chapter" data-level="17.2.3" data-path="hyplant5.html"><a href="hyplant5.html#sensitivity-to-the-selected-reference-location"><i class="fa fa-check"></i><b>17.2.3</b> Sensitivity to the selected reference location</a></li>
+<li class="chapter" data-level="17.2.4" data-path="hyplant5.html"><a href="hyplant5.html#spatial-patterns-of-residuals"><i class="fa fa-check"></i><b>17.2.4</b> Spatial patterns of residuals</a></li>
+</ul></li>
+<li class="chapter" data-level="17.3" data-path="hyplant5.html"><a href="hyplant5.html#discussion-7"><i class="fa fa-check"></i><b>17.3</b> Discussion</a><ul>
+<li class="chapter" data-level="17.3.1" data-path="hyplant5.html"><a href="hyplant5.html#on-derivation-of-proxy-estimates-for-gamma"><i class="fa fa-check"></i><b>17.3.1</b> On derivation of proxy estimates for <span class="math inline">\(\Gamma\)</span></a></li>
+<li class="chapter" data-level="17.3.2" data-path="hyplant5.html"><a href="hyplant5.html#on-the-evaluation-methodology-and-the-results"><i class="fa fa-check"></i><b>17.3.2</b> On the evaluation methodology and the results</a></li>
+<li class="chapter" data-level="17.3.3" data-path="hyplant5.html"><a href="hyplant5.html#on-possible-application-in-the-upscaling-of-sif"><i class="fa fa-check"></i><b>17.3.3</b> On possible application in the upscaling of SIF</a></li>
+<li class="chapter" data-level="17.3.4" data-path="hyplant5.html"><a href="hyplant5.html#conclusion"><i class="fa fa-check"></i><b>17.3.4</b> Conclusion</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="hyplant6.html"><a href="hyplant6.html"><i class="fa fa-check"></i><b>18</b> From HyPlant to FLEX upscaling procedure</a><ul>
+<li class="chapter" data-level="18.1" data-path="hyplant6.html"><a href="hyplant6.html#flex-and-hyplant"><i class="fa fa-check"></i><b>18.1</b> FLEX and HyPlant</a></li>
+<li class="chapter" data-level="18.2" data-path="hyplant6.html"><a href="hyplant6.html#input-data"><i class="fa fa-check"></i><b>18.2</b> Input data</a></li>
+</ul></li>
+<li class="chapter" data-level="19" data-path="flox-sif-vs-vi-flox4.html"><a href="flox-sif-vs-vi-flox4.html"><i class="fa fa-check"></i><b>19</b> FLOX SIF vs VI {flox4}</a><ul>
+<li class="chapter" data-level="19.1" data-path="flox-sif-vs-vi-flox4.html"><a href="flox-sif-vs-vi-flox4.html#sif-vi-relationship-at-flox-scale"><i class="fa fa-check"></i><b>19.1</b> sif vi relationship at flox scale</a></li>
+<li class="chapter" data-level="19.2" data-path="flox-sif-vs-vi-flox4.html"><a href="flox-sif-vs-vi-flox4.html#focus-on-nirv-fcvi-1"><i class="fa fa-check"></i><b>19.2</b> focus on nirv fcvi</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Exploring the effect of canopy structure on top-of-canopy sun-induced fluorescence</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="hyplant3" class="section level1">
+<h1><span class="header-section-number">Chapter 15</span> Exploring the relationship between LAI and Chlorophyll and SIF</h1>
+<p>In chapter <a href="scope.html#scope">9</a> we explored the effect of LAI and Cab on SIF using simulated data. In chapter <a href="flox2.html#flox2">11</a> we saw that the relationship is visible at ground level observations. In this chapter we will build increasingly complex models which are seeking to explain the spatial variability in SIF as a function of LAI, Cab, and spatial location in the area.</p>
+<div id="data-and-rq" class="section level2">
+<h2><span class="header-section-number">15.1</span> Data and RQ</h2>
+<div id="rq" class="section level3">
+<h3><span class="header-section-number">15.1.1</span> RQ</h3>
+<p>RQ1. Which are the significant predictors of SIF in O2A band inside of intensively managed agro-environment?</p>
+<p>RQ2. Does the spatial location have a significant effect on the interaction between SIF signal and LAI? RQ3. What proportion of variation of SIF can be explained by canopy biophysics and/or spatial location.</p>
+<p>RQ4. What is the appropriate form a of the model to be used to predict SIF?</p>
+<p>RQ5. How does spatial aggregation (scaling up to coarser resolution) affects the above explanatory power and the shape of the relationship(within field and between field variability)?</p>
+<p>To answer research questiona 1 through 3 we classify the predictors into two groups - those related to plant structure (internal), and those related to the environmental conditions (external) and evaluate the significance of the predictors using a stepwise regression modelling. The internal factors are the leaf arrea index (LAI) and chlorophyll content (Cab) retrieved in chapter <a href="hyplant2.html#hyplant2">14</a>. The external factors include the position in NS and WE directions, the soil conditions and wether the fields are located in the upper or lower terrace.</p>
+<p>According to our previous observations in chapter <a href="scope.html#scope">9</a> the appropriate model shape of the relationship between SIF and LAI should be a postive with saturation (Figure <a href="scope.html#fig:08-scope-huber">9.4</a>). In addition, the absense of green biomass indicates the absense of fluorescence emittance, hence, the appropriate model form should have a zero-intercept plateauing at high LAI values.</p>
+<p>To answer research quesiton 4 we will fit a linear model with 0-intercept (base line for comparison), a linear model with plateau, a piecewise linear models and the more flexible generalized additive model (GAM) to a training subset and evaluate it against an independent test subset by investigate the model diagnostics after <span class="citation">(<span class="citeproc-not-found" data-reference-id="Gautch2003"><strong>???</strong></span>)</span>. We will discuss the evaluation statistics, the signficance of predictors, and the considerations for choosing the best model.</p>
+<p>To answer the last research questions we will consider two spatial scales. First, we will use the nominal resolution of HyPlant sensor (1m) within the boudaries of three agricultural fields (within field variability). Secondly, we will aggregate SIF and the other relevant parameters for each agro-field/soil type combination and use these average values as the nominal sampling units for the whole extend of the Selhausen study area.</p>
+</div>
+<div id="data-1" class="section level3">
+<h3><span class="header-section-number">15.1.2</span> Data</h3>
+<p>The data set used here is the same as in the previous two chapters. The fluorescence (iFLD) was acquired the HyPlant sensor (Section <a href="rs.html#hyplant">3.4.2</a>) over the Selhausen study site (Chapter <a href="hyplant2.html#study-area">14.1.2</a>) on 26.06.2016. The nominal spatial resolution of the image is 1 meter. The area covered by the scene is approximately 27 km<sup>2</sup> and includes 58 sugar beet fields. Sugar beet was choosen because it was the most dominant green crop at time of image acquisition. For descriptive statistics of SIF in sugar beet see chapter <a href="hyplant1.html#hyplant1">13</a>.</p>
+<p>Leaf area index and Chlorophyll content were retrieved for the same image by means of RT model inversion (ProSAIL) (Chapter <a href="hyplant2.html#hyplant2">14</a>).</p>
+<p>The soil type, depth, and bedrock information were extracted from a soil map from the german goverment (Section <a href="studyarea.html#soilter">7.4</a>). The terrace boundaries were defined after <span class="citation">(Rudolph et al. <a href="#ref-Rudolph2015">2015</a>)</span>. Elevation was extracted from a stereo-camera system on board of HyPlant.</p>
+<p>Standardization of all input variables was performed prior to model fit.</p>
+</div>
+</div>
+<div id="field-level" class="section level2">
+<h2><span class="header-section-number">15.2</span> Field level</h2>
+<p>To study the within field variability we will concentrate on the group of three fields in the center of the selhausen image (Figure <a href="hyplant3.html#fig:map1">15.1</a>). Since they are adjecent to each other they can be regarded as one single field. Henceforth, the analysis performed with data from the three fields will be called field scale analysis to indicate that the analysis extends to a single field (e.g. a single management unit). Analysis on this level explores to what degree the interaction between SIF and LAI can be modelled within single agricultural field.</p>
+<div class="figure"><span id="fig:map1"></span>
+<img src="bookdown_files/figure-html/map1-1.png" alt="Nominal scale (1m spatial resolution). The analysis was performed over the three sugar beet fields. Upper panel shows the spatial distribution of SIF760 and the topography. The 107 m a.s.l. isoline separates the area into lower terrace (to the West) and upper terrace (to the East). Lower pannel shows the spatial distribution of LAI values and soils. Legend for the soil map was shown in table \@ref(tab:06-study-soil-legend). " width="768" />
+<p class="caption">
+Figure 15.1: Nominal scale (1m spatial resolution). The analysis was performed over the three sugar beet fields. Upper panel shows the spatial distribution of SIF760 and the topography. The 107 m a.s.l. isoline separates the area into lower terrace (to the West) and upper terrace (to the East). Lower pannel shows the spatial distribution of LAI values and soils. Legend for the soil map was shown in table <a href="#tab:06-study-soil-legend"><strong>??</strong></a>.
+</p>
+</div>
+<table>
+<thead>
+<tr class="header">
+<th align="right">Sol_cd1</th>
+<th align="left">Sol_cd2</th>
+<th align="left">soiln</th>
+<th align="left">description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">5</td>
+<td align="left">L35</td>
+<td align="left">Parabrown</td>
+<td align="left">Loess from Pleistozaen over NA in NA</td>
+</tr>
+<tr class="even">
+<td align="right">8</td>
+<td align="left">sL35</td>
+<td align="left">Parabrown</td>
+<td align="left">Loess from Pleistozaen over NA in NA</td>
+</tr>
+<tr class="odd">
+<td align="right">10</td>
+<td align="left">sL33</td>
+<td align="left">Parabrown</td>
+<td align="left">Loess from Pleistozaen over Sand und Kies in Hauptterrasse</td>
+</tr>
+<tr class="even">
+<td align="right">17</td>
+<td align="left">lS35</td>
+<td align="left">Pseudoclay</td>
+<td align="left">Loess from Pleistozaen over NA in NA</td>
+</tr>
+<tr class="odd">
+<td align="right">1</td>
+<td align="left">B32</td>
+<td align="left">Brown</td>
+<td align="left">Loess from Pleistozaen over Sand und Kies in Hauptterrasse</td>
+</tr>
+<tr class="even">
+<td align="right">17</td>
+<td align="left">lS35</td>
+<td align="left">Pseudoclay</td>
+<td align="left">Loess from Pleistozaen over NA in NA</td>
+</tr>
+<tr class="odd">
+<td align="right">21</td>
+<td align="left">gS35</td>
+<td align="left">Pseudoclay</td>
+<td align="left">Hochflutlehm oder umgelagerter Loesslehm from Holozaen over NA in NA</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="left">B31</td>
+<td align="left">Brown</td>
+<td align="left">Loess from Pleistozaen over Sand und Kies in Hauptterrasse</td>
+</tr>
+<tr class="odd">
+<td align="right">7</td>
+<td align="left">L33</td>
+<td align="left">Parabrown</td>
+<td align="left">Loess from Pleistozaen over Sand und Kies in Hauptterrasse</td>
+</tr>
+<tr class="even">
+<td align="right">7</td>
+<td align="left">L33</td>
+<td align="left">Parabrown</td>
+<td align="left">Loess from Pleistozaen over Sand und Kies in Hauptterrasse</td>
+</tr>
+</tbody>
+</table>
+<div id="data-partitioning" class="section level3">
+<h3><span class="header-section-number">15.2.1</span> Data partitioning</h3>
+<p>The field level data set consist of 84474 pixels. The image was sampled equally (n=200) from each of the eight soil types (Figure <a href="hyplant3.html#fig:map1">15.1</a>). A stratification based on soil substrate was chosen because some of the soil types are underrepresented in the data. The resulted random sample with equal proportion of pixels from each soil class was further split into train and test subsets (70/30). It is quite obvious that there is a significiant noise in the system (Figure <a href="hyplant3.html#fig:plot1-EDA-field">15.2</a>).</p>
+<div class="figure"><span id="fig:plot1-EDA-field"></span>
+<img src="bookdown_files/figure-html/plot1-EDA-field-1.png" alt="Scatterplot of SIF vs. LAI for the training subset in the field level data. (A) per soil type, (B) per terrace association" width="768" />
+<p class="caption">
+Figure 15.2: Scatterplot of SIF vs. LAI for the training subset in the field level data. (A) per soil type, (B) per terrace association
+</p>
+</div>
+</div>
+<div id="models-on-the-field-level" class="section level3">
+<h3><span class="header-section-number">15.2.2</span> Models on the field level</h3>
+<div id="univariate-linear-model-with-0-intercept-against-lai" class="section level4">
+<h4><span class="header-section-number">15.2.2.1</span> Univariate linear model with 0-intercept against LAI</h4>
+<p>We discussed in the introduction that an appropriate form for a linear fit is one with 0-intercept term with plateau, e.g. saturating at high LAI.</p>
+<p>This model is often used to model responses which saturate after some break point value. The fit after the max value is a horizontal line. In essense it is a linear model for the range between 0 and the saturating point for LAI. After this saturating LAI any SIF equals SIFmax. A linear model with no plateau will be used as a reference model for comparison and evaluation.</p>
+<div class="figure"><span id="fig:unnamed-chunk-107"></span>
+<img src="bookdown_files/figure-html/unnamed-chunk-107-1.png" alt="Fit on the training data for the linear and Piecewise linear models (linear response with plateau). In both cases a 0-intercept model was fit" width="768" />
+<p class="caption">
+Figure 15.3: Fit on the training data for the linear and Piecewise linear models (linear response with plateau). In both cases a 0-intercept model was fit
+</p>
+</div>
+<p>For both models, the assumption of independence of residuals is violated the edges of the distribution (plots not shown). The plots above answer our expectations of poor performance. Most of the variation remains unexplained. In addition, violation of assumptions and existence of observations with high levarage suggest the single factor (LAI) is unable to explain tha variability between SIF and LAI at the nominal 1m resolution. The predictive performance of both models were evaluated using the diagnostics in Gouch (2003). These are presented in the table <a href="hyplant3.html#tab:valid-lrp-diagnostics">15.1</a>.</p>
+<p>The interpretation of the error decomposition after Gauch is given in section <a href="hyplant5.html#gauch">17.1.6.1</a>.</p>
+<table>
+<caption><span id="tab:valid-lrp-diagnostics">Table 15.1: </span>Model evaluation Diagnostics after Gouch (2003) for linear response and linear response with plateau. The total error (MSD) is decomposed into error due to translation (SB), rotation (NU) and noise (LC)</caption>
+<thead>
+<tr class="header">
+<th align="left">Diagnostics</th>
+<th align="left">Abreviation</th>
+<th align="right">Linear</th>
+<th align="right">linear with plateau</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Prediction RMSE</td>
+<td align="left">RMSEP</td>
+<td align="right">0.6467534</td>
+<td align="right">0.6069675</td>
+</tr>
+<tr class="even">
+<td align="left">Squared biased</td>
+<td align="left">SB</td>
+<td align="right">0.0186981</td>
+<td align="right">0.0000011</td>
+</tr>
+<tr class="odd">
+<td align="left">Non-unity slope</td>
+<td align="left">NU</td>
+<td align="right">0.1307788</td>
+<td align="right">0.0182442</td>
+</tr>
+<tr class="even">
+<td align="left">Lack of correlation</td>
+<td align="left">LC</td>
+<td align="right">0.2688131</td>
+<td align="right">0.3501642</td>
+</tr>
+</tbody>
+</table>
+<div class="figure"><span id="fig:valid-lrp-plot"></span>
+<img src="bookdown_files/figure-html/valid-lrp-plot-1.png" alt="Comparison between linear and linear response with plateau prediction vs. actual observation on the test dataset" width="768" />
+<p class="caption">
+Figure 15.4: Comparison between linear and linear response with plateau prediction vs. actual observation on the test dataset
+</p>
+</div>
+<p>The overall error MSD improves from simple linear to a linear with plateau. The error decomposition showed that NU LC combined explain most of the prediction error. For the linear regression with a plateau the rotation and bias decreased while the LC increased. Though the linear model with plateau is overal better it underperforms in tracking the noise, e.g. the all values after LAImax are modeled via one single value - SIFmax.</p>
+<p>To minimize the slope and exlain more of the variation, more complex local regressions can be used. For example, splines fit a linear model to a weighted regions track better curvy relationships. On the other hand, the noise in the system indicates additional variability to be explained. We will seek to explain this variation and investigate its directions by further including Cab, soil as explanatory covariates. In conclusion, the SIF LAI relationship is visible at one meter resolution but is quite noisy, the apporpriate model form is one with saturation at high values but flexible enough to track complex changes.</p>
+</div>
+<div id="multivariate.-including-cab-and-soil" class="section level4">
+<h4><span class="header-section-number">15.2.2.2</span> Multivariate. Including Cab and Soil</h4>
+<p>In the previous section we performed bivariate modeling, seeking to measure the proportion of variation in SIF explained by LAI. Here, we will include chlorophyl concentration and spatial information (soil type) to the linear response model with plateau, and to a generalized additive spline model (GAM).</p>
+<p>By plotting the individual additive components of a spline GAM, we can interogate the effect of each of the three input variables (Figure <a href="#fig:gam1"><strong>??</strong></a>). In figure <a href="hyplant3.html#fig:gam">15.5</a> <span class="math inline">\(x1 \equiv LAI\)</span>, <span class="math inline">\(x2 \equiv Cab\)</span>, and <span class="math inline">\(x3 \equiv\)</span> the soil type. However, we cannot conclude about the significance of each of the predictors.</p>
+<p>In the SCOPE simulation (Chapter <a href="scope.html#scope">9</a>) we saw that SIF760 saturates at high LAI and Cab. At the hyplant level we observa that SIF and LAI have positive, fairly linear relationship while the SIF decreases at high Cab. One possible explanation is that Cab actually contains the combined information from high LAI and high Cab.</p>
+<div class="figure"><span id="fig:gam"></span>
+<img src="bookdown_files/figure-html/gam-1.png" alt="Generalized additive model predicting SIF760 from x1 - LAI, x2-Cab, x3-soil." width="768" />
+<p class="caption">
+Figure 15.5: Generalized additive model predicting SIF760 from x1 - LAI, x2-Cab, x3-soil.
+</p>
+</div>
+<div class="figure"><span id="fig:valid-multivar-plot"></span>
+<img src="bookdown_files/figure-html/valid-multivar-plot-1.png" alt="Actual vs. observed plots for the multivariate linear model with plateau (right) and for the generalised additive model. Predictors: LAI, Cab, soil" width="768" />
+<p class="caption">
+Figure 15.6: Actual vs. observed plots for the multivariate linear model with plateau (right) and for the generalised additive model. Predictors: LAI, Cab, soil
+</p>
+</div>
+<table>
+<caption><span id="tab:valid-multivar-gam-diagnostics">Table 15.2: </span>Model evaluation generalized additive response . Diagnostics after Gouch (2003). The total error (MSD) is decomposed into error due to translation (SB), rotation (NU) and noise (LC)</caption>
+<thead>
+<tr class="header">
+<th align="left">Diagnostics</th>
+<th align="left">Abreviation</th>
+<th align="right">Linear</th>
+<th align="right">linear with plateau</th>
+<th align="right">multivariate linear with plateau</th>
+<th align="right">multivariate gam</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Prediction RMSE</td>
+<td align="left">RMSEP</td>
+<td align="right">0.6467534</td>
+<td align="right">0.6069675</td>
+<td align="right">0.7796351</td>
+<td align="right">0.6942351</td>
+</tr>
+<tr class="even">
+<td align="left">Squared biased</td>
+<td align="left">SB</td>
+<td align="right">0.0186981</td>
+<td align="right">0.0000011</td>
+<td align="right">0.0003160</td>
+<td align="right">0.0003597</td>
+</tr>
+<tr class="odd">
+<td align="left">Non-unity slope</td>
+<td align="left">NU</td>
+<td align="right">0.1307788</td>
+<td align="right">0.0182442</td>
+<td align="right">0.0026596</td>
+<td align="right">0.0007609</td>
+</tr>
+<tr class="even">
+<td align="left">Lack of correlation</td>
+<td align="left">LC</td>
+<td align="right">0.2688131</td>
+<td align="right">0.3501642</td>
+<td align="right">0.6048553</td>
+<td align="right">0.4808418</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="summary" class="section level3">
+<h3><span class="header-section-number">15.2.3</span> Summary</h3>
+<p>We saw that ordinary least squares (OLS) is not appropriate to model the highly complex SIF ~ LAI relationship. OLS relies on certain assumptions about the data and the appropriate sample size. For a large sample size will artificially inflate the regression dignastic statistics. The optimal sample size for OLS is between 30 and several hundred. Also, if the magnitutes of the input variables are different, standardization is necessary. The SIF and LAI ranges fairly similar but not comparable to Cab and elevation. VI have different ranges too. Simple ratios are bound to infinity, normalized indices - bound to 0 and 1.</p>
+<p>Signal to noise ratio is low at this scale. The largest part of the overal error (MSD) is due to residual noise even for models with visually significant rotation between predicted and observed from validation. For the leanr models with plateau, including Cab does not improve overal error, suggesting that the added noise by Cab is indeed higher than the added information. The best model, smooth splines, is only slightly better than chance.</p>
+<p>improvements - better validation of LAI and Cab, including better parameterization (e.g. Leaf Angle). Non-parameteric retrieval methods ( ML). Better SIF retrieval. will reduce input noise. Further non-parametric models to improve relationship. although some oare too black box so there is a trade of between interpreation nad prediction.</p>
+<!-- ### On coarser resolution level  -->
+</div>
+</div>
+<div id="agrosystem-level" class="section level2">
+<h2><span class="header-section-number">15.3</span> Agrosystem level</h2>
+<p>Next, we will scale up the research to the entire study area. All data was aggregated over each field/soil type combination. The new dataset has has size n= 116 where each sampling unit is the soil/agrofield combination.</p>
+<div id="linear-model-for-lai" class="section level3">
+<h3><span class="header-section-number">15.3.1</span> Linear model for LAI</h3>
+<p>Here we build a linear model between SIF and LAI to examine the trends in the data(Figure <a href="hyplant3.html#fig:lm-soil-ter-plot">15.7</a>). We can see that both the terrace and the soil type have an effect on the relationship. Notably, the slope of the linear fit (Tables <a href="hyplant3.html#tab:lm-per-soilfield-slope">15.3</a> and <a href="#tab:per-ter-slope"><strong>??</strong></a>) and the tightness of the fit (R<sup>2</sup> in tables @ref(tab:lm-per-soilfield-glance and <a href="hyplant3.html#tab:lm-per-ter-glance">15.6</a>) change depending on the soil and the terrace.</p>
+<div class="figure"><span id="fig:lm-soil-ter-plot"></span>
+<img src="bookdown_files/figure-html/lm-soil-ter-plot-1.png" alt="Indvidual linear models for each soil group (A), and per terrace association (B)." width="768" />
+<p class="caption">
+Figure 15.7: Indvidual linear models for each soil group (A), and per terrace association (B).
+</p>
+</div>
+<table>
+<caption><span id="tab:lm-per-soilfield-slope">Table 15.3: </span>Slope of the linear fit</caption>
+<thead>
+<tr class="header">
+<th align="left">soiln</th>
+<th align="left">term</th>
+<th align="right">estimate</th>
+<th align="right">std.error</th>
+<th align="right">statistic</th>
+<th align="right">p.value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Pseudoclay</td>
+<td align="left">LAI</td>
+<td align="right">0.4019679</td>
+<td align="right">0.0651469</td>
+<td align="right">6.170176</td>
+<td align="right">0.0000003</td>
+</tr>
+<tr class="even">
+<td align="left">Parabrown</td>
+<td align="left">LAI</td>
+<td align="right">0.4657197</td>
+<td align="right">0.0580910</td>
+<td align="right">8.017069</td>
+<td align="right">0.0000000</td>
+</tr>
+<tr class="odd">
+<td align="left">Brown</td>
+<td align="left">LAI</td>
+<td align="right">0.3235014</td>
+<td align="right">0.0598362</td>
+<td align="right">5.406446</td>
+<td align="right">0.0000925</td>
+</tr>
+<tr class="even">
+<td align="left">Clay</td>
+<td align="left">LAI</td>
+<td align="right">0.4343216</td>
+<td align="right">0.0816050</td>
+<td align="right">5.322243</td>
+<td align="right">0.0004796</td>
+</tr>
+<tr class="odd">
+<td align="left">Loes</td>
+<td align="left">LAI</td>
+<td align="right">0.5439180</td>
+<td align="right">0.2368456</td>
+<td align="right">2.296509</td>
+<td align="right">0.1053251</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption><span id="tab:lm-per-soilfield-glance">Table 15.4: </span>Summary of the linear fit per soil type</caption>
+<thead>
+<tr class="header">
+<th align="left">soiln</th>
+<th align="right">r.squared</th>
+<th align="right">adj.r.squared</th>
+<th align="right">sigma</th>
+<th align="right">statistic</th>
+<th align="right">p.value</th>
+<th align="right">df</th>
+<th align="right">logLik</th>
+<th align="right">AIC</th>
+<th align="right">BIC</th>
+<th align="right">deviance</th>
+<th align="right">df.residual</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Pseudoclay</td>
+<td align="right">0.4939735</td>
+<td align="right">0.4809985</td>
+<td align="right">0.4072660</td>
+<td align="right">38.071068</td>
+<td align="right">0.0000003</td>
+<td align="right">2</td>
+<td align="right">-20.3214312</td>
+<td align="right">46.642862</td>
+<td align="right">51.783579</td>
+<td align="right">6.4687593</td>
+<td align="right">39</td>
+</tr>
+<tr class="even">
+<td align="left">Parabrown</td>
+<td align="right">0.6105378</td>
+<td align="right">0.6010388</td>
+<td align="right">0.4250138</td>
+<td align="right">64.273387</td>
+<td align="right">0.0000000</td>
+<td align="right">2</td>
+<td align="right">-23.1981084</td>
+<td align="right">52.396217</td>
+<td align="right">57.679817</td>
+<td align="right">7.4061063</td>
+<td align="right">41</td>
+</tr>
+<tr class="odd">
+<td align="left">Brown</td>
+<td align="right">0.6761483</td>
+<td align="right">0.6530160</td>
+<td align="right">0.2293872</td>
+<td align="right">29.229661</td>
+<td align="right">0.0000925</td>
+<td align="right">2</td>
+<td align="right">1.9227364</td>
+<td align="right">2.154527</td>
+<td align="right">4.472293</td>
+<td align="right">0.7366588</td>
+<td align="right">14</td>
+</tr>
+<tr class="even">
+<td align="left">Clay</td>
+<td align="right">0.7588829</td>
+<td align="right">0.7320921</td>
+<td align="right">0.2557781</td>
+<td align="right">28.326266</td>
+<td align="right">0.0004796</td>
+<td align="right">2</td>
+<td align="right">0.4932602</td>
+<td align="right">5.013480</td>
+<td align="right">6.207166</td>
+<td align="right">0.5888019</td>
+<td align="right">9</td>
+</tr>
+<tr class="odd">
+<td align="left">Loes</td>
+<td align="right">0.6374164</td>
+<td align="right">0.5165552</td>
+<td align="right">0.3041185</td>
+<td align="right">5.273954</td>
+<td align="right">0.1053251</td>
+<td align="right">2</td>
+<td align="right">0.1340603</td>
+<td align="right">5.731879</td>
+<td align="right">4.560193</td>
+<td align="right">0.2774642</td>
+<td align="right">3</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption><span id="tab:lm-per-ter-slope">Table 15.5: </span>Slope of the linear fit.</caption>
+<thead>
+<tr class="header">
+<th align="left">in.high</th>
+<th align="left">term</th>
+<th align="right">estimate</th>
+<th align="right">std.error</th>
+<th align="right">statistic</th>
+<th align="right">p.value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">TRUE</td>
+<td align="left">LAI</td>
+<td align="right">0.4730025</td>
+<td align="right">0.0425949</td>
+<td align="right">11.104684</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">FALSE</td>
+<td align="left">LAI</td>
+<td align="right">0.3430890</td>
+<td align="right">0.0428523</td>
+<td align="right">8.006311</td>
+<td align="right">0</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption><span id="tab:lm-per-ter-glance">Table 15.6: </span>Summary of the linear fit per terrace association.</caption>
+<thead>
+<tr class="header">
+<th align="left">in.high</th>
+<th align="right">r.squared</th>
+<th align="right">adj.r.squared</th>
+<th align="right">sigma</th>
+<th align="right">statistic</th>
+<th align="right">p.value</th>
+<th align="right">df</th>
+<th align="right">logLik</th>
+<th align="right">AIC</th>
+<th align="right">BIC</th>
+<th align="right">deviance</th>
+<th align="right">df.residual</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">TRUE</td>
+<td align="right">0.7326426</td>
+<td align="right">0.7267013</td>
+<td align="right">0.3269279</td>
+<td align="right">123.31400</td>
+<td align="right">0</td>
+<td align="right">2</td>
+<td align="right">-13.12148</td>
+<td align="right">32.24297</td>
+<td align="right">37.79341</td>
+<td align="right">4.809685</td>
+<td align="right">45</td>
+</tr>
+<tr class="even">
+<td align="left">FALSE</td>
+<td align="right">0.4889437</td>
+<td align="right">0.4813160</td>
+<td align="right">0.3567486</td>
+<td align="right">64.10102</td>
+<td align="right">0</td>
+<td align="right">2</td>
+<td align="right">-25.77202</td>
+<td align="right">57.54405</td>
+<td align="right">64.24636</td>
+<td align="right">8.527060</td>
+<td align="right">67</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="stewise-model-selection" class="section level3">
+<h3><span class="header-section-number">15.3.2</span> Stewise model selection</h3>
+<p>Here we will use the <code>leaps</code> exhaustive stepwise procedure to fit full interaction model between LAI, Cab, soil, and terrace association. The procedure will build increasingly complex models (including more explanatory variables) and evaluate the goodness-of-fit against parsimony. That is the information gain vs. added complexity. The best model is found by minimizing the <a href="https://support.minitab.com/en-us/minitab/19/help-and-how-to/modeling-statistics/regression/supporting-topics/goodness-of-fit-statistics/what-is-mallows-cp/">Mallows’Cp</a> estimate. In figure <a href="#fig:stepwise-summary"><strong>??</strong></a> the Cp estimate is plotted against the number of explanatory variables. In figure <a href="#fig:stepwise-summary2"><strong>??</strong></a> the important variables are shown.</p>
+<pre><code>## Reordering variables and trying again:</code></pre>
+<p><img src="bookdown_files/figure-html/stepwise-summary-1.png" width="768" /></p>
+<p><img src="bookdown_files/figure-html/stepwise-summary2-1.png" width="768" /></p>
+<p>The most parsimonious model contains the following predictors:</p>
+<pre><code>## [1] &quot;(Intercept)&quot;                  &quot;LAI&quot;                          &quot;soilnClay&quot;                    &quot;LAI:Cab&quot;                     
+## [5] &quot;LAI:soilnPseudoclay&quot;          &quot;LAI:in.high2TRUE&quot;             &quot;soilnPseudoclay:in.high2TRUE&quot;</code></pre>
+<p>Cab appears only as an interaction term. The Clay and Pseudoclay are the two most dominant soil types of the lower terrace. Both of them have an effect on SIF760 - clay has direct effect (factorial) pseudoclay through interaction with LAI. In addition, the pseudoclay in the higher terrace have positive effect- these are good soils. The interaction between LAI and terrace which was visible by the plot above (B) is captured too.</p>
+<p>The LAI and the conditions in the field are the two most important predictors for SIF. At the agrienvironmental scale -Cab is less important and appears only as an interaction term with LAI.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">per.soilfield <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(LAI,SIF760)) <span class="op">+</span>
+<span class="st">    </span><span class="kw">geom_point</span>(<span class="dt">fill=</span><span class="st">&quot;black&quot;</span>, <span class="dt">size =</span> <span class="dv">3</span>) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">scale_shape_manual</span>(<span class="dt">values =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">21</span>)) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">theme_bw</span>(<span class="dt">base_size =</span> <span class="dv">14</span>) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">theme</span>(<span class="dt">legend.position =</span> <span class="st">&quot;none&quot;</span>) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="kw">expression</span>(<span class="st">&quot;LAI [&quot;</span><span class="op">~</span>m<span class="op">^</span>{<span class="dv">2</span>}<span class="op">%.%</span>m<span class="op">^</span>{<span class="op">-</span><span class="dv">2</span>}<span class="op">~</span><span class="st">&quot;]&quot;</span>), 
+     <span class="dt">y =</span> <span class="kw">expression</span>(<span class="st">&quot;SIF in O2A band [&quot;</span><span class="op">~</span>mW<span class="op">%.%</span>m<span class="op">^</span>{<span class="op">-</span><span class="dv">2</span>}<span class="op">%.%</span>sr<span class="op">^</span>{<span class="op">-</span><span class="dv">1</span>}<span class="op">%.%</span>nm<span class="op">^</span>{<span class="op">-</span><span class="dv">1</span>}<span class="op">~</span><span class="st">&quot;]&quot;</span>)) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>)
+
+per.soilfield <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(LAI,SIF760, <span class="dt">shape =</span> <span class="kw">as.factor</span>(in.high2))) <span class="op">+</span>
+<span class="st">    </span><span class="kw">geom_point</span>(<span class="dt">fill=</span><span class="st">&quot;black&quot;</span>, <span class="dt">size =</span> <span class="dv">3</span>) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">scale_shape_manual</span>(<span class="dt">values =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">21</span>)) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">theme_bw</span>(<span class="dt">base_size =</span> <span class="dv">14</span>) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">theme</span>(<span class="dt">legend.position =</span> <span class="st">&quot;none&quot;</span>) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="kw">expression</span>(<span class="st">&quot;LAI [&quot;</span><span class="op">~</span>m<span class="op">^</span>{<span class="dv">2</span>}<span class="op">%.%</span>m<span class="op">^</span>{<span class="op">-</span><span class="dv">2</span>}<span class="op">~</span><span class="st">&quot;]&quot;</span>), 
+     <span class="dt">y =</span> <span class="kw">expression</span>(<span class="st">&quot;SIF in O2A band [&quot;</span><span class="op">~</span>mW<span class="op">%.%</span>m<span class="op">^</span>{<span class="op">-</span><span class="dv">2</span>}<span class="op">%.%</span>sr<span class="op">^</span>{<span class="op">-</span><span class="dv">1</span>}<span class="op">%.%</span>nm<span class="op">^</span>{<span class="op">-</span><span class="dv">1</span>}<span class="op">~</span><span class="st">&quot;]&quot;</span>)) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>)
+
+per.soilfield <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(LAI,SIF760, <span class="dt">shape =</span> <span class="kw">as.factor</span>(in.high2))) <span class="op">+</span>
+<span class="st">    </span><span class="kw">geom_point</span>(<span class="dt">fill=</span><span class="st">&quot;black&quot;</span>, <span class="dt">size =</span> <span class="dv">3</span>) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">scale_shape_manual</span>(<span class="dt">values =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">21</span>), 
+                       <span class="dt">labels =</span> <span class="kw">c</span>(<span class="st">&quot;Lower Terrace&quot;</span>, <span class="st">&quot;Upper Terrace&quot;</span>)) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">theme_bw</span>(<span class="dt">base_size =</span> <span class="dv">14</span>) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">theme</span>(<span class="dt">legend.justification =</span> <span class="kw">c</span>(<span class="st">&quot;left&quot;</span>,<span class="st">&quot;top&quot;</span>),
+          <span class="dt">legend.position =</span> <span class="kw">c</span>(<span class="fl">0.005</span>,<span class="fl">0.995</span>),
+          <span class="dt">legend.title =</span> <span class="kw">element_blank</span>()) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="kw">expression</span>(<span class="st">&quot;LAI [&quot;</span><span class="op">~</span>m<span class="op">^</span>{<span class="dv">2</span>}<span class="op">%.%</span>m<span class="op">^</span>{<span class="op">-</span><span class="dv">2</span>}<span class="op">~</span><span class="st">&quot;]&quot;</span>), 
+     <span class="dt">y =</span> <span class="kw">expression</span>(<span class="st">&quot;SIF in O2A band [&quot;</span><span class="op">~</span>mW<span class="op">%.%</span>m<span class="op">^</span>{<span class="op">-</span><span class="dv">2</span>}<span class="op">%.%</span>sr<span class="op">^</span>{<span class="op">-</span><span class="dv">1</span>}<span class="op">%.%</span>nm<span class="op">^</span>{<span class="op">-</span><span class="dv">1</span>}<span class="op">~</span><span class="st">&quot;]&quot;</span>)) 
+
+per.soilfield <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(LAI,SIF760, <span class="dt">size =</span> Cab, <span class="dt">shape =</span> <span class="kw">as.factor</span>(in.high2))) <span class="op">+</span>
+<span class="st">    </span><span class="kw">geom_point</span>(<span class="dt">fill=</span><span class="st">&quot;black&quot;</span>) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">scale_size</span>(<span class="dt">name =</span> <span class="kw">expression</span>(<span class="st">&quot;Cab [mg]&quot;</span>)) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">scale_shape_manual</span>(<span class="dt">values =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">21</span>), 
+                       <span class="dt">name =</span> <span class="st">&quot;Terrace&quot;</span>,
+                       <span class="dt">labels =</span> <span class="kw">c</span>(<span class="st">&quot;Lower Terrace&quot;</span>, <span class="st">&quot;Upper Terrace&quot;</span>)) <span class="op">+</span>
+<span class="st">    </span><span class="kw">theme_bw</span>()<span class="op">+</span>
+<span class="st">    </span><span class="kw">theme</span>(<span class="dt">legend.justification =</span> <span class="kw">c</span>(<span class="st">&quot;left&quot;</span>,<span class="st">&quot;top&quot;</span>),
+          <span class="dt">legend.position =</span> <span class="kw">c</span>(<span class="fl">0.005</span>,<span class="fl">0.995</span>)) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="kw">expression</span>(<span class="st">&quot;LAI [&quot;</span><span class="op">~</span>m<span class="op">^</span>{<span class="dv">2</span>}<span class="op">%.%</span>m<span class="op">^</span>{<span class="op">-</span><span class="dv">2</span>}<span class="op">~</span><span class="st">&quot;]&quot;</span>), 
+     <span class="dt">y =</span> <span class="kw">expression</span>(<span class="st">&quot;SIF in O2A band [&quot;</span><span class="op">~</span>mW<span class="op">%.%</span>m<span class="op">^</span>{<span class="op">-</span><span class="dv">2</span>}<span class="op">%.%</span>sr<span class="op">^</span>{<span class="op">-</span><span class="dv">1</span>}<span class="op">%.%</span>nm<span class="op">^</span>{<span class="op">-</span><span class="dv">1</span>}<span class="op">~</span><span class="st">&quot;]&quot;</span>)) 
+
+per.soilfield <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(Cab,SIF760, <span class="dt">shape =</span> <span class="kw">as.factor</span>(in.high2))) <span class="op">+</span>
+<span class="st">    </span><span class="kw">geom_point</span>(<span class="dt">fill=</span><span class="st">&quot;black&quot;</span>, <span class="dt">size =</span> <span class="dv">3</span>) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">scale_size</span>(<span class="dt">name =</span> <span class="kw">expression</span>(<span class="st">&quot;Cab [mg]&quot;</span>)) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">scale_shape_manual</span>(<span class="dt">values =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">21</span>), 
+                       <span class="dt">name =</span> <span class="st">&quot;Terrace&quot;</span>,
+                       <span class="dt">labels =</span> <span class="kw">c</span>(<span class="st">&quot;Lower Terrace&quot;</span>, <span class="st">&quot;Upper Terrace&quot;</span>)) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">theme_bw</span>(<span class="dt">base_size =</span> <span class="dv">14</span>) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">theme</span>(<span class="dt">legend.position =</span> <span class="st">&quot;none&quot;</span>) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="kw">expression</span>(<span class="st">&quot;Cab [&quot;</span><span class="op">~</span>mg<span class="op">%.%</span>g<span class="op">^</span>{<span class="op">-</span><span class="dv">1</span>}<span class="op">~</span><span class="st">&quot;]&quot;</span>), 
+     <span class="dt">y =</span> <span class="kw">expression</span>(<span class="st">&quot;SIF in O2A band [&quot;</span><span class="op">~</span>mW<span class="op">%.%</span>m<span class="op">^</span>{<span class="op">-</span><span class="dv">2</span>}<span class="op">%.%</span>sr<span class="op">^</span>{<span class="op">-</span><span class="dv">1</span>}<span class="op">%.%</span>nm<span class="op">^</span>{<span class="op">-</span><span class="dv">1</span>}<span class="op">~</span><span class="st">&quot;]&quot;</span>)) 
+
+per.soilfield <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(LAI,SIF760, <span class="dt">fill =</span> <span class="kw">as.factor</span>(soiln))) <span class="op">+</span>
+<span class="st">    </span><span class="kw">geom_point</span>(<span class="dt">shape =</span> <span class="dv">21</span>, <span class="dt">size =</span> <span class="dv">3</span>) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">scale_fill_manual</span>(<span class="dt">values =</span> <span class="kw">c</span>(<span class="st">&quot;rosybrown3&quot;</span>, <span class="st">&quot;lightblue2&quot;</span>, <span class="st">&quot;brown4&quot;</span>, <span class="st">&quot;#FFCC99&quot;</span>, <span class="st">&quot;gray&quot;</span> )) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">theme_bw</span>(<span class="dt">base_size =</span> <span class="dv">14</span>) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">theme</span>(<span class="dt">legend.justification =</span> <span class="kw">c</span>(<span class="st">&quot;left&quot;</span>,<span class="st">&quot;top&quot;</span>),
+          <span class="dt">legend.position =</span> <span class="kw">c</span>(<span class="fl">0.005</span>,<span class="fl">0.995</span>), 
+          <span class="dt">legend.title =</span> <span class="kw">element_blank</span>()) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="kw">expression</span>(<span class="st">&quot;LAI [&quot;</span><span class="op">~</span>m<span class="op">^</span>{<span class="dv">2</span>}<span class="op">%.%</span>m<span class="op">^</span>{<span class="op">-</span><span class="dv">2</span>}<span class="op">~</span><span class="st">&quot;]&quot;</span>), 
+     <span class="dt">y =</span> <span class="kw">expression</span>(<span class="st">&quot;SIF in O2A band [&quot;</span><span class="op">~</span>mW<span class="op">%.%</span>m<span class="op">^</span>{<span class="op">-</span><span class="dv">2</span>}<span class="op">%.%</span>sr<span class="op">^</span>{<span class="op">-</span><span class="dv">1</span>}<span class="op">%.%</span>nm<span class="op">^</span>{<span class="op">-</span><span class="dv">1</span>}<span class="op">~</span><span class="st">&quot;]&quot;</span>))
+
+
+
+per.soilfield <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">filter</span>(soiln <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;Parabrown&quot;</span>, <span class="st">&quot;Pseudoclay&quot;</span>)) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(LAI,SIF760, <span class="dt">fill =</span> <span class="kw">as.factor</span>(soiln))) <span class="op">+</span>
+<span class="st">    </span><span class="kw">geom_point</span>(<span class="dt">shape =</span> <span class="dv">21</span>, <span class="dt">size =</span> <span class="dv">3</span>) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">scale_fill_manual</span>(<span class="dt">values =</span> <span class="kw">c</span>(<span class="st">&quot;#FFCC99&quot;</span>, <span class="st">&quot;gray&quot;</span> )) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">theme_bw</span>(<span class="dt">base_size =</span> <span class="dv">14</span>) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">theme</span>(<span class="dt">legend.justification =</span> <span class="kw">c</span>(<span class="st">&quot;left&quot;</span>,<span class="st">&quot;top&quot;</span>),
+          <span class="dt">legend.position =</span> <span class="kw">c</span>(<span class="fl">0.005</span>,<span class="fl">0.995</span>),
+          <span class="dt">legend.title =</span> <span class="kw">element_blank</span>()) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="kw">expression</span>(<span class="st">&quot;LAI [&quot;</span><span class="op">~</span>m<span class="op">^</span>{<span class="dv">2</span>}<span class="op">%.%</span>m<span class="op">^</span>{<span class="op">-</span><span class="dv">2</span>}<span class="op">~</span><span class="st">&quot;]&quot;</span>), 
+     <span class="dt">y =</span> <span class="kw">expression</span>(<span class="st">&quot;SIF in O2A band [&quot;</span><span class="op">~</span>mW<span class="op">%.%</span>m<span class="op">^</span>{<span class="op">-</span><span class="dv">2</span>}<span class="op">%.%</span>sr<span class="op">^</span>{<span class="op">-</span><span class="dv">1</span>}<span class="op">%.%</span>nm<span class="op">^</span>{<span class="op">-</span><span class="dv">1</span>}<span class="op">~</span><span class="st">&quot;]&quot;</span>))
+
+per.soilfield <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">filter</span>(<span class="op">!</span>soiln <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;Parabrown&quot;</span>, <span class="st">&quot;Pseudoclay&quot;</span>)) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(LAI,SIF760, <span class="dt">fill =</span> <span class="kw">as.factor</span>(soiln))) <span class="op">+</span>
+<span class="st">    </span><span class="kw">geom_point</span>(<span class="dt">shape =</span> <span class="dv">21</span>, <span class="dt">size =</span> <span class="dv">3</span>) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">scale_fill_manual</span>(<span class="dt">values =</span> <span class="kw">c</span>(<span class="st">&quot;rosybrown3&quot;</span>, <span class="st">&quot;lightblue2&quot;</span>, <span class="st">&quot;brown4&quot;</span>)) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">theme_bw</span>(<span class="dt">base_size =</span> <span class="dv">14</span>) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">theme</span>(<span class="dt">legend.position =</span> <span class="kw">c</span>(<span class="fl">0.12</span>,<span class="fl">0.8</span>), <span class="dt">legend.title =</span> <span class="kw">element_blank</span>()) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="kw">expression</span>(<span class="st">&quot;LAI [&quot;</span><span class="op">~</span>m<span class="op">^</span>{<span class="dv">2</span>}<span class="op">%.%</span>m<span class="op">^</span>{<span class="op">-</span><span class="dv">2</span>}<span class="op">~</span><span class="st">&quot;]&quot;</span>), 
+     <span class="dt">y =</span> <span class="kw">expression</span>(<span class="st">&quot;SIF in O2A band [&quot;</span><span class="op">~</span>mW<span class="op">%.%</span>m<span class="op">^</span>{<span class="op">-</span><span class="dv">2</span>}<span class="op">%.%</span>sr<span class="op">^</span>{<span class="op">-</span><span class="dv">1</span>}<span class="op">%.%</span>nm<span class="op">^</span>{<span class="op">-</span><span class="dv">1</span>}<span class="op">~</span><span class="st">&quot;]&quot;</span>))
+
+per.soilfield <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(LAI, SIF760)) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(<span class="dt">shape =</span> soiln, <span class="dt">fill =</span> in.high2), <span class="dt">size =</span> <span class="dv">3</span>) <span class="op">+</span>
+<span class="st">    </span><span class="kw">scale_shape_manual</span>(<span class="dt">values =</span> <span class="dv">21</span><span class="op">:</span><span class="dv">25</span>) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">scale_fill_gradient</span>(<span class="dt">low =</span> <span class="st">&quot;white&quot;</span>, <span class="dt">high =</span> <span class="st">&quot;black&quot;</span>) <span class="op">+</span>
+<span class="st">    </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;loess&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">theme_bw</span>()
+
+per.soilfield <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(LAI, SIF760)) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(<span class="dt">shape =</span> soiln, <span class="dt">fill =</span> Cab), <span class="dt">size =</span> <span class="dv">3</span>) <span class="op">+</span>
+<span class="st">    </span><span class="kw">scale_shape_manual</span>(<span class="dt">values =</span> <span class="dv">21</span><span class="op">:</span><span class="dv">25</span>) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">scale_fill_gradient</span>(<span class="dt">low =</span> <span class="st">&quot;white&quot;</span>, <span class="dt">high =</span> <span class="st">&quot;black&quot;</span>) <span class="op">+</span>
+<span class="st">    </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;loess&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>) <span class="op">+</span>
+<span class="st">    </span><span class="kw">theme_bw</span>()</code></pre></div>
+<p>As we expected, higher terrace has a larger intercept value than lower terrace. The variation explained after including terrace as a predictor has rissen to 58%. To prove if this improvement in model prediction is actually true we will compare the two hierarchical models using analysis of variance test.</p>
+<p>We observe decrease in residual sum of squares for the second model, e.g. more variation has been explained. The chance that F-ratio between the two model variances given the degrees of freedom ocurrs by chance is low Pr(&gt;F) &lt;0.001.</p>
+<p>Both models yield significant predictor, however the lower terrace model performs quite poorly, while we see an increase in adjusted R-squared for upper terrace. Lets visualise both individual models on one graph.</p>
+</div>
+</div>
+<div id="discussion-6" class="section level2">
+<h2><span class="header-section-number">15.4</span> Discussion</h2>
+<p>Parametric regression is advantageous when seeking to understand a process because if the assumptions for normallity and indipendence are true, it can yield robust inquiries and models. These models can be used and be used to predict.</p>
+<p>Two paramaters related to canopy structure (boiphysics) were considered in this chapter - LAI and Cab. These two parameter have a positive saturating overal effect on SIF. the reason for positive relationship is obvious - more green vegetation per square area leads to area from whereSIF is emitted. However, this also mean increased internal scattering by the structure and higher chance for reabsorption by chlorophyll. Similarly, more chlorophyl molecules per gram tissue increases the chance of reabsorption thus leading to saturation at high values. The shapes for the saturating curve of SIF vs. LAI and Cab, can be observed in controlled experiment (e.g solution of chlorophyll or at the leaf area manipulation experiments) or they can be retrieved via RT simulation(Fluorsail).</p>
+<p>At the remote sensing side, decoupling the effect of biophysical characteristics on SIF using maps with medium to high spatial resolution can be used to improve crop modeling. In addtion, improved physiological inference inside the field can also be usefull in early stress warning, crop prediction and other agricultural applications etc. At the larger scale, it can improve photosynthetic models and thus estimates of global carbon uptake.<br />
+There are several papers showing relationship between SIF and canopy biophyisical parameters or proxies thereof (mostly VIs) at different scales. For example relating SIf to vegetation indice such as NDVI, NIRv, peiqi. at small scale, airborne and satellite levels, as well as many simulation outputs have shown similar results.</p>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Rudolph2015">
+<p>Rudolph, S., J. van der Kruk, C. von Hebel, M. Ali, M. Herbst, C. Montzka, S. Pätzold, D.A. Robinson, H. Vereecken, and L. Weihermüller. 2015. “Linking Satellite Derived Lai Patterns with Subsoil Heterogeneity Using Large-Scale Ground-Based Electromagnetic Induction Measurements.” <em>Geoderma</em> 241-242: 262–71. doi:<a href="https://doi.org/https://doi.org/10.1016/j.geoderma.2014.11.015">https://doi.org/10.1016/j.geoderma.2014.11.015</a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="hyplant2.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="hyplant4.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["bookdown.pdf", "bookdown.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

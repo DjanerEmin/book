@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 13 Exploratory analysis of HyPlant data | Exploring the effect of canopy structure on top-of-canopy sun-induced fluorescence</title>
+  <meta name="description" content="A PhD thesis for awarding the title Doctor of Agricultural Science" />
+  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 13 Exploratory analysis of HyPlant data | Exploring the effect of canopy structure on top-of-canopy sun-induced fluorescence" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A PhD thesis for awarding the title Doctor of Agricultural Science" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 13 Exploratory analysis of HyPlant data | Exploring the effect of canopy structure on top-of-canopy sun-induced fluorescence" />
+  
+  <meta name="twitter:description" content="A PhD thesis for awarding the title Doctor of Agricultural Science" />
+  
+
+<meta name="author" content="Dzhaner Emin" />
+
+
+<meta name="date" content="2019-11-11" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="airborne-measurements-of-sif.html"/>
+<link rel="next" href="hyplant2.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.5/datatables.js"></script>
+<link href="libs/dt-core-1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.10.16/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.10.16/js/jquery.dataTables.min.js"></script>
+<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Sun-induced fluorescence</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#section"></a></li>
+<li class="chapter" data-level="" data-path="preamble.html"><a href="preamble.html"><i class="fa fa-check"></i>Preamble</a><ul>
+<li class="chapter" data-level="" data-path="preamble.html"><a href="preamble.html#acknowledgments"><i class="fa fa-check"></i>Acknowledgments</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="part"><span><b>I Theoretical background (Methods)</b></span></li>
+<li class="chapter" data-level="2" data-path="fluo.html"><a href="fluo.html"><i class="fa fa-check"></i><b>2</b> Fluorescence basics</a><ul>
+<li class="chapter" data-level="2.1" data-path="fluo.html"><a href="fluo.html#faith-of-absorbed-light-energy-reaching-the-plant-surface"><i class="fa fa-check"></i><b>2.1</b> Faith of absorbed light energy reaching the plant surface</a></li>
+<li class="chapter" data-level="2.2" data-path="fluo.html"><a href="fluo.html#origin-of-chlorophyll-fluorescence"><i class="fa fa-check"></i><b>2.2</b> Origin of chlorophyll fluorescence</a></li>
+<li class="chapter" data-level="2.3" data-path="fluo.html"><a href="fluo.html#link-between-fluorescence-and-photosynthesis"><i class="fa fa-check"></i><b>2.3</b> Link between fluorescence and photosynthesis</a></li>
+<li class="chapter" data-level="2.4" data-path="fluo.html"><a href="fluo.html#heat-dissipation"><i class="fa fa-check"></i><b>2.4</b> Heat dissipation</a></li>
+<li class="chapter" data-level="2.5" data-path="fluo.html"><a href="fluo.html#measuring-chl-fluorescence"><i class="fa fa-check"></i><b>2.5</b> Measuring Chl fluorescence</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="fluo.html"><a href="fluo.html#pam-fluorimetry---active-methods"><i class="fa fa-check"></i><b>2.5.1</b> PAM fluorimetry - active methods</a></li>
+<li class="chapter" data-level="2.5.2" data-path="fluo.html"><a href="fluo.html#fluorescence-under-natural-conditions-sif"><i class="fa fa-check"></i><b>2.5.2</b> Fluorescence under natural conditions (SIF)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="rs.html"><a href="rs.html"><i class="fa fa-check"></i><b>3</b> Remote sensing of vegetation biophysics and SIF</a><ul>
+<li class="chapter" data-level="3.1" data-path="rs.html"><a href="rs.html#remote-sensing"><i class="fa fa-check"></i><b>3.1</b> Remote sensing</a></li>
+<li class="chapter" data-level="3.2" data-path="rs.html"><a href="rs.html#the-concept-of-scale-in-remote-sensing.-scalability-of-ecological-processes-scale"><i class="fa fa-check"></i><b>3.2</b> The concept of scale in remote sensing. Scalability of ecological processes {scale}</a></li>
+<li class="chapter" data-level="3.3" data-path="rs.html"><a href="rs.html#retrieval-of-sif"><i class="fa fa-check"></i><b>3.3</b> Retrieval of SIF</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="rs.html"><a href="rs.html#fld-principle"><i class="fa fa-check"></i><b>3.3.1</b> FLD principle</a></li>
+<li class="chapter" data-level="3.3.2" data-path="rs.html"><a href="rs.html#spectral-fitting-methods-the-state-of-the-art-sif-retrieval-of-the-entire-sif-spectrum"><i class="fa fa-check"></i><b>3.3.2</b> Spectral fitting methods – the state of the art SIF retrieval of the entire SIF spectrum</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="rs.html"><a href="rs.html#sensor-design-for-sif-acquisition"><i class="fa fa-check"></i><b>3.4</b> Sensor design for SIF acquisition</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="rs.html"><a href="rs.html#flox"><i class="fa fa-check"></i><b>3.4.1</b> Ground sensor design</a></li>
+<li class="chapter" data-level="3.4.2" data-path="rs.html"><a href="rs.html#hyplant"><i class="fa fa-check"></i><b>3.4.2</b> Airborne</a></li>
+<li class="chapter" data-level="3.4.3" data-path="rs.html"><a href="rs.html#spaceborne"><i class="fa fa-check"></i><b>3.4.3</b> Spaceborne</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="factors-affecting-canopy-structure.html"><a href="factors-affecting-canopy-structure.html"><i class="fa fa-check"></i><b>4</b> Factors affecting canopy structure</a><ul>
+<li class="chapter" data-level="4.1" data-path="factors-affecting-canopy-structure.html"><a href="factors-affecting-canopy-structure.html#computational-factors"><i class="fa fa-check"></i><b>4.1</b> Computational Factors</a></li>
+<li class="chapter" data-level="4.2" data-path="factors-affecting-canopy-structure.html"><a href="factors-affecting-canopy-structure.html#environmental-factors"><i class="fa fa-check"></i><b>4.2</b> Environmental Factors</a></li>
+<li class="chapter" data-level="4.3" data-path="factors-affecting-canopy-structure.html"><a href="factors-affecting-canopy-structure.html#physiological-factors"><i class="fa fa-check"></i><b>4.3</b> Physiological Factors</a></li>
+<li class="chapter" data-level="4.4" data-path="factors-affecting-canopy-structure.html"><a href="factors-affecting-canopy-structure.html#discussion"><i class="fa fa-check"></i><b>4.4</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="canopystr.html"><a href="canopystr.html"><i class="fa fa-check"></i><b>5</b> Canopy structure</a><ul>
+<li class="chapter" data-level="5.1" data-path="canopystr.html"><a href="canopystr.html#measuring-canopy-structure"><i class="fa fa-check"></i><b>5.1</b> Measuring canopy structure</a></li>
+<li class="chapter" data-level="5.2" data-path="canopystr.html"><a href="canopystr.html#modeling-canopy-structure"><i class="fa fa-check"></i><b>5.2</b> modeling canopy structure</a></li>
+<li class="chapter" data-level="5.3" data-path="canopystr.html"><a href="canopystr.html#retrieval-of-canopy-structure"><i class="fa fa-check"></i><b>5.3</b> Retrieval of canopy structure</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="canopystr.html"><a href="canopystr.html#look-up-tables"><i class="fa fa-check"></i><b>5.3.1</b> Look-up Tables</a></li>
+<li class="chapter" data-level="5.3.2" data-path="canopystr.html"><a href="canopystr.html#cost-functions"><i class="fa fa-check"></i><b>5.3.2</b> Cost functions</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="canopystr.html"><a href="canopystr.html#the-effect-of-canopy-structure-on-sif"><i class="fa fa-check"></i><b>5.4</b> The effect of canopy structure on SIF</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="bibliometric-analysis-of-sun-induced-fluorescence-literature.html"><a href="bibliometric-analysis-of-sun-induced-fluorescence-literature.html"><i class="fa fa-check"></i><b>6</b> Bibliometric analysis of Sun-induced fluorescence literature</a><ul>
+<li class="chapter" data-level="6.1" data-path="bibliometric-analysis-of-sun-induced-fluorescence-literature.html"><a href="bibliometric-analysis-of-sun-induced-fluorescence-literature.html#descriptive-bibliometric-analysis"><i class="fa fa-check"></i><b>6.1</b> Descriptive bibliometric analysis</a></li>
+<li class="chapter" data-level="6.2" data-path="bibliometric-analysis-of-sun-induced-fluorescence-literature.html"><a href="bibliometric-analysis-of-sun-induced-fluorescence-literature.html#graphical-depiction"><i class="fa fa-check"></i><b>6.2</b> Graphical depiction</a></li>
+<li class="chapter" data-level="6.3" data-path="bibliometric-analysis-of-sun-induced-fluorescence-literature.html"><a href="bibliometric-analysis-of-sun-induced-fluorescence-literature.html#individual-paper-analytics"><i class="fa fa-check"></i><b>6.3</b> Individual paper analytics</a></li>
+<li class="chapter" data-level="6.4" data-path="bibliometric-analysis-of-sun-induced-fluorescence-literature.html"><a href="bibliometric-analysis-of-sun-induced-fluorescence-literature.html#bibliographic-network-matrices"><i class="fa fa-check"></i><b>6.4</b> Bibliographic network matrices</a></li>
+</ul></li>
+<li class="part"><span><b>II Materials and methods</b></span></li>
+<li class="chapter" data-level="7" data-path="studyarea.html"><a href="studyarea.html"><i class="fa fa-check"></i><b>7</b> Study area</a><ul>
+<li class="chapter" data-level="7.1" data-path="studyarea.html"><a href="studyarea.html#location"><i class="fa fa-check"></i><b>7.1</b> Location</a></li>
+<li class="chapter" data-level="7.2" data-path="studyarea.html"><a href="studyarea.html#climate"><i class="fa fa-check"></i><b>7.2</b> Climate</a></li>
+<li class="chapter" data-level="7.3" data-path="studyarea.html"><a href="studyarea.html#land-use"><i class="fa fa-check"></i><b>7.3</b> Land use</a></li>
+<li class="chapter" data-level="7.4" data-path="studyarea.html"><a href="studyarea.html#soilter"><i class="fa fa-check"></i><b>7.4</b> Soil &amp; Terrace</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="sugar-beet.html"><a href="sugar-beet.html"><i class="fa fa-check"></i><b>8</b> Sugar beet</a><ul>
+<li class="chapter" data-level="8.1" data-path="sugar-beet.html"><a href="sugar-beet.html#history-distribution-and-economics"><i class="fa fa-check"></i><b>8.1</b> History, distribution and economics</a></li>
+<li class="chapter" data-level="8.2" data-path="sugar-beet.html"><a href="sugar-beet.html#growth"><i class="fa fa-check"></i><b>8.2</b> Growth</a></li>
+<li class="chapter" data-level="8.3" data-path="sugar-beet.html"><a href="sugar-beet.html#husbandry"><i class="fa fa-check"></i><b>8.3</b> Husbandry</a></li>
+<li class="chapter" data-level="8.4" data-path="sugar-beet.html"><a href="sugar-beet.html#effects-of-canopy-structure"><i class="fa fa-check"></i><b>8.4</b> Effects of canopy structure</a><ul>
+<li class="chapter" data-level="8.4.1" data-path="sugar-beet.html"><a href="sugar-beet.html#canopy-development"><i class="fa fa-check"></i><b>8.4.1</b> Canopy development</a></li>
+<li class="chapter" data-level="8.4.2" data-path="sugar-beet.html"><a href="sugar-beet.html#effect-of-canopy-structure-on-yield"><i class="fa fa-check"></i><b>8.4.2</b> Effect of canopy structure on yield</a></li>
+<li class="chapter" data-level="8.4.3" data-path="sugar-beet.html"><a href="sugar-beet.html#effect-of-canopy-structure-on-radiation-budget-and-optical-properties"><i class="fa fa-check"></i><b>8.4.3</b> Effect of canopy structure on radiation budget and optical properties</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="sugar-beet.html"><a href="sugar-beet.html#other-effects"><i class="fa fa-check"></i><b>8.5</b> Other effects</a><ul>
+<li class="chapter" data-level="8.5.1" data-path="sugar-beet.html"><a href="sugar-beet.html#effect-of-nitrogen"><i class="fa fa-check"></i><b>8.5.1</b> effect of nitrogen</a></li>
+<li class="chapter" data-level="8.5.2" data-path="sugar-beet.html"><a href="sugar-beet.html#effect-of-soil-water"><i class="fa fa-check"></i><b>8.5.2</b> Effect of soil water</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>III Results</b></span></li>
+<li class="chapter" data-level="9" data-path="scope.html"><a href="scope.html"><i class="fa fa-check"></i><b>9</b> Exploring the influence of LAI and Chlorophyll content on TOC SIF using SCOPE simulation</a><ul>
+<li class="chapter" data-level="9.1" data-path="scope.html"><a href="scope.html#simulation"><i class="fa fa-check"></i><b>9.1</b> Simulation</a></li>
+<li class="chapter" data-level="9.2" data-path="scope.html"><a href="scope.html#results"><i class="fa fa-check"></i><b>9.2</b> Results</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="scope.html"><a href="scope.html#sif-as-function-of-lai-and-cab"><i class="fa fa-check"></i><b>9.2.1</b> SIF as function of LAI and Cab</a></li>
+<li class="chapter" data-level="9.2.2" data-path="scope.html"><a href="scope.html#sif-as-a-function-of-vi"><i class="fa fa-check"></i><b>9.2.2</b> SIF as a function of VI</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="scope.html"><a href="scope.html#discussion-1"><i class="fa fa-check"></i><b>9.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="ground-measurements-of-sif.html"><a href="ground-measurements-of-sif.html"><i class="fa fa-check"></i>Ground measurements of SIF</a></li>
+<li class="chapter" data-level="10" data-path="flox1.html"><a href="flox1.html"><i class="fa fa-check"></i><b>10</b> Description of FLOX device and exploratory data analysis of diurnal measurements</a><ul>
+<li class="chapter" data-level="10.1" data-path="flox1.html"><a href="flox1.html#flox-description-and-metadata"><i class="fa fa-check"></i><b>10.1</b> FLOX description and metadata</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="flox1.html"><a href="flox1.html#metadata"><i class="fa fa-check"></i><b>10.1.1</b> Metadata</a></li>
+<li class="chapter" data-level="10.1.2" data-path="flox1.html"><a href="flox1.html#temperature-of-device-housing-and-ccd"><i class="fa fa-check"></i><b>10.1.2</b> Temperature of device housing and CCD</a></li>
+<li class="chapter" data-level="10.1.3" data-path="flox1.html"><a href="flox1.html#humidity"><i class="fa fa-check"></i><b>10.1.3</b> Humidity</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="flox1.html"><a href="flox1.html#exploratory-analysis-of-diurnal-sif-for-two-crops"><i class="fa fa-check"></i><b>10.2</b> Exploratory analysis of diurnal SIF for two crops</a><ul>
+<li class="chapter" data-level="10.2.1" data-path="flox1.html"><a href="flox1.html#three-days-diurnal-measurements-in-sugar-beet"><i class="fa fa-check"></i><b>10.2.1</b> Three days diurnal measurements in sugar beet</a></li>
+<li class="chapter" data-level="10.2.2" data-path="flox1.html"><a href="flox1.html#diurnal-development-of-sif-in-winter-wheat"><i class="fa fa-check"></i><b>10.2.2</b> Diurnal development of SIF in Winter wheat</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="flox1.html"><a href="flox1.html#descriptive-statistics"><i class="fa fa-check"></i><b>10.3</b> Descriptive statistics</a><ul>
+<li class="chapter" data-level="10.3.1" data-path="flox1.html"><a href="flox1.html#sif-value-ranges.-comparison-between-ifld-and-sfm-values"><i class="fa fa-check"></i><b>10.3.1</b> SIF value ranges. Comparison between iFLD and SFM values</a></li>
+<li class="chapter" data-level="10.3.2" data-path="flox1.html"><a href="flox1.html#stability-of-sif-measurements"><i class="fa fa-check"></i><b>10.3.2</b> Stability of SIF measurements</a></li>
+</ul></li>
+<li class="chapter" data-level="10.4" data-path="flox1.html"><a href="flox1.html#discussion-2"><i class="fa fa-check"></i><b>10.4</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="flox2.html"><a href="flox2.html"><i class="fa fa-check"></i><b>11</b> Development and evaluation of a mobile measurement procedure for TOC SIF</a><ul>
+<li class="chapter" data-level="11.1" data-path="flox2.html"><a href="flox2.html#developing-a-mobile-measurement-protocol"><i class="fa fa-check"></i><b>11.1</b> Developing a mobile measurement protocol</a><ul>
+<li class="chapter" data-level="11.1.1" data-path="flox2.html"><a href="flox2.html#setup"><i class="fa fa-check"></i><b>11.1.1</b> Setup</a></li>
+<li class="chapter" data-level="11.1.2" data-path="flox2.html"><a href="flox2.html#procedure"><i class="fa fa-check"></i><b>11.1.2</b> Procedure</a></li>
+<li class="chapter" data-level="11.1.3" data-path="flox2.html"><a href="flox2.html#test-case"><i class="fa fa-check"></i><b>11.1.3</b> Test case</a></li>
+<li class="chapter" data-level="11.1.4" data-path="flox2.html"><a href="flox2.html#post-processing"><i class="fa fa-check"></i><b>11.1.4</b> Post-processing</a></li>
+<li class="chapter" data-level="11.1.5" data-path="flox2.html"><a href="flox2.html#quality-check"><i class="fa fa-check"></i><b>11.1.5</b> Quality check</a></li>
+<li class="chapter" data-level="11.1.6" data-path="flox2.html"><a href="flox2.html#finding-location-average-and-corresponding-reference-sif"><i class="fa fa-check"></i><b>11.1.6</b> Finding location average and corresponding reference SIF</a></li>
+</ul></li>
+<li class="chapter" data-level="11.2" data-path="flox2.html"><a href="flox2.html#evaluation-of-methodology"><i class="fa fa-check"></i><b>11.2</b> Evaluation of methodology</a><ul>
+<li class="chapter" data-level="11.2.1" data-path="flox2.html"><a href="flox2.html#using-par-readings"><i class="fa fa-check"></i><b>11.2.1</b> Using PAR readings</a></li>
+<li class="chapter" data-level="11.2.2" data-path="flox2.html"><a href="flox2.html#evaluating-the-variability-of-sif"><i class="fa fa-check"></i><b>11.2.2</b> Evaluating the variability of SIF</a></li>
+</ul></li>
+<li class="chapter" data-level="11.3" data-path="flox2.html"><a href="flox2.html#descriptive-statistics-of-mobile-flox-data"><i class="fa fa-check"></i><b>11.3</b> Descriptive statistics of mobile FLOX data</a></li>
+<li class="chapter" data-level="11.4" data-path="flox2.html"><a href="flox2.html#focus-on-nirv-fcvi"><i class="fa fa-check"></i><b>11.4</b> focus on nirv fcvi</a></li>
+<li class="chapter" data-level="11.5" data-path="flox2.html"><a href="flox2.html#discussion-3"><i class="fa fa-check"></i><b>11.5</b> Discussion</a><ul>
+<li class="chapter" data-level="11.5.1" data-path="flox2.html"><a href="flox2.html#on-the-measurement-protocol"><i class="fa fa-check"></i><b>11.5.1</b> On the measurement protocol</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="flox3.html"><a href="flox3.html"><i class="fa fa-check"></i><b>12</b> Diurnal rescaling procedure</a><ul>
+<li class="chapter" data-level="12.1" data-path="flox3.html"><a href="flox3.html#the-need-for-rescaling-explained"><i class="fa fa-check"></i><b>12.1</b> The need for rescaling explained</a></li>
+<li class="chapter" data-level="12.2" data-path="flox3.html"><a href="flox3.html#developing-a-rescaling-approach-based-on-empirical-relationship-between-sif-and-lai"><i class="fa fa-check"></i><b>12.2</b> Developing a rescaling approach based on empirical relationship between SIF and LAI</a><ul>
+<li class="chapter" data-level="12.2.1" data-path="flox3.html"><a href="flox3.html#data"><i class="fa fa-check"></i><b>12.2.1</b> Data</a></li>
+<li class="chapter" data-level="12.2.2" data-path="flox3.html"><a href="flox3.html#empirical-relationship"><i class="fa fa-check"></i><b>12.2.2</b> Empirical relationship</a></li>
+<li class="chapter" data-level="12.2.3" data-path="flox3.html"><a href="flox3.html#case-study-hyplant-validation"><i class="fa fa-check"></i><b>12.2.3</b> Case study hyplant validation</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="flox3.html"><a href="flox3.html#develping-a-priori-shape-based-on-the-quadratic-fit-on-par"><i class="fa fa-check"></i><b>12.3</b> Develping a-priori shape based on the quadratic fit on par</a></li>
+<li class="chapter" data-level="12.4" data-path="flox3.html"><a href="flox3.html#discussion-4"><i class="fa fa-check"></i><b>12.4</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="airborne-measurements-of-sif.html"><a href="airborne-measurements-of-sif.html"><i class="fa fa-check"></i>Airborne measurements of SIF</a></li>
+<li class="chapter" data-level="13" data-path="hyplant1.html"><a href="hyplant1.html"><i class="fa fa-check"></i><b>13</b> Exploratory analysis of HyPlant data</a><ul>
+<li class="chapter" data-level="13.1" data-path="hyplant1.html"><a href="hyplant1.html#hyplant-data"><i class="fa fa-check"></i><b>13.1</b> HyPlant Data</a></li>
+<li class="chapter" data-level="13.2" data-path="hyplant1.html"><a href="hyplant1.html#outlier-detection"><i class="fa fa-check"></i><b>13.2</b> Outlier detection</a></li>
+<li class="chapter" data-level="13.3" data-path="hyplant1.html"><a href="hyplant1.html#exploratory-analysis-of-sif"><i class="fa fa-check"></i><b>13.3</b> Exploratory analysis of SIF</a><ul>
+<li class="chapter" data-level="13.3.1" data-path="hyplant1.html"><a href="hyplant1.html#summary-stats"><i class="fa fa-check"></i><b>13.3.1</b> Summary stats</a></li>
+<li class="chapter" data-level="13.3.2" data-path="hyplant1.html"><a href="hyplant1.html#histogram-distribution"><i class="fa fa-check"></i><b>13.3.2</b> Histogram distribution</a></li>
+<li class="chapter" data-level="13.3.3" data-path="hyplant1.html"><a href="hyplant1.html#field-average"><i class="fa fa-check"></i><b>13.3.3</b> Field average</a></li>
+<li class="chapter" data-level="13.3.4" data-path="hyplant1.html"><a href="hyplant1.html#terrace-association"><i class="fa fa-check"></i><b>13.3.4</b> Terrace association</a></li>
+<li class="chapter" data-level="13.3.5" data-path="hyplant1.html"><a href="hyplant1.html#soil"><i class="fa fa-check"></i><b>13.3.5</b> Soil</a></li>
+<li class="chapter" data-level="13.3.6" data-path="hyplant1.html"><a href="hyplant1.html#scale-dependence"><i class="fa fa-check"></i><b>13.3.6</b> Scale dependence</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="hyplant2.html"><a href="hyplant2.html"><i class="fa fa-check"></i><b>14</b> Retrieval of LAI and Cab from HyPlant Reflectance</a><ul>
+<li class="chapter" data-level="14.1" data-path="hyplant2.html"><a href="hyplant2.html#materials"><i class="fa fa-check"></i><b>14.1</b> Materials</a><ul>
+<li class="chapter" data-level="14.1.1" data-path="rs.html"><a href="rs.html#hyplant"><i class="fa fa-check"></i><b>14.1.1</b> HyPlant</a></li>
+<li class="chapter" data-level="14.1.2" data-path="hyplant2.html"><a href="hyplant2.html#study-area"><i class="fa fa-check"></i><b>14.1.2</b> Study Area</a></li>
+<li class="chapter" data-level="14.1.3" data-path="hyplant2.html"><a href="hyplant2.html#ground-truth"><i class="fa fa-check"></i><b>14.1.3</b> Ground truth</a></li>
+<li class="chapter" data-level="14.1.4" data-path="hyplant2.html"><a href="hyplant2.html#lut-generation"><i class="fa fa-check"></i><b>14.1.4</b> LUT generation</a></li>
+<li class="chapter" data-level="14.1.5" data-path="hyplant2.html"><a href="hyplant2.html#cost-function-selection"><i class="fa fa-check"></i><b>14.1.5</b> Cost function selection</a></li>
+</ul></li>
+<li class="chapter" data-level="14.2" data-path="hyplant2.html"><a href="hyplant2.html#results-1"><i class="fa fa-check"></i><b>14.2</b> Results</a><ul>
+<li class="chapter" data-level="14.2.1" data-path="hyplant2.html"><a href="hyplant2.html#cost-function-evaluation-table"><i class="fa fa-check"></i><b>14.2.1</b> Cost function evaluation table</a></li>
+<li class="chapter" data-level="14.2.2" data-path="hyplant2.html"><a href="hyplant2.html#lai-observed-vs.predicted"><i class="fa fa-check"></i><b>14.2.2</b> LAI observed vs. predicted</a></li>
+<li class="chapter" data-level="14.2.3" data-path="hyplant2.html"><a href="hyplant2.html#residuals"><i class="fa fa-check"></i><b>14.2.3</b> Residuals</a></li>
+<li class="chapter" data-level="14.2.4" data-path="hyplant2.html"><a href="hyplant2.html#spectral-reflectance-observed-vs.predicted"><i class="fa fa-check"></i><b>14.2.4</b> Spectral reflectance observed vs. predicted</a></li>
+<li class="chapter" data-level="14.2.5" data-path="hyplant2.html"><a href="hyplant2.html#maps"><i class="fa fa-check"></i><b>14.2.5</b> Maps</a></li>
+<li class="chapter" data-level="14.2.6" data-path="hyplant2.html"><a href="hyplant2.html#compare-to-ndvi"><i class="fa fa-check"></i><b>14.2.6</b> Compare to NDVI</a></li>
+</ul></li>
+<li class="chapter" data-level="14.3" data-path="hyplant2.html"><a href="hyplant2.html#discussion-5"><i class="fa fa-check"></i><b>14.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="hyplant3.html"><a href="hyplant3.html"><i class="fa fa-check"></i><b>15</b> Exploring the relationship between LAI and Chlorophyll and SIF</a><ul>
+<li class="chapter" data-level="15.1" data-path="hyplant3.html"><a href="hyplant3.html#data-and-rq"><i class="fa fa-check"></i><b>15.1</b> Data and RQ</a><ul>
+<li class="chapter" data-level="15.1.1" data-path="hyplant3.html"><a href="hyplant3.html#rq"><i class="fa fa-check"></i><b>15.1.1</b> RQ</a></li>
+<li class="chapter" data-level="15.1.2" data-path="hyplant3.html"><a href="hyplant3.html#data-1"><i class="fa fa-check"></i><b>15.1.2</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="15.2" data-path="hyplant3.html"><a href="hyplant3.html#field-level"><i class="fa fa-check"></i><b>15.2</b> Field level</a><ul>
+<li class="chapter" data-level="15.2.1" data-path="hyplant3.html"><a href="hyplant3.html#data-partitioning"><i class="fa fa-check"></i><b>15.2.1</b> Data partitioning</a></li>
+<li class="chapter" data-level="15.2.2" data-path="hyplant3.html"><a href="hyplant3.html#models-on-the-field-level"><i class="fa fa-check"></i><b>15.2.2</b> Models on the field level</a></li>
+<li class="chapter" data-level="15.2.3" data-path="hyplant3.html"><a href="hyplant3.html#summary"><i class="fa fa-check"></i><b>15.2.3</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="15.3" data-path="hyplant3.html"><a href="hyplant3.html#agrosystem-level"><i class="fa fa-check"></i><b>15.3</b> Agrosystem level</a><ul>
+<li class="chapter" data-level="15.3.1" data-path="hyplant3.html"><a href="hyplant3.html#linear-model-for-lai"><i class="fa fa-check"></i><b>15.3.1</b> Linear model for LAI</a></li>
+<li class="chapter" data-level="15.3.2" data-path="hyplant3.html"><a href="hyplant3.html#stewise-model-selection"><i class="fa fa-check"></i><b>15.3.2</b> Stewise model selection</a></li>
+</ul></li>
+<li class="chapter" data-level="15.4" data-path="hyplant3.html"><a href="hyplant3.html#discussion-6"><i class="fa fa-check"></i><b>15.4</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="hyplant4.html"><a href="hyplant4.html"><i class="fa fa-check"></i><b>16</b> Evaluation of TCAR/OSACI to correct for Cab. Lidar data</a></li>
+<li class="chapter" data-level="17" data-path="hyplant5.html"><a href="hyplant5.html"><i class="fa fa-check"></i><b>17</b> Evaluation of proxy estimates for canopy structure for spatial upscaling of Top-of-Canopy Sun-induced Fluorescence</a><ul>
+<li class="chapter" data-level="17.1" data-path="hyplant5.html"><a href="hyplant5.html#methods"><i class="fa fa-check"></i><b>17.1</b> Methods</a><ul>
+<li class="chapter" data-level="17.1.1" data-path="hyplant5.html"><a href="hyplant5.html#theoretical-background"><i class="fa fa-check"></i><b>17.1.1</b> Theoretical background</a></li>
+<li class="chapter" data-level="17.1.2" data-path="hyplant5.html"><a href="hyplant5.html#rescaling-sif.-location-model-for-high-resolution-remote-sensing-data-hyplant"><i class="fa fa-check"></i><b>17.1.2</b> Rescaling SIF. Location model for high resolution remote sensing data (HyPlant)</a></li>
+<li class="chapter" data-level="17.1.3" data-path="hyplant5.html"><a href="hyplant5.html#data-used"><i class="fa fa-check"></i><b>17.1.3</b> Data used</a></li>
+<li class="chapter" data-level="17.1.4" data-path="hyplant5.html"><a href="hyplant5.html#selection-of-candidate-proxies-for-gamma"><i class="fa fa-check"></i><b>17.1.4</b> Selection of candidate proxies for <span class="math inline">\(\Gamma\)</span></a></li>
+<li class="chapter" data-level="17.1.5" data-path="hyplant5.html"><a href="hyplant5.html#monte-carlo-approach-to-find-the-best-reference-location"><i class="fa fa-check"></i><b>17.1.5</b> Monte Carlo approach to find the best reference location</a></li>
+<li class="chapter" data-level="17.1.6" data-path="hyplant5.html"><a href="hyplant5.html#evaluation-statistics"><i class="fa fa-check"></i><b>17.1.6</b> Evaluation statistics</a></li>
+</ul></li>
+<li class="chapter" data-level="17.2" data-path="hyplant5.html"><a href="hyplant5.html#results-2"><i class="fa fa-check"></i><b>17.2</b> Results</a><ul>
+<li class="chapter" data-level="17.2.1" data-path="hyplant5.html"><a href="hyplant5.html#interpretation-of-spatial-patterns-of-true-sif-vis-and-calculated-analytical-gamma"><i class="fa fa-check"></i><b>17.2.1</b> Interpretation of spatial patterns of true SIF, VIs, and calculated analytical <span class="math inline">\(\Gamma\)</span></a></li>
+<li class="chapter" data-level="17.2.2" data-path="hyplant5.html"><a href="hyplant5.html#evaluation-of-predictive-performance-and-error-decomposition-for-the-four-candidate-proxies"><i class="fa fa-check"></i><b>17.2.2</b> Evaluation of predictive performance and error decomposition for the four candidate proxies</a></li>
+<li class="chapter" data-level="17.2.3" data-path="hyplant5.html"><a href="hyplant5.html#sensitivity-to-the-selected-reference-location"><i class="fa fa-check"></i><b>17.2.3</b> Sensitivity to the selected reference location</a></li>
+<li class="chapter" data-level="17.2.4" data-path="hyplant5.html"><a href="hyplant5.html#spatial-patterns-of-residuals"><i class="fa fa-check"></i><b>17.2.4</b> Spatial patterns of residuals</a></li>
+</ul></li>
+<li class="chapter" data-level="17.3" data-path="hyplant5.html"><a href="hyplant5.html#discussion-7"><i class="fa fa-check"></i><b>17.3</b> Discussion</a><ul>
+<li class="chapter" data-level="17.3.1" data-path="hyplant5.html"><a href="hyplant5.html#on-derivation-of-proxy-estimates-for-gamma"><i class="fa fa-check"></i><b>17.3.1</b> On derivation of proxy estimates for <span class="math inline">\(\Gamma\)</span></a></li>
+<li class="chapter" data-level="17.3.2" data-path="hyplant5.html"><a href="hyplant5.html#on-the-evaluation-methodology-and-the-results"><i class="fa fa-check"></i><b>17.3.2</b> On the evaluation methodology and the results</a></li>
+<li class="chapter" data-level="17.3.3" data-path="hyplant5.html"><a href="hyplant5.html#on-possible-application-in-the-upscaling-of-sif"><i class="fa fa-check"></i><b>17.3.3</b> On possible application in the upscaling of SIF</a></li>
+<li class="chapter" data-level="17.3.4" data-path="hyplant5.html"><a href="hyplant5.html#conclusion"><i class="fa fa-check"></i><b>17.3.4</b> Conclusion</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="hyplant6.html"><a href="hyplant6.html"><i class="fa fa-check"></i><b>18</b> From HyPlant to FLEX upscaling procedure</a><ul>
+<li class="chapter" data-level="18.1" data-path="hyplant6.html"><a href="hyplant6.html#flex-and-hyplant"><i class="fa fa-check"></i><b>18.1</b> FLEX and HyPlant</a></li>
+<li class="chapter" data-level="18.2" data-path="hyplant6.html"><a href="hyplant6.html#input-data"><i class="fa fa-check"></i><b>18.2</b> Input data</a></li>
+</ul></li>
+<li class="chapter" data-level="19" data-path="flox-sif-vs-vi-flox4.html"><a href="flox-sif-vs-vi-flox4.html"><i class="fa fa-check"></i><b>19</b> FLOX SIF vs VI {flox4}</a><ul>
+<li class="chapter" data-level="19.1" data-path="flox-sif-vs-vi-flox4.html"><a href="flox-sif-vs-vi-flox4.html#sif-vi-relationship-at-flox-scale"><i class="fa fa-check"></i><b>19.1</b> sif vi relationship at flox scale</a></li>
+<li class="chapter" data-level="19.2" data-path="flox-sif-vs-vi-flox4.html"><a href="flox-sif-vs-vi-flox4.html#focus-on-nirv-fcvi-1"><i class="fa fa-check"></i><b>19.2</b> focus on nirv fcvi</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Exploring the effect of canopy structure on top-of-canopy sun-induced fluorescence</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="hyplant1" class="section level1">
+<h1><span class="header-section-number">Chapter 13</span> Exploratory analysis of HyPlant data</h1>
+<p>The main goal of this chapter is to introduce the HyPlant data structure and perform an exploratory data analysis of the low altitude flight pattern over Selhausen. The design and characteristics of HyPlant were discussed in Section <a href="rs.html#hyplant">3.4.2</a>.</p>
+<div id="hyplant-data" class="section level2">
+<h2><span class="header-section-number">13.1</span> HyPlant Data</h2>
+<p>HyPlant consist of two sensing modules - a dual-channel broad band imager in the VIS and NIR spectrum (380-2500 nm) with 622 spectral bands (DUAL), and a second, high resolution imaging spectrometer covering the red and NIR regions (670-780 nm) specifically designed for fluorescence retrieval (FLUO) <span class="citation">(Rascher et al. <a href="#ref-Rascher2015">2015</a>)</span>.</p>
+<p>The low altitude flight pattern over the Selhause research site consists of 7 flightlines. The nominal ground sampling distance (the pixel resolution) is 1 meter. We will focus on the sugar beet fields (shown in red color in figure <a href="hyplant1.html#fig:map-std">13.1</a>). Sugar beet was the predominant green crop at time of data acquisition. To study the within field variability we will focus on the small subset of fields in the center of the low altitude mosaic (Figure <a href="hyplant1.html#fig:map-std">13.1</a>).</p>
+<div class="figure"><span id="fig:map-std"></span>
+<img src="bookdown_files/figure-html/map-std-1.png" alt="Overview map of the area covered by the low altitude flight of HyPlant. Sugar beet fields are shown in red. The small area for pixel based analysis is marked with a rectangle." width="576" />
+<p class="caption">
+Figure 13.1: Overview map of the area covered by the low altitude flight of HyPlant. Sugar beet fields are shown in red. The small area for pixel based analysis is marked with a rectangle.
+</p>
+</div>
+<p>Bellow are maps of the two retrieved SIF estimates and plots showing the distribution of SIF values for both retrieval regions (O2A and O2B) within the images. The four vegetation fields in center of the frame stand out with higher values (in green colours). The surrounding fields are bare soil at time of image acqusition (in purple colours). The fourth field to the East is a potato field (Figure <a href="hyplant1.html#fig:composite1">13.2</a>).</p>
+<div class="figure"><span id="fig:composite1"></span>
+<img src="bookdown_files/figure-html/composite1-1.png" alt="Maps of SIF in O2A and O2B bands and corresponding histogram distribution." width="960" />
+<p class="caption">
+Figure 13.2: Maps of SIF in O2A and O2B bands and corresponding histogram distribution.
+</p>
+</div>
+<p>The shape of the histogram distribution of SIF retrieved at 760 nm (O2A, top graph) resembles a bimodal normal distribution with one mode centered around 0 and a second - centered around 3. This corresponds to the two classes of ground cover observed in this scene - soil and vegetation cover, respectively. The bimodality is not obvious in the case of SIF retrieved at 687 nm (O2A).</p>
+<div class="figure"><span id="fig:composite2"></span>
+<img src="bookdown_files/figure-html/composite2-1.png" alt="Maps of SIF in O2A and O2B bands and corresponding histogram distribution." width="960" />
+<p class="caption">
+Figure 13.3: Maps of SIF in O2A and O2B bands and corresponding histogram distribution.
+</p>
+</div>
+<p>When we mask out the non sugar beet fields we can observe that the distribution of SIF retrieved at 760 nm becomes unimodal. However, there are still a small number of negative values (Figure <a href="hyplant1.html#fig:composite2">13.3</a>). These are most likely soil pixels somewhere along the borders of the fields. We will visualising those negative pixels next. A more detailed outlier detection and quality criteria were defined in the master thesis of Vera Krieger (2019)</p>
+</div>
+<div id="outlier-detection" class="section level2">
+<h2><span class="header-section-number">13.2</span> Outlier detection</h2>
+<p>In order to visualise the negative values in both SIF images, we will reclassify the image into two categories - pixels bellow and above 0. The plots bellow show the spatial distribution of negative SIF values (Figures <a href="hyplant1.html#fig:neg-sifa">13.4</a> and <a href="hyplant1.html#fig:neg-sifb">13.5</a>).</p>
+<p><span class="math inline">\(SIF ratio = SIF687/SIF760\)</span></p>
+<div class="figure"><span id="fig:neg-sifa"></span>
+<img src="bookdown_files/figure-html/neg-sifa-1.png" alt="Spatial distribution of negative values for SIF in O2A retrieval region." width="1152" />
+<p class="caption">
+Figure 13.4: Spatial distribution of negative values for SIF in O2A retrieval region.
+</p>
+</div>
+<div class="figure"><span id="fig:neg-sifb"></span>
+<img src="bookdown_files/figure-html/neg-sifb-1.png" alt="Spatial distribution of negative values for SIF in O2B retrieval region." width="1152" />
+<p class="caption">
+Figure 13.5: Spatial distribution of negative values for SIF in O2B retrieval region.
+</p>
+</div>
+<p>As expected, negative values are constrained mainly along the borders of the fields or along tractor tracks. In all analysis to follow, negative values will be masked out.</p>
+<p>Finally, a look a the distribution of SIF ratio will be shown. SIF ratio was calculated with the larger SIF 760 as denominator to constrain the majority of the values to the range between 0 and 1.</p>
+<pre><code>##           0%          10%          20%          30%          40%          50%          60%          70%          80%          90% 
+## -415.4913682    0.2142609    0.2619753    0.2941172    0.3237527    0.3525581    0.3838051    0.4208344    0.4703381    0.5575466 
+##         100% 
+##  107.2346857</code></pre>
+<p>The quantile distribution above shows that the majority (somewhere between 90% and 100%) of SIF ratio values are between 0 and 1. Obviously, negative SIF ratio values are possible if one and only one of the SIF estimates is bellow zero. On the other hand, unrealistically high SIF ratio values (SIF ratio larger than say 2) point to a very small denominator (SIF 760). This is possible when the vegetation cover of a pixel is scarce (e.g. a soil pixel) or plants are approaching senescence (as seen in figure <a href="flox2.html#fig:eda2">11.6</a>). Bellow is a plot of SIF ratio pixel with values above 2 (Figure <a href="hyplant1.html#fig:sif-ratio">13.6</a>).</p>
+<div class="figure"><span id="fig:sif-ratio"></span>
+<img src="bookdown_files/figure-html/sif-ratio-1.png" alt="Spatial distribution of negative values for SIF ratio." width="1152" />
+<p class="caption">
+Figure 13.6: Spatial distribution of negative values for SIF ratio.
+</p>
+</div>
+<p>Based on the findings above, an outlier removal inside all sugar beet fields was conduced following three exclusion criteria:</p>
+<ol style="list-style-type: decimal">
+<li><p>Simple Ratio VI values higher than 40 were excluded ( a 40 fold difference in NIR/Red reflection is already highly unlikely).</p></li>
+<li><p>Negative SIF values were excluded as they are by definition not possible.</p></li>
+<li><p>SIF ratio values above 2 was excluded since SIF in O2A band (the denominator in SIF ratio) is mostly higher than in O2B band (nominator)</p></li>
+</ol>
+<p>Applying The three criteria above resulted in exclusion of approx. 3% of pixels from the sugar beet pixels, the most being attributed to negative SIF values (Figures <a href="hyplant1.html#fig:composite3">13.7</a> and <a href="hyplant1.html#fig:sif-ratio2">13.8</a>).</p>
+<div class="figure"><span id="fig:composite3"></span>
+<img src="bookdown_files/figure-html/composite3-1.png" alt="Spatial and histogram distributions of SIF values after excluding outliers." width="960" />
+<p class="caption">
+Figure 13.7: Spatial and histogram distributions of SIF values after excluding outliers.
+</p>
+</div>
+<div class="figure"><span id="fig:sif-ratio2"></span>
+<img src="bookdown_files/figure-html/sif-ratio2-1.png" alt="Spatial and histogram distributions of SIF ratio after excluding outliers." width="960" />
+<p class="caption">
+Figure 13.8: Spatial and histogram distributions of SIF ratio after excluding outliers.
+</p>
+</div>
+</div>
+<div id="exploratory-analysis-of-sif" class="section level2">
+<h2><span class="header-section-number">13.3</span> Exploratory analysis of SIF</h2>
+<p>All sugar beet pixels in the Selhausen mosaic were extracted using the vector map of sugar beet fields (Figure <a href="hyplant1.html#fig:map-std">13.1</a>). It contains 58 polygon features for each sugar beet field grown in 2016 in the area. The resulting table has 9 variables (Table <a href="#tab:hyplant1-inputtab"><strong>??</strong></a>).</p>
+<div id="htmlwidget-2a876bd0ed637ef7e01c" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2a876bd0ed637ef7e01c">{"x":{"filter":"none","caption":"<caption>Input variables.<\/caption>","data":[["1","7","6","2","5","3","4","8"],["fieldid","in.high","elev","NDVI","SR","SIF687","SIF760","SIF.ratio"],["Field ID","Terrace association","Elevation above baseline minimum for the area","Normalized Difference Vegetation index","Simple Ration Vegetation Index (NIR / R)","Sun-induced fluorescence in O2B absorption band (iFLD)","Sun-induced fluorescence in O2A absorption band (iFLD)","Ratio between both SIF (SIF687 / SIF760)"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Field.Name<\/th>\n      <th>Description<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
+<div id="summary-stats" class="section level3">
+<h3><span class="header-section-number">13.3.1</span> Summary stats</h3>
+<p>A summary table shows the moments, and ranges of all variables for n = 1072886 sugar beet pixels in the Selhausen study area (Table <a href="#fig:table-hyplant"><strong>??</strong></a>).</p>
+<div id="htmlwidget-0248a54498934ff27839" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0248a54498934ff27839">{"x":{"filter":"none","caption":"<caption>Descriptive statistics.<\/caption>","data":[["Mean","Std.Dev","Min","Q1","Median","Q3","Max","MAD","IQR","CV","Skewness","SE.Skewness","Kurtosis","N.Valid","Pct.Valid"],[10.307,6.025,0,4.336,10.032,16.288,58.697,8.829,11.953,0.585,0.054,0.002,-1.329,1072886,100],[39.983,21.962,0,22,42,58,75,29.652,36,0.549,-0.074,0.002,-1.2,1072886,100],[0.904,0.09,0.097,0.906,0.932,0.945,0.999,0.023,0.039,0.1,-4.092,0.002,21.042,1072886,100],[0.417,0.203,0,0.291,0.378,0.494,2,0.145,0.202,0.487,2.19,0.002,9.107,1072886,100],[0.88,0.278,0,0.712,0.893,1.065,3.431,0.262,0.353,0.316,-0.26,0.002,0.417,1072886,100],[2.327,0.77,0.004,1.791,2.322,2.858,5.972,0.791,1.067,0.331,0.04,0.002,-0.241,1072886,100],[11.868,4.002,0.948,9.351,12.531,14.765,39.965,3.831,5.414,0.337,-0.429,0.002,0.21,1072886,100]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>elev<\/th>\n      <th>fieldid<\/th>\n      <th>NDVI<\/th>\n      <th>SIF.ratio<\/th>\n      <th>SIF687<\/th>\n      <th>SIF760<\/th>\n      <th>SR<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"scrollX":true,"columnDefs":[{"width":"30%","targets":[1,2]},{"className":"dt-right","targets":[1,2,3,4,5,6,7]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="histogram-distribution" class="section level3">
+<h3><span class="header-section-number">13.3.2</span> Histogram distribution</h3>
+<p>Histigram distribution of SIF, VI and elevation (Figure <a href="#fig:hyplant1:hist"><strong>??</strong></a>).</p>
+<div class="figure"><span id="fig:unnamed-chunk-89"></span>
+<img src="bookdown_files/figure-html/unnamed-chunk-89-1.png" alt="Histigram distribution of SIF, VI and Elevation." width="768" />
+<p class="caption">
+Figure 13.9: Histigram distribution of SIF, VI and Elevation.
+</p>
+</div>
+<p>Most of the variables are normally distributed with some exceptions (e.g. elevation). We observe a bimodalilty in the VIs (and to certain extend in SIF) which points to the fact that there is an outlier field, incorrectly classified as sugar beet, where in fact it is most certainly a bare soil field.</p>
+</div>
+<div id="field-average" class="section level3">
+<h3><span class="header-section-number">13.3.3</span> Field average</h3>
+<p>In the next step we explore the presence of inter-variable correlations, dependencies, and trends in the data. To minimize the clutter We use the field average value for each variable. Figure <a href="hyplant1.html#fig:12-hy-scatter">13.10</a> shows a scatter plot between each pair of variables, where each point represents a single sugar beet field (in the upper pannels above the diagonal). The lower panels show the Pearson’s correlation coefficient including the significance level (with stars).</p>
+<pre><code>##     fieldid           NDVI            SIF687           SIF760            SR              elev            in.high      
+##  Min.   : 0.00   Min.   :0.6888   Min.   :0.5974   Min.   :1.138   Min.   : 4.586   Min.   : 0.7922   Min.   :0.0000  
+##  1st Qu.:18.25   1st Qu.:0.8858   1st Qu.:0.8066   1st Qu.:1.857   1st Qu.: 9.692   1st Qu.: 4.9070   1st Qu.:0.0000  
+##  Median :39.50   Median :0.9066   Median :0.8901   Median :2.270   Median :11.676   Median :11.8803   Median :0.0000  
+##  Mean   :38.14   Mean   :0.8940   Mean   :0.8760   Mean   :2.310   Mean   :11.579   Mean   :11.2080   Mean   :0.4138  
+##  3rd Qu.:56.50   3rd Qu.:0.9221   3rd Qu.:0.9507   3rd Qu.:2.761   3rd Qu.:13.454   3rd Qu.:16.4904   3rd Qu.:1.0000  
+##  Max.   :75.00   Max.   :0.9426   Max.   :1.0727   Max.   :3.490   Max.   :16.850   Max.   :21.7007   Max.   :1.0000  
+##    SIF.ratio     
+##  Min.   :0.2736  
+##  1st Qu.:0.3559  
+##  Median :0.3998  
+##  Mean   :0.4227  
+##  3rd Qu.:0.4867  
+##  Max.   :0.6367</code></pre>
+<div class="figure"><span id="fig:12-hy-scatter"></span>
+<img src="bookdown_files/figure-html/12-hy-scatter-1.png" alt="Scatterplot for average field values for variables extracted from 2016 HyPlant overflight." width="960" />
+<p class="caption">
+Figure 13.10: Scatterplot for average field values for variables extracted from 2016 HyPlant overflight.
+</p>
+</div>
+<p>We observe that elevation is not related to any other variables (the highest correlation coefficent is with SIF ratio). This was to be expected since the difference in elevation is hardly 17 hight meters. On the other hand, the average SIF in O2A band is tightly correlated to SIF ratio and to SR vegetation index. Similar correlation was seen from the flox data in figure <a href="flox2.html#fig:eda2">11.6</a>.</p>
+</div>
+<div id="terrace-association" class="section level3">
+<h3><span class="header-section-number">13.3.4</span> Terrace association</h3>
+<p>Our dataset includes two categorical variable - the terrace association, and the soil information. Maps of both can be seen in the chapter <a href="hyplant2.html#study-area">14.1.2</a>. A quick look at the location of the fields reveils that they are more fields in the lower terrace (Figure <a href="hyplant1.html#fig:12-hy-termap">13.11</a>). The mean values for elation and SIF in O2A differ between the two terraces, while the other variables do not (Table <a href="hyplant1.html#tab:12-hy-table1">13.1</a>).</p>
+<table>
+<caption><span id="tab:12-hy-table1">Table 13.1: </span>Summary statistics of variables based on terrace association</caption>
+<thead>
+<tr class="header">
+<th align="left">in.high</th>
+<th align="right">area m2</th>
+<th align="right">N fields</th>
+<th align="right">NDVI</th>
+<th align="right">SR</th>
+<th align="right">SIF687</th>
+<th align="right">SIF760</th>
+<th align="right">Elevation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">FALSE</td>
+<td align="right">702131</td>
+<td align="right">34</td>
+<td align="right">0.9075580</td>
+<td align="right">12.40909</td>
+<td align="right">0.865591</td>
+<td align="right">2.139545</td>
+<td align="right">6.859412</td>
+</tr>
+<tr class="even">
+<td align="left">TRUE</td>
+<td align="right">370755</td>
+<td align="right">24</td>
+<td align="right">0.8964774</td>
+<td align="right">12.92382</td>
+<td align="right">0.906874</td>
+<td align="right">2.682997</td>
+<td align="right">16.835300</td>
+</tr>
+</tbody>
+</table>
+<div class="figure"><span id="fig:12-hy-termap"></span>
+<img src="bookdown_files/figure-html/12-hy-termap-1.png" alt="Overview map of the area covered by the low altitude flight of HyPlant. Sugar beet fields are shown in blue for lower terrace and yellow for upper terrace." width="576" />
+<p class="caption">
+Figure 13.11: Overview map of the area covered by the low altitude flight of HyPlant. Sugar beet fields are shown in blue for lower terrace and yellow for upper terrace.
+</p>
+</div>
+<p>These differences can be more easily explored using boxplot graphs (Figure <a href="hyplant1.html#fig:12-hy-box-ter">13.12</a>).</p>
+<div class="figure"><span id="fig:12-hy-box-ter"></span>
+<img src="bookdown_files/figure-html/12-hy-box-ter-1.png" alt="Comparison of SIF values between lower and upper terrace." width="960" />
+<p class="caption">
+Figure 13.12: Comparison of SIF values between lower and upper terrace.
+</p>
+</div>
+<p>In next step the data frame is divided into two - one for each terrace, and tested for significant difference in mean terrace values for all variables.</p>
+<div id="difference-in-means" class="section level4">
+<h4><span class="header-section-number">13.3.4.1</span> Difference in means</h4>
+<p>The Student’s two sample unpaired t-test is test is sensitive to sample size. with increasing sample size it is more likely to confirm a difference in means. The appropriate size of the sample is the subject of branch of statistical science called Power Analysis. In order to decrease the power of the sample size has on the statistical test it is advisable to perform a bootstrap replicate with smaller portion of the data (Table <a href="#tab:12-hy-boot"><strong>??</strong></a>).</p>
+<div id="htmlwidget-97a4fc2f844d908e37d1" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-97a4fc2f844d908e37d1">{"x":{"filter":"none","caption":"<caption>Mean and standard deviation of the p-value for Student's t test comparing 100 random pixels from lower and upper terrace after n=1000 bootstrap replications.<\/caption>","data":[["NDVI","SIF687","SIF760","SR","elev","SIF.ratio"],[0.38506,0.36767,0.00018,0.41935,0,0.06755],[0.30345,0.32333,0.00084,0.30456,0,0.13348]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Mean<\/th>\n      <th>SD<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[1,2]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<p>The bootstrap replication of the T-test shows that there is no significant difference between average terrace values for the Vegetation Indices and for SIF in O2B band. In fact, the only significant difference in means (very highly significant, p &lt; 0.005) is for SIF in O2A band and for elevation.</p>
+</div>
+<div id="distribution" class="section level4">
+<h4><span class="header-section-number">13.3.4.2</span> Distribution</h4>
+<p>We saw that there is significant difference between mean values for SIF O2A in lower and upper terrace. Now we will explore the histogram distribution of values in each of the terrace. Are they normally distributed? Visibly the distribution of SIF values resembles the typical bell shape of a normal distribution (Figure <a href="hyplant1.html#fig:12-hy-distr">13.13</a>) and the Shapiro test for normality confirms our visual interpretation.</p>
+<pre><code>## [[1]]
+## 
+##  Shapiro-Wilk normality test
+## 
+## data:  All fields
+## W = 0.98643, p-value = 0.4005
+## 
+## 
+## [[2]]
+## 
+##  Shapiro-Wilk normality test
+## 
+## data:  Lower terrace
+## W = 0.97922, p-value = 0.1155
+## 
+## 
+## [[3]]
+## 
+##  Shapiro-Wilk normality test
+## 
+## data:  Upper terrace
+## W = 0.97786, p-value = 0.09045</code></pre>
+<p>The reported p-value is the chance that rejecting the null hypthesis that the sample is from a normal distribution is an incorrect decision (the probability of committing a Type I error).</p>
+<div class="figure"><span id="fig:12-hy-distr"></span>
+<img src="bookdown_files/figure-html/12-hy-distr-1.png" alt="Empirical and theoretical density distribution of SIF (O2A) for all field, those in high and low terrace." width="1152" />
+<p class="caption">
+Figure 13.13: Empirical and theoretical density distribution of SIF (O2A) for all field, those in high and low terrace.
+</p>
+</div>
+</div>
+</div>
+<div id="soil" class="section level3">
+<h3><span class="header-section-number">13.3.5</span> Soil</h3>
+<table>
+<caption><span id="tab:12-hy-table2">Table 13.2: </span>Summary table of the input data per soil type.</caption>
+<thead>
+<tr class="header">
+<th align="left">soiln</th>
+<th align="right">area m2</th>
+<th align="right">N fields</th>
+<th align="right">NDVI</th>
+<th align="right">SR</th>
+<th align="right">SIF687</th>
+<th align="right">SIF760</th>
+<th align="right">Elevation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Brown</td>
+<td align="right">131538</td>
+<td align="right">15</td>
+<td align="right">0.8927195</td>
+<td align="right">10.23529</td>
+<td align="right">0.9026354</td>
+<td align="right">2.201412</td>
+<td align="right">16.292389</td>
+</tr>
+<tr class="even">
+<td align="left">Clay</td>
+<td align="right">92147</td>
+<td align="right">9</td>
+<td align="right">0.8707340</td>
+<td align="right">10.05387</td>
+<td align="right">0.7536494</td>
+<td align="right">1.835120</td>
+<td align="right">6.270637</td>
+</tr>
+<tr class="odd">
+<td align="left">Loes</td>
+<td align="right">50568</td>
+<td align="right">5</td>
+<td align="right">0.9166420</td>
+<td align="right">11.85304</td>
+<td align="right">0.9409005</td>
+<td align="right">2.451075</td>
+<td align="right">15.782794</td>
+</tr>
+<tr class="even">
+<td align="left">Parabrown</td>
+<td align="right">397798</td>
+<td align="right">35</td>
+<td align="right">0.9079881</td>
+<td align="right">14.02963</td>
+<td align="right">0.9105632</td>
+<td align="right">2.723220</td>
+<td align="right">12.364152</td>
+</tr>
+<tr class="odd">
+<td align="left">Pseudoclay</td>
+<td align="right">400835</td>
+<td align="right">31</td>
+<td align="right">0.9090708</td>
+<td align="right">12.33936</td>
+<td align="right">0.8632213</td>
+<td align="right">2.073342</td>
+<td align="right">6.537727</td>
+</tr>
+</tbody>
+</table>
+<div class="figure"><span id="fig:12-hy-box1"></span>
+<img src="bookdown_files/figure-html/12-hy-box1-1.png" alt="Boxplot of SIF (O2A) for each of soil class in Selhausen." width="1152" />
+<p class="caption">
+Figure 13.14: Boxplot of SIF (O2A) for each of soil class in Selhausen.
+</p>
+</div>
+<div class="figure"><span id="fig:12-hy-box2"></span>
+<img src="bookdown_files/figure-html/12-hy-box2-1.png" alt="Boxplot of SIF (O2A) for per soil class and terrace association in Selhausen." width="1152" />
+<p class="caption">
+Figure 13.15: Boxplot of SIF (O2A) for per soil class and terrace association in Selhausen.
+</p>
+</div>
+</div>
+<div id="scale-dependence" class="section level3">
+<h3><span class="header-section-number">13.3.6</span> Scale dependence</h3>
+<p>Choosing the appropriate scale at which to study a particular phenomenon is important. The shape or the strenght of a relationship beteween two environmental variables might differ when observed at two different scales (see theoretical section <a href="#scale"><strong>??</strong></a>). Identifying the scale of relevance (the appropraite operational scale) can be done empirically by comparing some goodness-of-fit statistics across the possible scales. In the next chapter we will perform analysis on two different operational scales. The agrosystem scale which we will define in the next chapter takes the individual agricultural field as an elementary sampling unit. However, unlike raster pixels, the agricultural fields have different size (Figure <a href="hyplant1.html#fig:13-hy-scale-hist">13.16</a>). This requires a preliminary analysis to see wether the size of the field has any impact on the values of our inputs.</p>
+<div class="figure"><span id="fig:13-hy-scale-hist"></span>
+<img src="bookdown_files/figure-html/13-hy-scale-hist-1.png" alt="Histogram distribution of field size in Selhausen" width="768" />
+<p class="caption">
+Figure 13.16: Histogram distribution of field size in Selhausen
+</p>
+</div>
+<p>Figure <a href="hyplant1.html#fig:13-hy-scale">13.17</a> bellow plots the most important distribution characteristics as a function of field size. What we see is that there is no significant effect of field size on the the distribution of SIF values itself. Most importantly, the standard deviation (in other words the variability) of SIF is scale invariant.</p>
+<div class="figure"><span id="fig:13-hy-scale"></span>
+<img src="bookdown_files/figure-html/13-hy-scale-1.png" alt="Field level statistics as a function of size of the field" width="768" />
+<p class="caption">
+Figure 13.17: Field level statistics as a function of size of the field
+</p>
+</div>
+
+</div>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Rascher2015">
+<p>Rascher, U., L. Alonso, A. Burkart, C. Cilia, S. Cogliati, R. Colombo, A. Damm, et al. 2015. “Sun-induced fluorescence - a new probe of photosynthesis: First maps from the imaging spectrometer HyPlant.” <em>Global Change Biology</em> 21 (12): 4673–84. doi:<a href="https://doi.org/10.1111/gcb.13017">10.1111/gcb.13017</a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="airborne-measurements-of-sif.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="hyplant2.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["bookdown.pdf", "bookdown.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

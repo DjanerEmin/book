@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 13 From HyPlant to FLEX upscaling procedure | Exploring the effect of canopy structure on top-of-canopy sun-induced fluorescence</title>
+  <meta name="description" content="A PhD thesis for awarding the title Doctor of Agricultural Science" />
+  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 13 From HyPlant to FLEX upscaling procedure | Exploring the effect of canopy structure on top-of-canopy sun-induced fluorescence" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A PhD thesis for awarding the title Doctor of Agricultural Science" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 13 From HyPlant to FLEX upscaling procedure | Exploring the effect of canopy structure on top-of-canopy sun-induced fluorescence" />
+  
+  <meta name="twitter:description" content="A PhD thesis for awarding the title Doctor of Agricultural Science" />
+  
+
+<meta name="author" content="Dzhaner Emin" />
+
+
+<meta name="date" content="2019-11-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html"/>
+<link rel="next" href="references.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.5/datatables.js"></script>
+<link href="libs/dt-core-1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.10.16/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.10.16/js/jquery.dataTables.min.js"></script>
+<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Sun-induced fluorescence</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#section"></a></li>
+<li class="chapter" data-level="" data-path="preamble.html"><a href="preamble.html"><i class="fa fa-check"></i>Preamble</a><ul>
+<li class="chapter" data-level="" data-path="preamble.html"><a href="preamble.html#acknowledgments"><i class="fa fa-check"></i>Acknowledgments</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="part"><span><b>I Theoretical background</b></span></li>
+<li class="chapter" data-level="2" data-path="fluo.html"><a href="fluo.html"><i class="fa fa-check"></i><b>2</b> Fluorescence basics</a><ul>
+<li class="chapter" data-level="2.1" data-path="fluo.html"><a href="fluo.html#faith-of-absorbed-light-energy-reaching-the-plant-surface"><i class="fa fa-check"></i><b>2.1</b> Faith of absorbed light energy reaching the plant surface</a></li>
+<li class="chapter" data-level="2.2" data-path="fluo.html"><a href="fluo.html#origin-of-chlorophyll-fluorescence"><i class="fa fa-check"></i><b>2.2</b> Origin of chlorophyll fluorescence</a></li>
+<li class="chapter" data-level="2.3" data-path="fluo.html"><a href="fluo.html#link-between-fluorescence-and-photosynthesis"><i class="fa fa-check"></i><b>2.3</b> Link between fluorescence and photosynthesis</a></li>
+<li class="chapter" data-level="2.4" data-path="fluo.html"><a href="fluo.html#heat-dissipation"><i class="fa fa-check"></i><b>2.4</b> Heat dissipation</a></li>
+<li class="chapter" data-level="2.5" data-path="fluo.html"><a href="fluo.html#measuring-chl-fluorescence"><i class="fa fa-check"></i><b>2.5</b> Measuring Chl fluorescence</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="fluo.html"><a href="fluo.html#pam-fluorimetry---active-methods"><i class="fa fa-check"></i><b>2.5.1</b> PAM fluorimetry - active methods</a></li>
+<li class="chapter" data-level="2.5.2" data-path="fluo.html"><a href="fluo.html#fluorescence-under-natural-conditions-sif"><i class="fa fa-check"></i><b>2.5.2</b> Fluorescence under natural conditions (SIF)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="remote-sensing-of-vegetation-biophysics-and-sif.html"><a href="remote-sensing-of-vegetation-biophysics-and-sif.html"><i class="fa fa-check"></i><b>3</b> Remote sensing of vegetation biophysics and SIF</a><ul>
+<li class="chapter" data-level="3.1" data-path="remote-sensing-of-vegetation-biophysics-and-sif.html"><a href="remote-sensing-of-vegetation-biophysics-and-sif.html#remote-sensing"><i class="fa fa-check"></i><b>3.1</b> Remote sensing</a></li>
+<li class="chapter" data-level="3.2" data-path="remote-sensing-of-vegetation-biophysics-and-sif.html"><a href="remote-sensing-of-vegetation-biophysics-and-sif.html#the-concept-of-scale-in-remote-sensing.-scalability-of-ecological-processes"><i class="fa fa-check"></i><b>3.2</b> The concept of scale in remote sensing. Scalability of ecological processes</a></li>
+<li class="chapter" data-level="3.3" data-path="remote-sensing-of-vegetation-biophysics-and-sif.html"><a href="remote-sensing-of-vegetation-biophysics-and-sif.html#retrieval-of-sif"><i class="fa fa-check"></i><b>3.3</b> Retrieval of SIF</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="remote-sensing-of-vegetation-biophysics-and-sif.html"><a href="remote-sensing-of-vegetation-biophysics-and-sif.html#fld-principle"><i class="fa fa-check"></i><b>3.3.1</b> FLD principle</a></li>
+<li class="chapter" data-level="3.3.2" data-path="remote-sensing-of-vegetation-biophysics-and-sif.html"><a href="remote-sensing-of-vegetation-biophysics-and-sif.html#spectral-fitting-methods-the-state-of-the-art-sif-retrieval-of-the-entire-sif-spectrum"><i class="fa fa-check"></i><b>3.3.2</b> Spectral fitting methods – the state of the art SIF retrieval of the entire SIF spectrum</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="remote-sensing-of-vegetation-biophysics-and-sif.html"><a href="remote-sensing-of-vegetation-biophysics-and-sif.html#sensor-design-for-sif-acquisition"><i class="fa fa-check"></i><b>3.4</b> Sensor design for SIF acquisition</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="remote-sensing-of-vegetation-biophysics-and-sif.html"><a href="remote-sensing-of-vegetation-biophysics-and-sif.html#ground-sensor-design"><i class="fa fa-check"></i><b>3.4.1</b> Ground sensor design</a></li>
+<li class="chapter" data-level="3.4.2" data-path="remote-sensing-of-vegetation-biophysics-and-sif.html"><a href="remote-sensing-of-vegetation-biophysics-and-sif.html#airborne"><i class="fa fa-check"></i><b>3.4.2</b> Airborne</a></li>
+<li class="chapter" data-level="3.4.3" data-path="remote-sensing-of-vegetation-biophysics-and-sif.html"><a href="remote-sensing-of-vegetation-biophysics-and-sif.html#spaceborne"><i class="fa fa-check"></i><b>3.4.3</b> Spaceborne</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="factors-affecting-canopy-structure.html"><a href="factors-affecting-canopy-structure.html"><i class="fa fa-check"></i><b>4</b> Factors affecting canopy structure</a><ul>
+<li class="chapter" data-level="4.1" data-path="factors-affecting-canopy-structure.html"><a href="factors-affecting-canopy-structure.html#computational-factors"><i class="fa fa-check"></i><b>4.1</b> Computational Factors</a></li>
+<li class="chapter" data-level="4.2" data-path="factors-affecting-canopy-structure.html"><a href="factors-affecting-canopy-structure.html#environmental-factors"><i class="fa fa-check"></i><b>4.2</b> Environmental Factors</a></li>
+<li class="chapter" data-level="4.3" data-path="factors-affecting-canopy-structure.html"><a href="factors-affecting-canopy-structure.html#physiological-factors"><i class="fa fa-check"></i><b>4.3</b> Physiological Factors</a></li>
+<li class="chapter" data-level="4.4" data-path="factors-affecting-canopy-structure.html"><a href="factors-affecting-canopy-structure.html#discussion"><i class="fa fa-check"></i><b>4.4</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="canopy-structure.html"><a href="canopy-structure.html"><i class="fa fa-check"></i><b>5</b> Canopy structure</a><ul>
+<li class="chapter" data-level="5.1" data-path="canopy-structure.html"><a href="canopy-structure.html#measuring-canopy-structure"><i class="fa fa-check"></i><b>5.1</b> Measuring canopy structure</a></li>
+<li class="chapter" data-level="5.2" data-path="canopy-structure.html"><a href="canopy-structure.html#modeling-canopy-structure"><i class="fa fa-check"></i><b>5.2</b> modeling canopy structure</a></li>
+<li class="chapter" data-level="5.3" data-path="canopy-structure.html"><a href="canopy-structure.html#retrieval-of-canopy-structure"><i class="fa fa-check"></i><b>5.3</b> Retrieval of canopy structure</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="canopy-structure.html"><a href="canopy-structure.html#look-up-tables"><i class="fa fa-check"></i><b>5.3.1</b> Look-up Tables</a></li>
+<li class="chapter" data-level="5.3.2" data-path="canopy-structure.html"><a href="canopy-structure.html#cost-functions"><i class="fa fa-check"></i><b>5.3.2</b> Cost functions</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="canopy-structure.html"><a href="canopy-structure.html#the-effect-of-canopy-structure-on-sif"><i class="fa fa-check"></i><b>5.4</b> The effect of canopy structure on SIF</a></li>
+</ul></li>
+<li class="part"><span><b>II Materials and methods</b></span></li>
+<li class="chapter" data-level="6" data-path="study-area.html"><a href="study-area.html"><i class="fa fa-check"></i><b>6</b> Study area</a><ul>
+<li class="chapter" data-level="6.1" data-path="study-area.html"><a href="study-area.html#location"><i class="fa fa-check"></i><b>6.1</b> Location</a></li>
+<li class="chapter" data-level="6.2" data-path="study-area.html"><a href="study-area.html#climate"><i class="fa fa-check"></i><b>6.2</b> Climate</a></li>
+<li class="chapter" data-level="6.3" data-path="study-area.html"><a href="study-area.html#land-use-and-husbandry"><i class="fa fa-check"></i><b>6.3</b> Land Use and Husbandry</a></li>
+<li class="chapter" data-level="6.4" data-path="study-area.html"><a href="study-area.html#soil-terrace"><i class="fa fa-check"></i><b>6.4</b> Soil &amp; Terrace</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="sugar-beet.html"><a href="sugar-beet.html"><i class="fa fa-check"></i><b>7</b> Sugar beet</a><ul>
+<li class="chapter" data-level="7.1" data-path="sugar-beet.html"><a href="sugar-beet.html#history-distribution-and-economics"><i class="fa fa-check"></i><b>7.1</b> History, distribution and economics</a></li>
+<li class="chapter" data-level="7.2" data-path="sugar-beet.html"><a href="sugar-beet.html#growth"><i class="fa fa-check"></i><b>7.2</b> Growth</a></li>
+<li class="chapter" data-level="7.3" data-path="sugar-beet.html"><a href="sugar-beet.html#husbandry"><i class="fa fa-check"></i><b>7.3</b> Husbandry</a></li>
+<li class="chapter" data-level="7.4" data-path="sugar-beet.html"><a href="sugar-beet.html#effects-of-canopy-structure"><i class="fa fa-check"></i><b>7.4</b> Effects of canopy structure</a><ul>
+<li class="chapter" data-level="7.4.1" data-path="sugar-beet.html"><a href="sugar-beet.html#canopy-development"><i class="fa fa-check"></i><b>7.4.1</b> Canopy development</a></li>
+<li class="chapter" data-level="7.4.2" data-path="sugar-beet.html"><a href="sugar-beet.html#effect-of-canopy-structure-on-yield"><i class="fa fa-check"></i><b>7.4.2</b> Effect of canopy structure on yield</a></li>
+<li class="chapter" data-level="7.4.3" data-path="sugar-beet.html"><a href="sugar-beet.html#effect-of-canopy-structure-on-radiation-budget-and-optical-properties"><i class="fa fa-check"></i><b>7.4.3</b> Effect of canopy structure on radiation budget and optical properties</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="sugar-beet.html"><a href="sugar-beet.html#other-effects"><i class="fa fa-check"></i><b>7.5</b> Other effects</a><ul>
+<li class="chapter" data-level="7.5.1" data-path="sugar-beet.html"><a href="sugar-beet.html#effect-of-nitrogen"><i class="fa fa-check"></i><b>7.5.1</b> effect of nitrogen</a></li>
+<li class="chapter" data-level="7.5.2" data-path="sugar-beet.html"><a href="sugar-beet.html#effect-of-soil-water"><i class="fa fa-check"></i><b>7.5.2</b> Effect of soil water</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>III Results</b></span></li>
+<li class="chapter" data-level="8" data-path="exploring-the-influence-of-lai-and-chlorophyll-content-on-toc-sif-using-scope-simulation.html"><a href="exploring-the-influence-of-lai-and-chlorophyll-content-on-toc-sif-using-scope-simulation.html"><i class="fa fa-check"></i><b>8</b> Exploring the influence of LAI and Chlorophyll content on TOC SIF using SCOPE simulation</a><ul>
+<li class="chapter" data-level="8.1" data-path="exploring-the-influence-of-lai-and-chlorophyll-content-on-toc-sif-using-scope-simulation.html"><a href="exploring-the-influence-of-lai-and-chlorophyll-content-on-toc-sif-using-scope-simulation.html#simulation"><i class="fa fa-check"></i><b>8.1</b> Simulation</a></li>
+<li class="chapter" data-level="8.2" data-path="exploring-the-influence-of-lai-and-chlorophyll-content-on-toc-sif-using-scope-simulation.html"><a href="exploring-the-influence-of-lai-and-chlorophyll-content-on-toc-sif-using-scope-simulation.html#results"><i class="fa fa-check"></i><b>8.2</b> Results</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="exploring-the-influence-of-lai-and-chlorophyll-content-on-toc-sif-using-scope-simulation.html"><a href="exploring-the-influence-of-lai-and-chlorophyll-content-on-toc-sif-using-scope-simulation.html#sif-as-function-of-lai-and-cab"><i class="fa fa-check"></i><b>8.2.1</b> SIF as function of LAI and Cab</a></li>
+<li class="chapter" data-level="8.2.2" data-path="exploring-the-influence-of-lai-and-chlorophyll-content-on-toc-sif-using-scope-simulation.html"><a href="exploring-the-influence-of-lai-and-chlorophyll-content-on-toc-sif-using-scope-simulation.html#sif-as-a-function-of-vi"><i class="fa fa-check"></i><b>8.2.2</b> SIF as a function of VI</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="exploring-the-influence-of-lai-and-chlorophyll-content-on-toc-sif-using-scope-simulation.html"><a href="exploring-the-influence-of-lai-and-chlorophyll-content-on-toc-sif-using-scope-simulation.html#discussion-1"><i class="fa fa-check"></i><b>8.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="description-of-flox-device-and-exploratory-data-analysis-of-diurnal-measurements.html"><a href="description-of-flox-device-and-exploratory-data-analysis-of-diurnal-measurements.html"><i class="fa fa-check"></i><b>9</b> Description of FLOX device and exploratory data analysis of diurnal measurements</a><ul>
+<li class="chapter" data-level="9.1" data-path="description-of-flox-device-and-exploratory-data-analysis-of-diurnal-measurements.html"><a href="description-of-flox-device-and-exploratory-data-analysis-of-diurnal-measurements.html#flox-description-and-metadata"><i class="fa fa-check"></i><b>9.1</b> FLOX description and metadata</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="description-of-flox-device-and-exploratory-data-analysis-of-diurnal-measurements.html"><a href="description-of-flox-device-and-exploratory-data-analysis-of-diurnal-measurements.html#temperature-of-device-housing-and-ccd"><i class="fa fa-check"></i><b>9.1.1</b> Temperature of device housing and CCD</a></li>
+<li class="chapter" data-level="9.1.2" data-path="description-of-flox-device-and-exploratory-data-analysis-of-diurnal-measurements.html"><a href="description-of-flox-device-and-exploratory-data-analysis-of-diurnal-measurements.html#humidity"><i class="fa fa-check"></i><b>9.1.2</b> Humidity</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="description-of-flox-device-and-exploratory-data-analysis-of-diurnal-measurements.html"><a href="description-of-flox-device-and-exploratory-data-analysis-of-diurnal-measurements.html#exploratory-analysis-of-diurnal-sif-for-two-crops"><i class="fa fa-check"></i><b>9.2</b> Exploratory analysis of diurnal SIF for two crops</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="description-of-flox-device-and-exploratory-data-analysis-of-diurnal-measurements.html"><a href="description-of-flox-device-and-exploratory-data-analysis-of-diurnal-measurements.html#three-days-diurnal-measurements-in-sugar-beet"><i class="fa fa-check"></i><b>9.2.1</b> Three days diurnal measurements in sugar beet</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="description-of-flox-device-and-exploratory-data-analysis-of-diurnal-measurements.html"><a href="description-of-flox-device-and-exploratory-data-analysis-of-diurnal-measurements.html#diurnal-development-of-sif-in-winter-wheat"><i class="fa fa-check"></i><b>9.3</b> Diurnal development of SIF in Winter wheat</a><ul>
+<li class="chapter" data-level="9.3.1" data-path="description-of-flox-device-and-exploratory-data-analysis-of-diurnal-measurements.html"><a href="description-of-flox-device-and-exploratory-data-analysis-of-diurnal-measurements.html#sif-value-ranges.-comparison-between-ifld-and-sfm-values"><i class="fa fa-check"></i><b>9.3.1</b> SIF value ranges. Comparison between iFLD and SFM values</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="description-of-flox-device-and-exploratory-data-analysis-of-diurnal-measurements.html"><a href="description-of-flox-device-and-exploratory-data-analysis-of-diurnal-measurements.html#stability-of-sif-measurements"><i class="fa fa-check"></i><b>9.4</b> Stability of SIF measurements</a><ul>
+<li class="chapter" data-level="9.4.1" data-path="description-of-flox-device-and-exploratory-data-analysis-of-diurnal-measurements.html"><a href="description-of-flox-device-and-exploratory-data-analysis-of-diurnal-measurements.html#e-stability"><i class="fa fa-check"></i><b>9.4.1</b> E-stability</a></li>
+<li class="chapter" data-level="9.4.2" data-path="description-of-flox-device-and-exploratory-data-analysis-of-diurnal-measurements.html"><a href="description-of-flox-device-and-exploratory-data-analysis-of-diurnal-measurements.html#negative-sif-values"><i class="fa fa-check"></i><b>9.4.2</b> Negative SIF values</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="description-of-flox-device-and-exploratory-data-analysis-of-diurnal-measurements.html"><a href="description-of-flox-device-and-exploratory-data-analysis-of-diurnal-measurements.html#discussion-2"><i class="fa fa-check"></i><b>9.5</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="development-and-evaluation-of-a-mobile-measurement-procedure-for-toc-sif.html"><a href="development-and-evaluation-of-a-mobile-measurement-procedure-for-toc-sif.html"><i class="fa fa-check"></i><b>10</b> Development and evaluation of a mobile measurement procedure for TOC SIF</a><ul>
+<li class="chapter" data-level="10.1" data-path="development-and-evaluation-of-a-mobile-measurement-procedure-for-toc-sif.html"><a href="development-and-evaluation-of-a-mobile-measurement-procedure-for-toc-sif.html#developing-a-mobile-measurement-protocol"><i class="fa fa-check"></i><b>10.1</b> Developing a mobile measurement protocol</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="development-and-evaluation-of-a-mobile-measurement-procedure-for-toc-sif.html"><a href="development-and-evaluation-of-a-mobile-measurement-procedure-for-toc-sif.html#setup"><i class="fa fa-check"></i><b>10.1.1</b> Setup</a></li>
+<li class="chapter" data-level="10.1.2" data-path="development-and-evaluation-of-a-mobile-measurement-procedure-for-toc-sif.html"><a href="development-and-evaluation-of-a-mobile-measurement-procedure-for-toc-sif.html#procedure"><i class="fa fa-check"></i><b>10.1.2</b> Procedure</a></li>
+<li class="chapter" data-level="10.1.3" data-path="development-and-evaluation-of-a-mobile-measurement-procedure-for-toc-sif.html"><a href="development-and-evaluation-of-a-mobile-measurement-procedure-for-toc-sif.html#post-processing"><i class="fa fa-check"></i><b>10.1.3</b> Post-processing</a></li>
+<li class="chapter" data-level="10.1.4" data-path="development-and-evaluation-of-a-mobile-measurement-procedure-for-toc-sif.html"><a href="development-and-evaluation-of-a-mobile-measurement-procedure-for-toc-sif.html#quality-check"><i class="fa fa-check"></i><b>10.1.4</b> Quality check</a></li>
+<li class="chapter" data-level="10.1.5" data-path="development-and-evaluation-of-a-mobile-measurement-procedure-for-toc-sif.html"><a href="development-and-evaluation-of-a-mobile-measurement-procedure-for-toc-sif.html#finding-location-average-and-corresponding-reference-sif"><i class="fa fa-check"></i><b>10.1.5</b> Finding location average and corresponding reference SIF</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="development-and-evaluation-of-a-mobile-measurement-procedure-for-toc-sif.html"><a href="development-and-evaluation-of-a-mobile-measurement-procedure-for-toc-sif.html#evaluation-of-methodology"><i class="fa fa-check"></i><b>10.2</b> Evaluation of methodology</a><ul>
+<li class="chapter" data-level="10.2.1" data-path="development-and-evaluation-of-a-mobile-measurement-procedure-for-toc-sif.html"><a href="development-and-evaluation-of-a-mobile-measurement-procedure-for-toc-sif.html#using-par-readings"><i class="fa fa-check"></i><b>10.2.1</b> Using PAR readings</a></li>
+<li class="chapter" data-level="10.2.2" data-path="development-and-evaluation-of-a-mobile-measurement-procedure-for-toc-sif.html"><a href="development-and-evaluation-of-a-mobile-measurement-procedure-for-toc-sif.html#evaluating-the-variability-of-sif"><i class="fa fa-check"></i><b>10.2.2</b> Evaluating the variability of SIF</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="development-and-evaluation-of-a-mobile-measurement-procedure-for-toc-sif.html"><a href="development-and-evaluation-of-a-mobile-measurement-procedure-for-toc-sif.html#descriptive-statistics-of-mobile-flox-data"><i class="fa fa-check"></i><b>10.3</b> Descriptive statistics of mobile FLOX data</a></li>
+<li class="chapter" data-level="10.4" data-path="development-and-evaluation-of-a-mobile-measurement-procedure-for-toc-sif.html"><a href="development-and-evaluation-of-a-mobile-measurement-procedure-for-toc-sif.html#discussion-3"><i class="fa fa-check"></i><b>10.4</b> Discussion</a><ul>
+<li class="chapter" data-level="10.4.1" data-path="development-and-evaluation-of-a-mobile-measurement-procedure-for-toc-sif.html"><a href="development-and-evaluation-of-a-mobile-measurement-procedure-for-toc-sif.html#on-the-measurement-protocol"><i class="fa fa-check"></i><b>10.4.1</b> On the measurement protocol</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="diurnal-rescaling-procedure.html"><a href="diurnal-rescaling-procedure.html"><i class="fa fa-check"></i><b>11</b> Diurnal rescaling procedure</a><ul>
+<li class="chapter" data-level="11.1" data-path="diurnal-rescaling-procedure.html"><a href="diurnal-rescaling-procedure.html#the-need-for-rescaling-explained"><i class="fa fa-check"></i><b>11.1</b> The need for rescaling explained</a></li>
+<li class="chapter" data-level="11.2" data-path="diurnal-rescaling-procedure.html"><a href="diurnal-rescaling-procedure.html#developing-a-rescaling-approach-based-on-empirical-relationship-between-sif-and-lai"><i class="fa fa-check"></i><b>11.2</b> Developing a rescaling approach based on empirical relationship between SIF and LAI</a><ul>
+<li class="chapter" data-level="11.2.1" data-path="diurnal-rescaling-procedure.html"><a href="diurnal-rescaling-procedure.html#data"><i class="fa fa-check"></i><b>11.2.1</b> Data</a></li>
+<li class="chapter" data-level="11.2.2" data-path="diurnal-rescaling-procedure.html"><a href="diurnal-rescaling-procedure.html#empirical-relationship"><i class="fa fa-check"></i><b>11.2.2</b> Empirical relationship</a></li>
+<li class="chapter" data-level="11.2.3" data-path="diurnal-rescaling-procedure.html"><a href="diurnal-rescaling-procedure.html#case-study-hyplant-validation"><i class="fa fa-check"></i><b>11.2.3</b> Case study hyplant validation</a></li>
+</ul></li>
+<li class="chapter" data-level="11.3" data-path="diurnal-rescaling-procedure.html"><a href="diurnal-rescaling-procedure.html#develping-a-priori-shape-based-on-the-quadratic-fit-on-par"><i class="fa fa-check"></i><b>11.3</b> Develping a-priori shape based on the quadratic fit on par</a></li>
+<li class="chapter" data-level="11.4" data-path="diurnal-rescaling-procedure.html"><a href="diurnal-rescaling-procedure.html#discussion-4"><i class="fa fa-check"></i><b>11.4</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html"><a href="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html"><i class="fa fa-check"></i><b>12</b> Tensting the sensitivity of refence location for rescaling sif from FLOX to HyPlant</a><ul>
+<li class="chapter" data-level="12.1" data-path="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html"><a href="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html#introduction"><i class="fa fa-check"></i><b>12.1</b> Introduction</a></li>
+<li class="chapter" data-level="12.2" data-path="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html"><a href="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html#methods"><i class="fa fa-check"></i><b>12.2</b> Methods</a><ul>
+<li class="chapter" data-level="12.2.1" data-path="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html"><a href="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html#theoretical-background"><i class="fa fa-check"></i><b>12.2.1</b> Theoretical background</a></li>
+<li class="chapter" data-level="12.2.2" data-path="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html"><a href="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html#location-model-for-hyplant"><i class="fa fa-check"></i><b>12.2.2</b> Location model for HyPlant</a></li>
+<li class="chapter" data-level="12.2.3" data-path="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html"><a href="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html#spatiotemporal-model"><i class="fa fa-check"></i><b>12.2.3</b> Spatiotemporal model</a></li>
+<li class="chapter" data-level="12.2.4" data-path="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html"><a href="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html#raster-spatial-analysis-using-hyplant-images"><i class="fa fa-check"></i><b>12.2.4</b> Raster spatial analysis using HyPlant images</a></li>
+<li class="chapter" data-level="12.2.5" data-path="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html"><a href="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html#data-used"><i class="fa fa-check"></i><b>12.2.5</b> Data used</a></li>
+<li class="chapter" data-level="12.2.6" data-path="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html"><a href="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html#evaluation-statistics"><i class="fa fa-check"></i><b>12.2.6</b> Evaluation statistics</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html"><a href="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html#results-1"><i class="fa fa-check"></i><b>12.3</b> Results</a><ul>
+<li class="chapter" data-level="12.3.1" data-path="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html"><a href="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html#diagnostics"><i class="fa fa-check"></i><b>12.3.1</b> Diagnostics</a></li>
+<li class="chapter" data-level="12.3.2" data-path="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html"><a href="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html#spatial-analysis-of-residual-maps"><i class="fa fa-check"></i><b>12.3.2</b> Spatial analysis of residual maps</a></li>
+<li class="chapter" data-level="12.3.3" data-path="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html"><a href="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html#plots-of-residuals-vs.observed"><i class="fa fa-check"></i><b>12.3.3</b> Plots of residuals vs. observed</a></li>
+</ul></li>
+<li class="chapter" data-level="12.4" data-path="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html"><a href="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html#discussion-5"><i class="fa fa-check"></i><b>12.4</b> Discussion</a><ul>
+<li class="chapter" data-level="12.4.1" data-path="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html"><a href="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html#on-derivation-of-proxy-estimates-for-gamma"><i class="fa fa-check"></i><b>12.4.1</b> On derivation of proxy estimates for <span class="math inline">\(\Gamma\)</span></a></li>
+<li class="chapter" data-level="12.4.2" data-path="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html"><a href="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html#on-the-evaluation-methodology-and-the-results"><i class="fa fa-check"></i><b>12.4.2</b> On the evaluation methodology and the results</a></li>
+<li class="chapter" data-level="12.4.3" data-path="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html"><a href="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html#on-possible-application-in-the-upscaling-of-sif"><i class="fa fa-check"></i><b>12.4.3</b> On possible application in the upscaling of SIF</a></li>
+<li class="chapter" data-level="12.4.4" data-path="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html"><a href="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html#conclusion"><i class="fa fa-check"></i><b>12.4.4</b> Conclusion</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="from-hyplant-to-flex-upscaling-procedure.html"><a href="from-hyplant-to-flex-upscaling-procedure.html"><i class="fa fa-check"></i><b>13</b> From HyPlant to FLEX upscaling procedure</a><ul>
+<li class="chapter" data-level="13.1" data-path="from-hyplant-to-flex-upscaling-procedure.html"><a href="from-hyplant-to-flex-upscaling-procedure.html#flex-and-hyplant"><i class="fa fa-check"></i><b>13.1</b> FLEX and HyPlant</a></li>
+<li class="chapter" data-level="13.2" data-path="from-hyplant-to-flex-upscaling-procedure.html"><a href="from-hyplant-to-flex-upscaling-procedure.html#input-data"><i class="fa fa-check"></i><b>13.2</b> Input data</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Exploring the effect of canopy structure on top-of-canopy sun-induced fluorescence</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="from-hyplant-to-flex-upscaling-procedure" class="section level1">
+<h1><span class="header-section-number">Chapter 13</span> From HyPlant to FLEX upscaling procedure</h1>
+<blockquote>
+<ul>
+<li>HyPlant images can be used to simulate SIF at 300 m resolution</li>
+<li>The procedure to scale-up SIF and land cover (LC) to 300 m involves a polygon grid cell</li>
+<li>For each grid cell SIF 760, proportion of LC, and SIF contribution from each land cover is calculated</li>
+</ul>
+</blockquote>
+<hr />
+<div id="flex-and-hyplant" class="section level2">
+<h2><span class="header-section-number">13.1</span> FLEX and HyPlant</h2>
+<p>FLEX satellite is the upcomming scientific satellite mission from ESA. It will monitor global SIF levels at 300 m spatial resolution. HyPlant is an airborn hyperspectral device used for SIF retrieval at nominal spatial resolution of 1 m. HyPlant can be used to simulate SIF at 300 meter and study the scaling effects.</p>
+<p>Here, the procedure to derive SIF values at 300 meter spatial resolution is described. We will create a vector grid. Then the grid will be overlayed with the SIF map from HyPlant and the land cover map. For each grid cell we will extract proportion of land cover, average SIF, and average SIF per land cover.</p>
+</div>
+<div id="input-data" class="section level2">
+<h2><span class="header-section-number">13.2</span> Input data</h2>
+<p>Input data includes:</p>
+<ul>
+<li>SIF map from 2017 over Selhausen study area at 1m spatial resolution</li>
+<li>Vector land cover map of the same area contains the following classes:</li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="tensting-the-sensitivity-of-refence-location-for-rescaling-sif-from-flox-to-hyplant.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["bookdown.pdf", "bookdown.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
